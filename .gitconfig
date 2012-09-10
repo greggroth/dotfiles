@@ -1,0 +1,17 @@
+[user]
+  name = Greggory Rothmeier
+  email = gregg@highgroove.com
+[heroku]
+  account = work
+[core]
+  excludesfile = /Users/greggory/.gitignore
+  quotepath = false
+  editor = vim
+[color]
+  ui = auto
+[branch]
+  autosetuprebase = always
+[branch "master"]
+  rebase = true
+[branch "staging"]
+  rebase = true
