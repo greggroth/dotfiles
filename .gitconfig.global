@@ -15,3 +15,6 @@
   rebase = true
 [branch "staging"]
   rebase = true
+[alias]
+  dc = diff --cached
+  aa = add --all
