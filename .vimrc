@@ -170,3 +170,7 @@ vmap <Leader>a\| :Tabularize /\|<CR>
 
 " <leader><leader> toggles between files
 nnoremap <leader><leader> <c-^>
+
+" Cursor highlighting
+set cursorcolumn
+set cursorline
