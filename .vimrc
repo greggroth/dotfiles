@@ -174,3 +174,7 @@ nnoremap <leader><leader> <c-^>
 " Cursor highlighting
 set cursorcolumn
 set cursorline
+
+" Scrolling
+set scrolloff=8        " Number of lines from vertical edge to start scrolling
+set sidescrolloff=15   " Number of cols from horizontal edge to start scrolling
