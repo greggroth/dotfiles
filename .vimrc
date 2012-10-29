@@ -40,6 +40,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Powerline Options
+let g:Powerline_symbols = 'fancy'
+
 " Colorscheme
 syntax enable
 filetype plugin indent on
@@ -59,6 +62,23 @@ set splitbelow
 " set the terminal's title
 set title
 
+" better command completion
+set wildmenu
+" set complete=.,b,u,]
+" set wildmode=longest,list:longest
+" set completeopt=menu,preview
+
+" auto load changed files
+set autoread
+
+" set the terminal's title
+set title
+
+" List chars
+set listchars=""
+set listchars=tab:\ \
+set listchars+=trail:.
+
 " <leader>w opens a vertical split window and switches to it
 nnoremap <leader>w <C-w>v<C-w>l
 
@@ -70,6 +90,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" resizeing splits
+nnoremap <leader>+ :res +10<CR>
+nnoremap <leader>- :res -10<CR>
 
 " tabs
 set tabstop=2
@@ -91,7 +115,6 @@ nnoremap <F6> :buffers<CR>:buffer<Space>
 
 " status bar
 set statusline=%F\ %m\ %{fugitive#statusline()}\ %y%=%l,%c\ %P
-set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 
@@ -152,7 +175,7 @@ set directory=~/.vim/_tmp
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " open NERDTree
-map <leader>p :NERDTree<CR>
+" map <leader>p :NERDTree<CR>
 
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
@@ -168,6 +191,9 @@ vmap <Leader>a> :Tabularize /=><CR>
 nmap <Leader>a\| :Tabularize /\|<CR>
 vmap <Leader>a\| :Tabularize /\|<CR>
 
+" Use system clipboard
+set clipboard=unnamed
+
 " <leader><leader> toggles between files
 nnoremap <leader><leader> <c-^>
 
@@ -178,3 +204,28 @@ set cursorline
 " Scrolling
 set scrolloff=8        " Number of lines from vertical edge to start scrolling
 set sidescrolloff=15   " Number of cols from horizontal edge to start scrolling
+
+" local variable -> let() { ... }
+function! PromoteToLet()
+  :normal! dd
+  " :exec '?^\s*it\>'
+  :normal! P
+  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  :normal ==
+endfunction
+:command! PromoteToLet :call PromoteToLet()
+:map <leader>p :PromoteToLet<cr>
+
+function! MoveLine(open_motion, post_motion)
+  let cols=col('.')
+  execute "normal! D" . a:open_motion
+
+  let next_cols=col('.')
+  let delta_cols=cols-next_cols
+
+  if(delta_cols > 0)
+    execute "normal! " . delta_cols . "A "
+  endif
+
+  execute "normal! p" . a:post_motion
+endfunction
