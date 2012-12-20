@@ -24,21 +24,18 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'benmills/vimux'
-Bundle 'nelstrom/vim-markdown-preview'
+Bundle 'tpope/vim-markdown'
+Bundle 'jtratner/vim-flavored-markdown.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'groenewege/vim-less'
 
 set encoding=utf8
 set shell=/bin/sh
-
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 
 " Powerline Options
 let g:Powerline_symbols = 'fancy'
@@ -46,8 +43,8 @@ let g:Powerline_symbols = 'fancy'
 " Colorscheme
 syntax enable
 filetype plugin indent on
-colorscheme solarized
-set background=dark
+colorscheme Tomorrow-Night
+" colorscheme FreshCut
 
 " Line Numbers
 set number
@@ -68,6 +65,11 @@ set wildmenu
 " set wildmode=longest,list:longest
 " set completeopt=menu,preview
 
+
+" Clojure settings
+let vimclojure#HighlightBuiltins=1 
+let vimclojure#ParenRainbow=1
+
 " auto load changed files
 set autoread
 
@@ -79,11 +81,12 @@ set listchars=""
 set listchars=tab:\ \
 set listchars+=trail:.
 
-" <leader>w opens a vertical split window and switches to it
-nnoremap <leader>w <C-w>v<C-w>l
+" Vertical/horizonal split shortcuts
+nnoremap gs <C-w>v
+nnoremap gd :sp<CR>
 
 " <leader>t opens the associated Rails file (test/class, etc.) in a vertical split
-nnoremap <leader>t <C-w>v<C-w>l:A<cr>
+nnoremap <leader>y <C-w>v<C-w>l:A<cr>
 
 " moving among splits
 nnoremap <C-h> <C-w>h
@@ -95,6 +98,14 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
 
+" save/quits
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
+
+" leader shortcuts
+map <leader>vi :e ~/.vimrc<CR>
+map <leader>gb :Gblame<CR>
+
 " tabs
 set tabstop=2
 set shiftwidth=2
@@ -104,6 +115,9 @@ set autoindent
 
 " add ruby comments
 autocmd FileType ruby set commentstring=#\ %s
+
+" convert view to html
+map <leader>ht :runtime! syntax/2html.vim<CR>
 
 " open CtrlP
 let g:ctrlp_map = '<leader>t'
@@ -172,7 +186,7 @@ set backupdir=~/.vim/_backup
 set directory=~/.vim/_tmp
 
 " search/replace word under cursor
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+nnoremap <C-a> :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " open NERDTree
 " map <leader>p :NERDTree<CR>
@@ -229,3 +243,19 @@ function! MoveLine(open_motion, post_motion)
 
   execute "normal! p" . a:post_motion
 endfunction
+
+function! GistLinks()
+  :%s/\vhttps:\/\/gist\.github\.com\/([0-9a-z]*)/{% gist \1 %}/g
+endfunction
+:command! GistLinks :call GistLinks()
+
+augroup markdown
+  au!
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
+" Markdown preview
+nnoremap <leader>mm :silent !open -a Marked.app '%:p'<cr>
+
+" Folding shorcuts
+nnoremap <space> za
