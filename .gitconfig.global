@@ -49,3 +49,5 @@
   cmd = p4merge "$LOCAL" "$BASE"
 [difftool]
   prompt = false
+[rerere]
+	enabled = true
