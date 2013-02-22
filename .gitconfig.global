@@ -1,6 +1,6 @@
 [user]
   name = Greggory Rothmeier
-  email = gregg@highgroove.com
+	email = greggroth@gmail.com
 [core]
   excludesfile = /Users/greggory/.gitignore
   quotepath = false
@@ -33,3 +33,19 @@
   la = !git l --all
 [web]
 	browser = open
+[heroku]
+	account = personal
+[merge]
+  tool = p4merge
+[mergetool "p4merge"]
+  cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  trustExitCode = false
+[mergetool]
+  prompt = false
+  keepBackup = false
+[diff]
+  tool = p4diff
+[difftool "p4diff"]
+  cmd = p4merge "$LOCAL" "$BASE"
+[difftool]
+  prompt = false
