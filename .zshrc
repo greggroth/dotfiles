@@ -44,8 +44,11 @@ alias unfuck_intersect='cp config/mongo.yml.foreman config/mongo.yml && cp confi
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PLATFORM="mac"
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
+
+export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
