@@ -51,3 +51,5 @@
   prompt = false
 [rerere]
 	enabled = true
+[push]
+	default = simple
