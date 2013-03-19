@@ -31,6 +31,7 @@
   ra = !git r --all
   l = "!. ~/.dotfiles/.githelpers && pretty_git_log"
   la = !git l --all
+	g = grep --break --heading --line-number -B 2 -A 2
 [web]
 	browser = open
 [heroku]
