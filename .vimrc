@@ -7,32 +7,41 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'skwp/vim-rspec'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-commentary'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-repeat'
-Bundle 'skalnik/vim-vroom'
-Bundle 'tpope/vim-rvm'
 Bundle 'mileszs/ack.vim'
-Bundle 'bbommarito/vim-slim'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'benmills/vimux'
-Bundle 'tpope/vim-markdown'
-Bundle 'jtratner/vim-flavored-markdown.git'
-Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kana/vim-arpeggio'
+Bundle 'tpope/vim-commentary'
+
+" Ruby stuff
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'skalnik/vim-vroom'
+Bundle 'tpope/vim-rvm'
+
+" Pretty colors
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/vim-tomorrow-theme'
+
+" Syntax Highlighting
+Bundle 'vim-scripts/VimClojure'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
 Bundle 'groenewege/vim-less'
+Bundle 'jtratner/vim-flavored-markdown.git'
+Bundle 'tpope/vim-markdown'
+Bundle 'bbommarito/vim-slim'
+
+" Syntax checker
+Bundle 'scrooloose/syntastic'
+
+" Git
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-fugitive'
 
 set encoding=utf8
 set shell=/bin/sh
@@ -85,7 +94,7 @@ set listchars+=trail:.
 nnoremap gs <C-w>v
 nnoremap gd :sp<CR>
 
-" <leader>t opens the associated Rails file (test/class, etc.) in a vertical split
+" opens the associated Rails file (test/class, etc.) in a vertical split
 nnoremap <leader>y <C-w>v<C-w>l:A<cr>
 
 " moving among splits
@@ -154,9 +163,9 @@ let g:vroom_use_vimux = 1
 " Prompt for a command to run
 " map <leader>p :PromptVimTmuxCommand<CR>
 " Run last command executed by RunVimTmuxCommand
-" map <leader>l :RunLastVimTmuxCommand<CR>
+map <leader>l :RunLastVimTmuxCommand<CR>
 " Inspect runner pane
-" map <leader>i :InspectVimTmuxRunner<CR>
+map <leader>i :InspectVimTmuxRunner<CR>
 " Close all other tmux panes in current window
 map <leader>x :CloseVimTmuxPanes<CR>
 " Interrupt any command running in the runner pane
@@ -187,9 +196,6 @@ set directory=~/.vim/_tmp
 
 " search/replace word under cursor
 nnoremap <C-a> :%s/\<<C-r><C-w>\>//g<Left><Left>
-
-" open NERDTree
-" map <leader>p :NERDTree<CR>
 
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
@@ -259,3 +265,7 @@ nnoremap <leader>mm :silent !open -a Marked.app '%:p'<cr>
 
 " Folding shorcuts
 nnoremap <space> za
+
+" Press jk together for <esc>
+call arpeggio#load()
+Arpeggio inoremap jk  <Esc>
