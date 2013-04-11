@@ -22,6 +22,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'skalnik/vim-vroom'
 Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-cucumber'
 
 " Pretty colors
 Bundle 'altercation/vim-colors-solarized'
