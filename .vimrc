@@ -11,7 +11,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'mileszs/ack.vim'
 Bundle 'benmills/vimux'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-arpeggio'
@@ -47,9 +46,6 @@ Bundle 'tpope/vim-fugitive'
 
 set encoding=utf8
 set shell=/bin/sh
-
-" Powerline Options
-let g:Powerline_symbols = 'fancy'
 
 " Colorscheme
 syntax enable
@@ -271,3 +267,7 @@ nnoremap <space> za
 " Press jk together for <esc>
 call arpeggio#load()
 Arpeggio inoremap jk  <Esc>
+
+python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
+python from powerline.vim import VimPowerline
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
