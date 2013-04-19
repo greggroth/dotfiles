@@ -8,7 +8,7 @@ alias hate_coffeeshops='sudo tcpkill -i en1 -9 tcp portrange 6881-6999'
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="greggroth_2"
+ZSH_THEME="greggroth_3"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
