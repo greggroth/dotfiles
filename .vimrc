@@ -53,6 +53,10 @@ filetype plugin indent on
 colorscheme Tomorrow-Night
 " colorscheme FreshCut
 
+" GitGutter Shortcuts
+nnoremap gu :GitGutterPrevHunk<CR>
+nnoremap gn :GitGutterNextHunk<CR>
+
 " Line Numbers
 set number
 
@@ -65,6 +69,7 @@ set splitbelow
 
 " set the terminal's title
 set title
+autocmd BufEnter * let &titlestring = expand("%:t")
 
 " better command completion
 set wildmenu
