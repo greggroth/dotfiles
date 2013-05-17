@@ -33,6 +33,9 @@ zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~
 
 source $ZSH/oh-my-zsh.sh
 
+# Pretty diff
+alias pdiff='colordiff -u'
+
 #Tmuxinator
 EDITOR='vim'
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
