@@ -55,3 +55,6 @@ PLATFORM="mac"
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+
+# Remove anoying regex matching
+unsetopt NOMATCH
