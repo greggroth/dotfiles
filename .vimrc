@@ -159,9 +159,6 @@ nnoremap <leader>/ :noh<CR>
 set novisualbell  " No blinking .
 set noerrorbells  " No noise.
 
-" Vim-Vroom options
-let g:vroom_use_vimux = 1
-
 " ViMux Shortcuts
 " Prompt for a command to run
 " map <leader>p :PromptVimTmuxCommand<CR>
