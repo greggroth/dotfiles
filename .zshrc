@@ -40,9 +40,6 @@ alias pdiff='colordiff -u'
 EDITOR='vim'
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-#Intersect
-alias fix_intersect='cp config/mongo.yml.foreman config/mongo.yml && cp config/resque.yml.foreman config/resque.yml && git update-index --assume-unchanged config/{mongo,resque}.yml'
-
 #Homewbrew
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:/usr/local/sbin
