@@ -15,6 +15,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-arpeggio'
 Bundle 'tpope/vim-commentary'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Ruby stuff
 Bundle 'tpope/vim-rails'
@@ -56,9 +57,6 @@ colorscheme Tomorrow-Night
 " GitGutter Shortcuts
 nnoremap gu :GitGutterPrevHunk<CR>
 nnoremap gn :GitGutterNextHunk<CR>
-
-" Line Numbers
-set relativenumber
 
 " Remap leader to comma
 let mapleader = ","
