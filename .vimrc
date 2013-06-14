@@ -58,7 +58,7 @@ nnoremap gu :GitGutterPrevHunk<CR>
 nnoremap gn :GitGutterNextHunk<CR>
 
 " Line Numbers
-set number
+set relativenumber
 
 " Remap leader to comma
 let mapleader = ","
