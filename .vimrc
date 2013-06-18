@@ -52,7 +52,12 @@ set shell=/bin/sh
 syntax enable
 filetype plugin indent on
 colorscheme Tomorrow-Night
-" colorscheme FreshCut
+
+" Diff Highlighting
+exe "hi! DiffAdd ctermbg=28"
+exe "hi! DiffChange ctermbg=220"
+exe "hi! DiffDelete ctermbg=88 ctermfg=Cyan"
+exe "hi! DiffText ctermbg=53"
 
 " GitGutter Shortcuts
 nnoremap gu :GitGutterPrevHunk<CR>
