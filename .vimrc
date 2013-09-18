@@ -1,4 +1,3 @@
-set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -10,12 +9,17 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'mileszs/ack.vim'
+" Bundle 'rking/ag.vim'
 Bundle 'benmills/vimux'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-arpeggio'
 Bundle 'tpope/vim-commentary'
+Bundle 'bling/vim-airline'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'tpope/vim-surround'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Ruby stuff
 Bundle 'tpope/vim-rails'
@@ -24,6 +28,10 @@ Bundle 'skalnik/vim-vroom'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-cucumber'
+Bundle 'greggroth/vim-cucumber-folding'
+Bundle 'matchit.zip'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Pretty colors
 Bundle 'altercation/vim-colors-solarized'
@@ -36,7 +44,8 @@ Bundle 'tpope/vim-haml'
 Bundle 'groenewege/vim-less'
 Bundle 'jtratner/vim-flavored-markdown.git'
 Bundle 'tpope/vim-markdown'
-Bundle 'bbommarito/vim-slim'
+Bundle 'slim-template/vim-slim'
+Bundle 'elzr/vim-json'
 
 " Syntax checker
 Bundle 'scrooloose/syntastic'
@@ -46,22 +55,21 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 
 set encoding=utf8
-set shell=/bin/sh
+set shell=/bin/sh\ -l
+
+set number
 
 " Colorscheme
+set t_Co=256
 syntax enable
 filetype plugin indent on
 colorscheme Tomorrow-Night
-
-" Diff Highlighting
-exe "hi! DiffAdd ctermbg=28"
-exe "hi! DiffChange ctermbg=220"
-exe "hi! DiffDelete ctermbg=88 ctermfg=Cyan"
-exe "hi! DiffText ctermbg=53"
+" colorscheme Tomorrow
 
 " GitGutter Shortcuts
 nnoremap gu :GitGutterPrevHunk<CR>
 nnoremap gn :GitGutterNextHunk<CR>
+let g:gitgutter_realtime = 0
 
 " Remap leader to comma
 let mapleader = ","
@@ -72,7 +80,7 @@ set splitbelow
 
 " set the terminal's title
 set title
-autocmd BufEnter * let &titlestring = expand("%:t")
+" autocmd BufEnter * let &titlestring = expand("%:t")
 
 " better command completion
 set wildmenu
@@ -92,9 +100,7 @@ set autoread
 set title
 
 " List chars
-set listchars=""
-set listchars=tab:\ \
-set listchars+=trail:.
+set list listchars=tab:→\ ,trail:●
 
 " Vertical/horizonal split shortcuts
 nnoremap gs <C-w>v
@@ -117,9 +123,12 @@ nnoremap <leader>- :res -10<CR>
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
-" leader shortcuts
-map <leader>vi :e ~/.vimrc<CR>
+" autosave
+au BufLeave * :up
+
+" fugitive shortcuts
 map <leader>gb :Gblame<CR>
+map <leader>gd :Gdiff<CR>
 
 " tabs
 set tabstop=2
@@ -267,12 +276,24 @@ augroup END
 nnoremap <leader>mm :silent !open -a Marked.app '%:p'<cr>
 
 " Folding shorcuts
+set foldmethod=syntax
+set foldlevelstart=99 " open all folds by default
 nnoremap <space> za
 
 " Press jk together for <esc>
 call arpeggio#load()
 Arpeggio inoremap jk  <Esc>
 
-python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
-python from powerline.vim import VimPowerline
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+" python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
+" python from powerline.vim import VimPowerline
+" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+
+let g:airline_enable_syntastic=1
+let g:airline_theme='badwolf'
+let g:airline_powerline_fonts=1
+let g:airline_section_y=""
+let g:airline_enable_branch=0
+let g:airline_branch_empty_message=''
+
+" Gem tags
+" set tags+=gem_tags
