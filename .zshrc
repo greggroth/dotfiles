@@ -55,5 +55,7 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
+export PGHOST=localhost
+
 # Remove anoying regex matching
 unsetopt NOMATCH
