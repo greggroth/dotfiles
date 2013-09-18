@@ -4,6 +4,8 @@ ZSH=$HOME/.oh-my-zsh
 alias vlc='Applications/VLC.app/Contents/MacOS/VLC'
 alias hate_coffeeshops='sudo tcpkill -i en1 -9 tcp portrange 6881-6999'
 
+alias git=hub
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
