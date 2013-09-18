@@ -32,6 +32,7 @@
   l = "!. ~/.dotfiles/.githelpers && pretty_git_log"
   la = !git l --all
 	g = grep --break --heading --line-number -B 2 -A 2
+	ctags = !.git/hooks/ctags
 [web]
 	browser = open
 [heroku]
@@ -54,3 +55,7 @@
 	enabled = true
 [push]
 	default = simple
+[hub]
+	host = code.apple.com
+[init]
+	templatedir = ~/.git_template
