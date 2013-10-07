@@ -16,6 +16,7 @@
 [alias]
   dc = diff --cached
   aa = add --all
+  pu = push --set-upstream
 
   # Fancy logging.
   #   h = head
