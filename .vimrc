@@ -16,7 +16,6 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-arpeggio'
 Bundle 'tpope/vim-commentary'
 Bundle 'bling/vim-airline'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'tpope/vim-surround'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
@@ -58,6 +57,7 @@ set encoding=utf8
 set shell=/bin/sh\ -l
 
 set number
+set relativenumber
 
 " Colorscheme
 set t_Co=256
