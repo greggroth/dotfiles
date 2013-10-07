@@ -20,6 +20,14 @@ Bundle 'tpope/vim-surround'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
+" Docbook Editing
+Bundle 'sukima/vim-docbk'
+Bundle 'othree/xml.vim'
+
+hi link docbkKeyword String
+hi link xmlTag Identifier
+hi link xmlTagEnd xmlTag
+
 " Ruby stuff
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
