@@ -1,5 +1,5 @@
 [user]
-  name = Greggory Rothmeier
+	name = Greggory Rothmeier
 	email = greggroth@gmail.com
 [core]
   excludesfile = /Users/greggory/.gitignore
@@ -15,7 +15,7 @@
   rebase = true
 [alias]
   dc = diff --cached
-  aa = add --all
+  aa = add --all :/
   pu = push --set-upstream
 
   # Fancy logging.
@@ -45,7 +45,7 @@
   trustExitCode = false
 [mergetool]
   prompt = false
-  keepBackup = false
+	keepBackup = false
 [diff]
   tool = p4diff
 [difftool "p4diff"]
