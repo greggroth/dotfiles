@@ -16,13 +16,16 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-arpeggio'
 Bundle 'tpope/vim-commentary'
 Bundle 'bling/vim-airline'
+Bundle 'edkolev/tmuxline.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'jnwhiteh/vim-golang'
 
 " Docbook Editing
 Bundle 'sukima/vim-docbk'
 Bundle 'othree/xml.vim'
+Bundle 'msanders/snipmate.vim'
 
 hi link docbkKeyword String
 hi link xmlTag Identifier
@@ -89,14 +92,17 @@ set title
 " autocmd BufEnter * let &titlestring = expand("%:t")
 
 " better command completion
+set path=**
 set wildmenu
 " set complete=.,b,u,]
 " set wildmode=longest,list:longest
-" set completeopt=menu,preview
+set wildmode=full
+set completeopt=menu,preview
+
 
 
 " Clojure settings
-let vimclojure#HighlightBuiltins=1 
+let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 
 " auto load changed files
@@ -295,11 +301,25 @@ Arpeggio inoremap jk  <Esc>
 " source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 let g:airline_enable_syntastic=1
-let g:airline_theme='badwolf'
+let g:airline_theme='ubaryd'
 let g:airline_powerline_fonts=1
 let g:airline_section_y=""
 let g:airline_enable_branch=0
 let g:airline_branch_empty_message=''
+
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W', '#F'],
+      \'y'    : ['%R', '%a', '%Y'],
+      \'z'    : ''}
+
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '|',
+    \ 'right' : '',
+    \ 'right_alt' : '|',
+    \ 'space' : ' '}
 
 " Gem tags
 " set tags+=gem_tags
