@@ -41,8 +41,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Pretty colors
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'junegunn/seoul256.vim'
 
 " Syntax Highlighting
 Bundle 'vim-scripts/VimClojure'
@@ -71,8 +70,7 @@ set relativenumber
 set t_Co=256
 syntax enable
 filetype plugin indent on
-colorscheme Tomorrow-Night
-" colorscheme Tomorrow
+colorscheme seoul256
 
 " GitGutter Shortcuts
 nnoremap gu :GitGutterPrevHunk<CR>
