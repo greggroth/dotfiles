@@ -1,0 +1,39 @@
+[general]
+ui = Blinkenlights
+pythonfile=~/.mutt/offlineimap.py
+accounts = greggroth
+fsync = False
+
+[Account greggroth]
+localrepository = greggroth-Local
+remoterepository = greggroth-Remote
+status_backend = sqlite
+postsynchook = notmuch new
+
+[Repository greggroth-Local]
+type = Maildir
+localfolders = ~/.mail/greggroth-gmail.com
+nametrans = lambda folder: {'Drafts':  '[Gmail]/Drafts',
+                            'sent':    '[Gmail]/Sent Mail',
+                            'flagged': '[Gmail]/Starred',
+                            'trash':   '[Gmail]/Trash',
+                            'archive': '[Gmail]/All Mail',
+                            }.get(folder, folder)
+
+[Repository greggroth-Remote]
+maxconnections = 1
+type = Gmail
+remoteuser = greggroth@gmail.com
+remotepasseval = get_keychain_pass(account="greggroth@gmail.com", server="imap.gmail.com")
+realdelete = no
+nametrans = lambda folder: {'[Gmail]/Drafts':    'Drafts',
+                            '[Gmail]/Sent Mail': 'sent',
+                            '[Gmail]/Starred':   'flagged',
+                            '[Gmail]/Trash':     'trash',
+                            '[Gmail]/All Mail':  'archive',
+                            }.get(folder, folder)
+folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
+                                             '[Gmail]/Important',
+                                             '[Gmail]/Spam',
+                                             ]
+cert_fingerprint = 89091347184d41768bfc0da9fad94bfe882dd358
