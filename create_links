@@ -1,7 +1,0 @@
-#!/bin/bash
-set -e
-
-for FILE in $(ls -dp .* | grep -e '[^\/]$')
-do
-  ln -vfs $(pwd)/$FILE ~/$FILE
-done
