@@ -300,12 +300,11 @@ Arpeggio inoremap jk  <Esc>
 " python from powerline.vim import VimPowerline
 " source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
-let g:airline_enable_syntastic=1
 let g:airline_theme='ubaryd'
 let g:airline_powerline_fonts=1
-let g:airline_section_y=""
-let g:airline_enable_branch=0
-let g:airline_branch_empty_message=''
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#branch#empty_message = ''
 
 let g:tmuxline_preset = {
       \'a'    : '#S',
