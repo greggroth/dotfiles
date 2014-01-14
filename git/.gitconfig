@@ -27,10 +27,10 @@
   #   la = all commits, all reachable refs
   head = !git l -1
   h = !git head
-  hp = "!. ~/.dotfiles/.githelpers && show_git_head"
+  hp = "!. .githelpers && show_git_head"
   r = !git l -30
   ra = !git r --all
-  l = "!. ~/.dotfiles/.githelpers && pretty_git_log"
+  l = "!. .githelpers && pretty_git_log"
   la = !git l --all
 	g = grep --break --heading --line-number -B 2 -A 2
 	ctags = !.git/hooks/ctags
