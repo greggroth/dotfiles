@@ -1,0 +1,11 @@
+2013-02-11 13:26:06	###	irc: connecting to server apple-irc/6667...
+2013-02-11 13:26:07	=!=	irc: address "apple-irc" not found
+2013-02-11 13:26:07	=!=	irc: error: nodename nor servname provided, or not known
+2013-02-11 13:26:07	###	irc: reconnecting to server in 10 seconds
+2013-02-11 13:26:17	###	irc: reconnecting to server...
+2013-02-11 13:26:17	###	irc: connecting to server apple-irc/6667...
+2013-02-11 13:26:17	=!=	irc: address "apple-irc" not found
+2013-02-11 13:26:17	=!=	irc: error: nodename nor servname provided, or not known
+2013-02-11 13:26:17	###	irc: reconnecting to server in 20 seconds
+2013-02-11 13:26:19		irc: auto-reconnection is cancelled
+2013-02-11 13:26:19	###	irc: disconnected from server

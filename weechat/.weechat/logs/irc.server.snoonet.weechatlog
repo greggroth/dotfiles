@@ -1,0 +1,2019 @@
+2013-05-23 15:36:17	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-23 15:36:17	###	irc: connected to irc.snoonet.org/6667 (87.117.247.15)
+2013-05-23 15:36:18	###	bathory.snoonet.org (bathory.snoonet.org): *** Looking up your hostname...
+2013-05-23 15:36:18	###	bathory.snoonet.org (bathory.snoonet.org): *** Checking Ident
+2013-05-23 15:36:18	###	bathory.snoonet.org (bathory.snoonet.org): *** Found your hostname
+2013-05-23 15:36:28	###	bathory.snoonet.org (bathory.snoonet.org): *** No Ident response
+2013-05-23 15:36:28	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-05-23 15:36:28	###	Your host is bathory.snoonet.org[bathory.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-05-23 15:36:28	###	This server was created Mon Jan 7 2013 at 03:35:58 EST
+2013-05-23 15:36:28	###	bathory.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-05-23 15:36:28	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-05-23 15:36:28	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-05-23 15:36:28	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-05-23 15:36:28	###	There are 3 users and 1108 invisible on 13 servers
+2013-05-23 15:36:28	###	17 :IRC Operators online
+2013-05-23 15:36:28	###	497 :channels formed
+2013-05-23 15:36:28	###	I have 135 clients and 1 servers
+2013-05-23 15:36:28	###	135 264 :Current local users 135, max 264
+2013-05-23 15:36:28	###	1111 1782 :Current global users 1111, max 1782
+2013-05-23 15:36:28	###	Highest connection count: 265 (264 clients) (35024 connections received)
+2013-05-23 15:36:28	###	- bathory.snoonet.org Message of the Day -
+2013-05-23 15:36:28	###	-   _________                                   __
+2013-05-23 15:36:28	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-05-23 15:36:28	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-05-23 15:36:28	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-05-23 15:36:28	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-05-23 15:36:28	###	-         \/     \/                   \/     \/
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-   By connecting to Snoonet,
+2013-05-23 15:36:28	###	-   You have agreed you will follow all network policies
+2013-05-23 15:36:28	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-05-23 15:36:28	###	-   We do not log public or private chats.
+2013-05-23 15:36:28	###	-   Our network is intra-connected via SSL to make sure
+2013-05-23 15:36:28	###	-   no private information is ever read by big brother.
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-   For more security, please utilize our SSL connectivity by
+2013-05-23 15:36:28	###	-   connecting to irc.snoonet.org port 6697
+2013-05-23 15:36:28	###	-   For our security-conscious clients, the below fingerprints
+2013-05-23 15:36:28	###	-   may be used to verify the identity of a Snoonet server:
+2013-05-23 15:36:28	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  Upon your connection,
+2013-05-23 15:36:28	###	-  you have also agreed to being scanned by the
+2013-05-23 15:36:28	###	-  network for any open proxies.
+2013-05-23 15:36:28	###	-  If one is indeed found running you will be removed and
+2013-05-23 15:36:28	###	-  required to
+2013-05-23 15:36:28	###	-  contact the banlist db provider in your disconnect message
+2013-05-23 15:36:28	###	-  Snoonet can not remove you from those banlists.
+2013-05-23 15:36:28	###	-  The IRC network software automatically utilizes these banlists
+2013-05-23 15:36:28	###	-  and bans upon client connect.
+2013-05-23 15:36:28	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-05-23 15:36:28	###	-  or was a part of a malicious bot or bot network.
+2013-05-23 15:36:28	###	-  Contact the banlist website provided to be removed,
+2013-05-23 15:36:28	###	-  and e-mail support@snoonet.org
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-05-23 15:36:28	###	-  please
+2013-05-23 15:36:28	###	-  /join #help
+2013-05-23 15:36:28	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you
+2013-05-23 15:36:28	###	-  Most Services help can be found by typing /msg NickServ help
+2013-05-23 15:36:28	###	-  and /msg ChanServ help
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-05-23 15:36:28	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-05-23 15:36:28	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-05-23 15:36:28	###	-  For other ways to authorize your IRC client upon connect
+2013-05-23 15:36:28	###	-  please read
+2013-05-23 15:36:28	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-05-23 15:36:28	###	-  and other services methods to identify to your account.
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-05-23 15:36:28	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-05-23 15:36:28	###	-  IP address/hostname
+2013-05-23 15:36:28	###	-  This is for your security!
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-05-23 15:36:28	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-05-23 15:36:28	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-05-23 15:36:28	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-05-23 15:36:28	###	-  Example: http://webchat.snoonet.org/reddit
+2013-05-23 15:36:28	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  Snoonet is a network for all communities to host live chat.
+2013-05-23 15:36:28	###	-  We will do our best to make sure your communities have a great experience!
+2013-05-23 15:36:28	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-05-23 15:36:28	###	-  Channel management is up to the channel operators.
+2013-05-23 15:36:28	###	-  To report abuse, please contact an operator in #help
+2013-05-23 15:36:28	###	-
+2013-05-23 15:36:28	###	-  Please visit www.snoonet.org regularly!
+2013-05-23 15:36:28	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-05-23 15:36:28	###	-  Please type /list to find chats meeting your interests!
+2013-05-23 15:36:28	###	-  -
+2013-05-23 15:36:28	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-05-23 15:36:28	###	-  Enjoy Minecraft?
+2013-05-23 15:36:28	###	-  Come check out our Minecraft server, at
+2013-05-23 15:36:28	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-05-23 15:36:28	###	-  -
+2013-05-23 15:36:28	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-05-23 15:36:28	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-05-23 15:36:28	###	-  -
+2013-05-23 15:36:28	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-05-23 15:36:28	###	-  completing the e-mail process. After registering
+2013-05-23 15:36:28	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-05-23 15:36:28	###	End of /MOTD command.
+2013-05-23 15:36:28	###	User mode [+iwx] by greggroth
+2013-05-23 15:36:28	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-05-23 15:36:28	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-05-23 15:36:28	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-05-23 15:36:28	###	CTCP requested by SnooStat: VERSION
+2013-05-23 15:36:28	###	CTCP reply to SnooStat: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-05-23 15:36:46	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Chinese GP April 12-14.
+2013-05-24 09:04:53	=!=	irc: reading data on socket: error 60 Operation timed out
+2013-05-24 09:04:53	###	irc: disconnecting from server...
+2013-05-24 09:04:53	###	irc: disconnected from server
+2013-05-24 09:04:53	###	irc: reconnecting to server in 10 seconds
+2013-05-24 09:05:03	###	irc: reconnecting to server...
+2013-05-24 09:05:03	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-24 09:05:03	###	irc: connected to irc.snoonet.org/6667 (142.4.213.142)
+2013-05-24 09:05:03	###	cosmos.snoonet.org (cosmos.snoonet.org): *** Looking up your hostname...
+2013-05-24 09:05:03	###	cosmos.snoonet.org (cosmos.snoonet.org): *** Checking Ident
+2013-05-24 09:05:04	###	cosmos.snoonet.org (cosmos.snoonet.org): *** Couldn't look up your hostname
+2013-05-24 09:05:13	###	cosmos.snoonet.org (cosmos.snoonet.org): *** No Ident response
+2013-05-24 09:05:13	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-05-24 09:05:13	###	Your host is cosmos.snoonet.org[cosmos.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-05-24 09:05:13	###	This server was created Mon Jan 7 2013 at 01:42:46 EST
+2013-05-24 09:05:13	###	cosmos.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-05-24 09:05:13	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-05-24 09:05:13	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=31 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-05-24 09:05:13	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-05-24 09:05:13	###	There are 3 users and 1004 invisible on 13 servers
+2013-05-24 09:05:13	###	16 :IRC Operators online
+2013-05-24 09:05:13	###	500 :channels formed
+2013-05-24 09:05:13	###	I have 145 clients and 1 servers
+2013-05-24 09:05:13	###	145 204 :Current local users 145, max 204
+2013-05-24 09:05:13	###	1007 1477 :Current global users 1007, max 1477
+2013-05-24 09:05:13	###	Highest connection count: 205 (204 clients) (3754 connections received)
+2013-05-24 09:05:13	###	- cosmos.snoonet.org Message of the Day -
+2013-05-24 09:05:13	###	-   _________                                   __
+2013-05-24 09:05:13	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-05-24 09:05:13	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-05-24 09:05:13	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-05-24 09:05:13	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-05-24 09:05:13	###	-         \/     \/                   \/     \/
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-   By connecting to Snoonet,
+2013-05-24 09:05:13	###	-   You have agreed you will follow all network policies
+2013-05-24 09:05:13	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-05-24 09:05:13	###	-   We do not log public or private chats.
+2013-05-24 09:05:13	###	-   Our network is intra-connected via SSL to make sure
+2013-05-24 09:05:13	###	-   no private information is ever read by big brother.
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-   For more security, please utilize our SSL connectivity by
+2013-05-24 09:05:13	###	-   connecting to irc.snoonet.org port 6697
+2013-05-24 09:05:13	###	-   For our security-conscious clients, the below fingerprints
+2013-05-24 09:05:13	###	-   may be used to verify the identity of a Snoonet server:
+2013-05-24 09:05:13	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  Upon your connection,
+2013-05-24 09:05:13	###	-  you have also agreed to being scanned by the
+2013-05-24 09:05:13	###	-  network for any open proxies.
+2013-05-24 09:05:13	###	-  If one is indeed found running you will be removed and
+2013-05-24 09:05:13	###	-  required to
+2013-05-24 09:05:13	###	-  contact the banlist db provider in your disconnect message
+2013-05-24 09:05:13	###	-  Snoonet can not remove you from those banlists.
+2013-05-24 09:05:13	###	-  The IRC network software automatically utilizes these banlists
+2013-05-24 09:05:13	###	-  and bans upon client connect.
+2013-05-24 09:05:13	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-05-24 09:05:13	###	-  or was a part of a malicious bot or bot network.
+2013-05-24 09:05:13	###	-  Contact the banlist website provided to be removed,
+2013-05-24 09:05:13	###	-  and e-mail support@snoonet.org
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-05-24 09:05:13	###	-  please
+2013-05-24 09:05:13	###	-  /join #help
+2013-05-24 09:05:13	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you
+2013-05-24 09:05:13	###	-  Most Services help can be found by typing /msg NickServ help
+2013-05-24 09:05:13	###	-  and /msg ChanServ help
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-05-24 09:05:13	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-05-24 09:05:13	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-05-24 09:05:13	###	-  For other ways to authorize your IRC client upon connect
+2013-05-24 09:05:13	###	-  please read
+2013-05-24 09:05:13	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-05-24 09:05:13	###	-  and other services methods to identify to your account.
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-05-24 09:05:13	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-05-24 09:05:13	###	-  IP address/hostname
+2013-05-24 09:05:13	###	-  This is for your security!
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-05-24 09:05:13	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-05-24 09:05:13	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-05-24 09:05:13	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-05-24 09:05:13	###	-  Example: http://webchat.snoonet.org/reddit
+2013-05-24 09:05:13	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  Snoonet is a network for all communities to host live chat.
+2013-05-24 09:05:13	###	-  We will do our best to make sure your communities have a great experience!
+2013-05-24 09:05:13	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-05-24 09:05:13	###	-  Channel management is up to the channel operators.
+2013-05-24 09:05:13	###	-  To report abuse, please contact an operator in #help
+2013-05-24 09:05:13	###	-
+2013-05-24 09:05:13	###	-  Please visit www.snoonet.org regularly!
+2013-05-24 09:05:13	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-05-24 09:05:13	###	-  Please type /list to find chats meeting your interests!
+2013-05-24 09:05:13	###	-  -
+2013-05-24 09:05:13	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-05-24 09:05:13	###	-  Enjoy Minecraft?
+2013-05-24 09:05:13	###	-  Come check out our Minecraft server, at
+2013-05-24 09:05:13	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-05-24 09:05:13	###	-  -
+2013-05-24 09:05:13	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-05-24 09:05:13	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-05-24 09:05:13	###	-  -
+2013-05-24 09:05:13	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-05-24 09:05:13	###	-  completing the e-mail process. After registering
+2013-05-24 09:05:13	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-05-24 09:05:13	###	End of /MOTD command.
+2013-05-24 09:05:13	###	User mode [+iwx] by greggroth
+2013-05-24 09:05:13	###	216.235.pxj.zhl :is now your hidden host
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-05-24 09:05:13	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-05-24 09:05:13	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-05-24 09:05:13	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Chinese GP April 12-14.
+2013-05-24 09:05:13	###	CTCP requested by SnooStat: VERSION
+2013-05-24 09:05:13	###	CTCP reply to SnooStat: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-05-24 12:38:30	###	Channel Users  Name
+2013-05-24 12:38:30	###	#har4har(10):  heh | Calendar of events: http://707.me/XScxHN | PINEAPPLE. PERIOD. | OH MAN | FUCK YO COUCH! | Party Down, Veronica Mars | WE ARE 31337 | LOL | http://no.pe/ | Movie Night: Groundhog Day - NEVER | HNNNNNNNNNNNNNNNNNNNNNG'
+2013-05-24 12:38:30	###	#subredditdrama(65): Official IRC channel of /r/SubredditDrama
+2013-05-24 12:38:30	###	#theoryofreddit(28): Theory of Reddit | Finding ways for the community to improve reddit | http://www.reddit.com/r/TheoryOfReddit/ | Wiki: http://www.reddit.com/r/TheoryOfReddit/wiki | reddit.com help: #reddit-help | If nobody responds, be patient; someone will get around to you eventually.
+2013-05-24 12:38:30	###	#foxes(5): Welcome to #foxes - the foxiest channel on snoonet | http://reddit.com/r/foxes | Join the rest of the foxes in a friendly chat | Follow us on Twitter! Https://twitter.com/redditfoxes | allthefoxes says: IT'S OVER 7000!!!
+2013-05-24 12:38:30	###	#modclub(25): Official IRC channel of /r/modclub! Approved submitters may ask an op for +V
+2013-05-24 12:38:30	###	#omaha(3)
+2013-05-24 12:38:30	###	#OnePiece(6)
+2013-05-24 12:38:30	###	#BookClub(17): Welcome to #bookclub! First rule of Book Club is don't talk about Book Club. Second rule of Book Club is don't talk about #BookClub. Umm, we probably need a change of rules. I'll get it sorted soon! Type "~bookclub"  Also type "~pdesc bookclub" to view poll information of which you can share your input with  "~vote bookclub option". :)
+2013-05-24 12:38:30	###	#indianapolis(7): Friday!! May 24th, 2013 | ..................
+2013-05-24 12:38:30	###	#dc(20): Facebook Group: [ http://goo.gl/C56Hv ] | Meeting room for teh misguided | http://i.imgur.com/khZP6.jpg | Voted channel of the year by snoonet staff | http://imgur.com/6K8O2w4.jpg
+2013-05-24 12:38:30	###	#scifi(5): Reddit science and speculative fiction channel. Come and join us!
+2013-05-24 12:38:30	###	#dickgirls(7): Remember, Abortions are against the will of God. If you make your girlfriend get one, you will burn in Hell. Amen. http://www.youtube.com/watch?v=zSbnoBNM6Pc&list=PLB89E2AE2AB989663
+2013-05-24 12:38:30	###	#nerds(4): Under new management. Come get your geek on :)
+2013-05-24 12:38:30	###	#philadelphia(23): Bug phobos18 about http://www.centercityphila.org/life/SipsPartic.php | RSVP - http://redd.it/1edv9i | http://youtu.be/tzWKWNM6zvI
+2013-05-24 12:38:30	###	#asrs(3)
+2013-05-24 12:38:30	###	#borderlands(3)
+2013-05-24 12:38:30	###	#sex(69): Welcome to the official advice and discussion channel for http://reddit.com/r/sex/ - ask any questions you have, help others as you can, and don't be a dick! All links are assumed NSFW. Please don't stick around if you aren't 18+ or are here to get cyber-laid. If you need a moderator, type ".ineedanadult"
+2013-05-24 12:38:30	###	#reddit(215): ༼ ຈل͜ຈ༽ށ ( ͡ಠ ͜ʖ ͡ಠ) http://turntable.fm/reddit (Tell us when you're DJing!!) | ----->Tag [NSFW] links!<----- | #reddit rules: http://snoonet.org/reddit | Channel stats: http://j.mp/LGgo4G | OPS: FUINNY QUOTES GO HERE. GET FUNNY.
+2013-05-24 12:38:30	###	#newzealand(3)
+2013-05-24 12:38:30	###	#uk(44): Reddit UK | No racism, trolling or misuse of prepositions | Remember: 88% of the UK live outside London | See also r/marketuk | gay is not a pejorative term
+2013-05-24 12:38:30	###	#ems(6): Welcome to the /r/ems channel! Checkout /r/emsacademy. Rule 1: There are no rules! Rule 2: No outside food!
+2013-05-24 12:38:30	###	#trackers(13): /r/trackers | Discussion of public and private trackers | trading/requesting/offering invites is *NOT* allowed
+2013-05-24 12:38:30	###	#nottheonion(3)
+2013-05-24 12:38:30	###	#tripsit(85): - Type "!tripsit" for immediate assistance | Welcome to #tripsit, friend! If you need help: Please share your substance, dosage, ROA, time of dosage, mindset, and other relevant info and someone will be with you shortly. | If you have a question or feel social: Type '/join #drugs'; our more active general chat. | Mix Of The Week - http://ur1.ca/dxfc0
+2013-05-24 12:38:30	###	#music(29): Reddit music | Last.fm bot: ~setuser lastfm_username :: ~np :: ~compare user1 user2 | People may not be around to respond immediately, hang around if you want to chat | http://tt.fm/reddit
+2013-05-24 12:38:30	###	#stopdrinking(32): Welcome to #stopdrinking, the official IRC channel of /r/stopdrinking.  Playing is fine, but helping comes first.  Speak up if you need to talk, everyone will stop playing & listen.  Channel Rules: http://is.gd/rul3s
+2013-05-24 12:38:30	###	#danishents(5)
+2013-05-24 12:38:30	###	#sysadmin(3): /r/sysadmin
+2013-05-24 12:38:30	###	#dig!(5): Come play dig!  commands:  ~dig ~inventory ~store ~market ~leaders ~crews.  use ~help (command) for more info. ~help Dig --info for general game info.  ~more to see more of a line.  PM's work for most things, but you can only dig in-channel.
+2013-05-24 12:38:30	###	#IRCDrama(12): Official channel for http://www.reddit.com/r/IRCDrama/ | IRCDrama's rules are more lax in IRC than on Reddit, but they do still apply. Especially about not revealing personal information. Doxxing will result in a ban, so don't do it! Don't link or post full names, locations, IP addresses, etc, or you will get banned. Also, if you just came in here to bitch about IRCD, get the fuck out!
+2013-05-24 12:38:30	###	#Vocaloid(7): Welcome to the official /r/Vocaloid channel! | Rules: Don't be a dick | Type: !yt <name of the song> to use Mikubot's Youtube search
+2013-05-24 12:38:30	###	#kpop(35): 안녕하세요, kpop에 오신 것을 환영합니다! Welcome to Reddit K-Pop | http://reddit.com/r/kpop/new | http://fiddle.se/tagged/hyolean | https://twitter.com/redditkpop
+2013-05-24 12:38:30	###	#warhammer(8)
+2013-05-24 12:38:30	###	#teenagers(3)
+2013-05-24 12:38:30	###	#asianladyboners(17): A place to discuss sexy Asian men. http://www.reddit.com/r/AsianLadyboners/
+2013-05-24 12:38:30	###	#home(14): You're drunk, go #home.
+2013-05-24 12:38:30	###	#radioreddit(19): Toes in the sand...
+2013-05-24 12:38:30	###	#apple(6)
+2013-05-24 12:38:30	###	#game(3)
+2013-05-24 12:38:30	###	#theredlion(6)
+2013-05-24 12:38:30	###	#kjoneslol(4): #swag
+2013-05-24 12:38:30	###	#europe(32): Welcome aboard #europe! Daily news from r/Europe: "Stockholm riots challenge image of happy, generous state - whats happening there, Swedes?" -- http://redd.it/1ew20o | In order lighten the mood in here, some positive news: "Polish doctors carry out world's first life-saving face transplant" [http://redd.it/1evutu]
+2013-05-24 12:38:30	###	#creepaholics(7): Welcome to Creepaholics | Please tag NSFW links | !addquote to add quotes to Egotron. | http://stats.117.me/creepaholics/
+2013-05-24 12:38:30	###	#angelsbaseball(5):  RIP NoisomeOne |    Losses:     27     On pace to lose:     93      66  Losses to go!   Last dinosaur attack: 6 days ago, winning steak!
+2013-05-24 12:38:30	###	#reddit-live(31): [it's not] - [but it can be] ¯\_(ツ)_/¯
+2013-05-24 12:38:30	###	#beer(4)
+2013-05-24 12:38:30	###	#torchlight(3)
+2013-05-24 12:38:30	###	#snoonet-minecraft(19): Minecraft server: minecraft.snoonet.org [ Online ] | Admin applications: http://www.snoonet.org/mcapp | Map: http://minecraft.snoonet.org:8123 | Mumble: justice.snoonet.org
+2013-05-24 12:38:30	###	#takecontrol(9): Take Control! | Live advice and support for those struggling with addiction to drugs,sex, gambling, or anything else. For support quitting drinking try #stopdrinking | Ask away; we've all been there.
+2013-05-24 12:38:30	###	#AFLNews(3): #AFLNews, for all your AFL News around the clock! -- Every RSS feed is scraped and posted here in 15 minute intervals.
+2013-05-24 12:38:30	###	#GirlFlesh(15): http://i.asshatter.org/GirlFlesh/ | Post pics of cute girls! | Assume links are NSFW
+2013-05-24 12:38:30	###	#yiff(8): Adult Furry Chat! Come join your fellow yiffers and meet some new ones! All species welcome. 18+ ASFO's found at: http://tinyurl.com/d6broex
+2013-05-24 12:38:30	###	#psychonaut(41):  Check out the psychonaut social nexus at www.tripsit.me/nexus | Want faster chat? Do /join #drugs to access general chat. | Want music? www.tripsit.fm | Rules? http://www.tripsit.me/network/chat/chat_rules/ |  Can I find or share a source? No | Report command? /msg tripbot ~report #drugs [user] [reason] |
+2013-05-24 12:38:30	###	#learnkorean(4): 안냐세염. #learnkorean에 오신걸 환영함knee다. :3 | Plz keep conversations NSFW
+2013-05-24 12:38:30	###	#washingtondc(7): Our web page: [ http://is.gd/0U0jPr ] | Welcome All
+2013-05-24 12:38:30	###	#euro4euro(14): Welcome to the Old World http://i.imgur.com/d6sq1.jpg | 18+ only please | Don't be a dick. Remember this is a classy channel - http://i.imgur.com/Eq52K.jpg | Please label links that are NSFW! | http://www.reddit.com/r/euro4euro - Put yourself on the map: https://www.zeemaps.com/map?group=560273 - Have a great summer - http://i.imgur.com/RL4J73j.jpg
+2013-05-24 12:38:30	###	#parkshinhye(3)
+2013-05-24 12:38:30	###	#philadelphia02(3)
+2013-05-24 12:38:30	###	#tripradio(18): LISTEN NOW: http://tripsit.fm | ATTENTION ALL DJS: please email trainwreck@tripsit.me with program you are using, timezone, availability, streaming program you use. DL/UL speed,email. Thanks! | Wanna be a DJ? http://wiki.tripsit.me/wiki/How_to_DJ | More info:  http://nexus.tripsit.me/index.php?do=/tripradio/ | Can't connect? Try leaving in/out the username when connecti
+2013-05-24 12:38:30	###	#freeallegiance(3)
+2013-05-24 12:38:30	###	#minecraft(9): Welcome to #minecraft! | Official chan @ irc.esper.net, Wiki @ http://goo.gl/PcNbh | Servers: http://goo.gl/uLo0 | Latest: Client [1.4.2] Server [1.4.2] | Piracy not condoned. | Use pastebins. | Don't ask to ask, Google FIRST! | Francophones: bienvenue aussi sur notre chan IRC!
+2013-05-24 12:38:30	###	#rscr(3): <dgb> dolphin_ziggler is in the corner judging us | <LegaleseFalcon> dgb he must make the most of the opportunity because he spends most of his life in front of a judge | <dgb> LegaleseFalcon because he's black, right?!?! | <LegaleseFalcon> dgb no because he's a delinquent
+2013-05-24 12:38:30	###	#AFL(5): #AFL, Round Nine 2013! -- Streams: http://www.vipboxsports.me/sports/aussie-rules.html -- AFL torrents: http://aussierul.es/
+2013-05-24 12:38:30	###	#GHB(3)
+2013-05-24 12:38:30	###	#longdistance(13): Welcome to the IRC Channel for /r/longdistance | Rules: 1) Be nice, or I kick you. 2) be nice. | Regulars get +v if you have a registered nick. | | http://www.snoonetstats.com/longdistance.html
+2013-05-24 12:38:30	###	##DIYBot(4)
+2013-05-24 12:38:30	###	#nzbreddit(4): Official channel for the devs. Remember to run " /hs take user/$account "   Note. mode #nzbreddit +I *!*@--host--
+2013-05-24 12:38:30	###	#ucla(5): Bruins
+2013-05-24 12:38:30	###	#f1(48): Hey /r/formula1! What's da Matta?! ;DDDD | First Lap Friday Streams! http://veetle.com/v/50695b6729269 | Also, please upvote self post for visibility :) http://redd.it/1eyc9s
+2013-05-24 12:38:30	###	#modsoftherealms(4): Welcome to ModsOfTheRealms on snoonet | http://www.reddit.com/r/ModsOfTheRealms | Say hello! | The Global List of Local Reddits is now at a new address: http://www.reddit.com/r/LocationReddits/wiki/index
+2013-05-24 12:38:30	###	#bitcointip(3): moved to #bitcoin go there please.
+2013-05-24 12:38:30	###	#askhistorians(5): Welcome new cannon fodd- ...mods
+2013-05-24 12:38:30	###	##english(3): JUST US
+2013-05-24 12:38:30	###	#mingle(58): It's Mingle! The official channel for http://www.reddit.com/r/mingle/ | 18+ only please | Don't be a dick. | Assume all links are NSFW! | Keep it welcoming - No hatred or otherwise disrespectful commentary. | Channel stats: http://707.me/10E4hrp | Winner of the pool tournament was ArcticAnarchy - Congratulations!
+2013-05-24 12:38:30	###	#help(52): vhosts: say ~cloakme in the channel. (You must be registered & verified through NickServ) | Registation e-mail comes from noreply@snoonet.org | Any subreddit/channel/user related issues ask freely in the channel | Please ask your question and patiently await a reply | Need channel protection? /msg policy .help | This channel now XKCD806 compliant
+2013-05-24 12:38:30	###	#vinyl(18): Welcome to Vinyl. The official channel for http://www.reddit.com/r/vinyl | "When I die, just keep playing the records"  ~Jimi Hendrix | Vinyl Setup Guide --> http://tinyurl.com/9vaxkhu
+2013-05-24 12:38:30	###	#redditsquaredcircle(13): RYBOT RULES! | <dgb> dolphin_ziggler is in the corner judging us | <LegaleseFalcon> dgb he must make the most of the opportunity because he spends most of his life in front of a judge | <dgb> LegaleseFalcon because he's black, right?!?! | <LegaleseFalcon> dgb no because he's a delinquent
+2013-05-24 12:38:30	###	#reddit-neopets(3)
+2013-05-24 12:38:30	###	#Squisso(3): Official channel for http://www.reddit.com/r/Squisso/ | Home for Squids.
+2013-05-24 12:38:30	###	##idlerpg(3)
+2013-05-24 12:38:30	###	#bicycling(67): Need help registering with the channel? See here: http://cyclingcuriosity.com/r/bicycling https://sites.google.com/site/redditbicycling/ | Ride on forever, Nomadiks and HarryD.  You will be missed.
+2013-05-24 12:38:30	###	#ocoretesticleschannel(3): yay immaturity :D
+2013-05-24 12:38:30	###	#badgers(3): We don't give a shit
+2013-05-24 12:38:30	###	#DnD(9): Fuck! You rolled a 1! | If you want to see activity then TALK TO US! (And wait around! It may take several hours for us to get back to you.) | What was your gateway game? | GET A GAME LAIR
+2013-05-24 12:38:30	###	#metal(46): DIE HARDEST: GOATS AND DIE | Sam kicks: 666 + 326 | Sam bans: 62 | Bot commands: ~help | http://i.imgur.com/CAn9jc9.jpg
+2013-05-24 12:38:30	###	#relationships(3)
+2013-05-24 12:38:30	###	#gamedeals(9): Please do not use the channel for trading / selling or swapping.
+2013-05-24 12:38:30	###	#zen(9): mu
+2013-05-24 12:38:30	###	#mote(3)
+2013-05-24 12:38:30	###	#nhlnews(20): follow requests highlight/query snackle ;]
+2013-05-24 12:38:30	###	#Scrubs(3)
+2013-05-24 12:38:30	###	#anime(4)
+2013-05-24 12:38:30	###	#hexagonbroke(3)
+2013-05-24 12:38:30	###	#atlantar4r(3): Atlanta R4R /r/AtlantaR4R |  Change your nickname by typing /nick yournewnickname | 18+ only please | No cybering in the channel. | Assume all links are NSFW! | Homophobia, transphobia, misogyny, and other disrespectful behaviors will not be tolerated. | Don't be a dick | irc.snoonet.org #atlantar4r | stats http://goo.gl/6HIF3
+2013-05-24 12:38:30	###	#horndrive(3)
+2013-05-24 12:38:30	###	#television(4): Come chat about TV! | Useful TVBot commands: $nw, $tvshow, $tvep, $rating, $tm, $ts, $person
+2013-05-24 12:38:30	###	#less(10): Minimalism, anticonsumerism and simple-living chat.
+2013-05-24 12:38:30	###	#northkoreanews(11): Video Feed: http://tinyurl.com/83f6ewk | False reporting without sources (e.g., missile launches) will result in a ban
+2013-05-24 12:38:30	###	#hockey(27): AV/Bowness/Brown Fired | Friday Streams http://goo.gl/c2852 | Playoff Schedule @ http://go.snackle.us/pr2
+2013-05-24 12:38:30	###	#rainbow(9): butts | welcome to #rainbow! | register your nick! | http://i.imgur.com/FNutSIo.jpg | don't be a dick!
+2013-05-24 12:38:30	###	#trivia(9): Welcome to Snoonet Trivia! Say .start if the trivia is not running| If you have any issues PM one of the mods, we ignore notifications in this channel otherwise | Say ~ for a hint | Stats: http://n0.ms | Top 5 losers: sweetafton, ZombieDahmer, TheMightyStylus, BipolarBear0, murdock
+2013-05-24 12:38:30	###	#ebookspain(3)
+2013-05-24 12:38:30	###	#reddiction(7)
+2013-05-24 12:38:30	###	#lostgeneration(4)
+2013-05-24 12:38:30	###	#technology(7)
+2013-05-24 12:38:30	###	#korean(28): 안녕하세요! 환영합니다 to Korean! This is the chat for those interested in studying and learning the Korean language, both from a cultural and a linguistic point of view. Please keep all discussion SFW.
+2013-05-24 12:38:30	###	#f1mods(4): guys make sure to maintain streams on ainu: .addstream streamurl or .repstream # newstreamurl or .delstream #
+2013-05-24 12:38:30	###	#evolutionReddit(4)
+2013-05-24 12:38:30	###	#psychopharm(30): Discussion of chemistry, psychopharmacology, or other advanced chatter.
+2013-05-24 12:38:30	###	#pornoverlords(28): SFWPorn Network | /r/PornOverlords | #pornoverlords is an irc channel devoted to discussion about the Safe For Work Porn Network.
+2013-05-24 12:38:30	###	#sandboxofdoom(3): ««««« Personal Sandbox Channel For A Personal Sandbox Subreddit. /r/SandboxOfDoom - 6 Lost Souls Roaming in the Sands of Endless Madness and Mayhem. Can you do it too? | So, Hail to the narwhal & Hail to the Bacon~ | Hail to the Orangered too~ | It's Digg 1 day early, & 4chan last week & /. about 10 years ago...»»»»»
+2013-05-24 12:38:30	###	#FIESTADELAKJONESLOL(4): ¡HOLA! BIENVENIDOS A LA FIESTA (FESTA)
+2013-05-24 12:38:30	###	#Wolf(11): :: The Werewolf Game :: Original script and instructions at: http://javatwg.sourceforge.net/ :: New version with statistics in development ::  Be sure to check out #trivia too! :) ::
+2013-05-24 12:38:30	###	#dexter(5)
+2013-05-24 12:38:30	###	#jerktalk(3)
+2013-05-24 12:38:30	###	#news-offtopic(16): Discuss here. Choose a nickname: /nick newnickhere | Please refrain from using all caps in this channel | To hide JOINS  PARTS AND QUITS, CLICK THE GEARS IN THE TOP RIGHT to see CHAT ONLY | please keep goofiness and douchebaggery to a minimum
+2013-05-24 12:38:30	###	#null(5): null
+2013-05-24 12:38:30	###	#community(9): Welcome to /r/community chat | "I know an evil doppelganger when I see one." | COMMUNITY HAS BEEN RENEWED FOR SEASON 5
+2013-05-24 12:38:30	###	#downtime(3)
+2013-05-24 12:38:30	###	#changemyview(6): "general discussions, meta discussions, or anything CMV related"
+2013-05-24 12:38:30	###	#christianity(3): This channel is a placeholder. Currently the /r/Christianity community IRCs on chat.freenode.net #reddit-christianity
+2013-05-24 12:38:30	###	#science(18): For Science!; new official home of the subreddits [science, softscience, sciencenetwork, space, physics, chemistry, biology] | Please contact the voiced mods for spam filter or post concerns
+2013-05-24 12:38:30	###	#lizp(3)
+2013-05-24 12:38:30	###	#bitcoin(21): Bitcoin stuff | Say !bitcoin to get a quick price index (mtgox) | Up to date prices http://thefuckingbitcoin.com | Subreddits: /r/bitcoin, /r/bitcointip, /r/btclotto
+2013-05-24 12:38:30	###	#irc(3)
+2013-05-24 12:38:30	###	#anxiety(8): Come on in and stay a while.  Welcome to the channel for /r/anxiety | feel free to poke aperson if no one is around
+2013-05-24 12:38:30	###	#reddit-help(17): For help or questions regarding reddit. Please ask your question then wait, someone will be able to help you shortly.
+2013-05-24 12:38:30	###	#officesupplies(4): The Official Channel of /r/officesupplies!
+2013-05-24 12:38:30	###	#skuldsux(16): http://reddit.com/r/skuldsux | SKVLD SVX | If yoV to not know why SkVld sVx, consVlt the leading expert, SkVld. | NEW RULE: No tsnging | No spam allowed, deop flooders | just kidding | /ns id to get the +v ;) | also happy new year | 2013 is the year of the sVcking skVld | Kick kjoneslol on sight, filthy Skuld lover
+2013-05-24 12:38:30	###	#v8supercars(3): Next Race: Perth
+2013-05-24 12:38:30	###	#barrie(3)
+2013-05-24 12:38:30	###	##toast(8): Safe haven for all toasters, regardless of make or model. NO SOURCING (BUTTER, PEANUT OR OTHERWISE) | <neoinr> I DECLARE THIS A BREAD-FREE ZONE
+2013-05-24 12:38:30	###	#enhancement(16): hmm. it seems a change in location.hash no longer closes the ctrl-f in Chrome or Firefox, at least on OSX.
+2013-05-24 12:38:30	###	#newsfeed(4): Welcome to #newsfeed: Streaming news from popular media outlets
+2013-05-24 12:38:30	###	#daftpunk(11): Daft Punk randomaccessmemories.com
+2013-05-24 12:38:30	###	#ProtectAndServe(16): Home of /r/ProtectAndServe | Stay awhile! We may not respond right away but we're always here and will reply asap, we're the chillsquad, so chillout and chat. | All flairs/requests to /r/LEO may be sent to redditlawenforcement@gmail.com or shane@snoonet.org or modmailed to P&S; feel free to block your last name
+2013-05-24 12:38:30	###	#(4): #
+2013-05-24 12:38:30	###	#anarcho-capitalism(6): Reddit anarcho-capitalism | http://reddit.com/r/anarcho_capitalism | A free and voluntary society leads to more liberty and opportunity for everyone.
+2013-05-24 12:38:30	###	#games(83): Official channel of /r/games – No games!
+2013-05-24 12:38:30	###	##doctorwho(7): The unofficial channel for Doctor Who discussions! SPOILERS!
+2013-05-24 12:38:30	###	#drama(44): Welcome to #drama, the official channel of /r/drama | Play Minecraft with us! Server: minecraft.snoonet.org
+2013-05-24 12:38:30	###	#cooking(3): Welcome to the Jacques Pepin fan club | All food questions welcome
+2013-05-24 12:38:30	###	#orlando(4)
+2013-05-24 12:38:30	###	#idlerpg(27): IdleRPG || Come idle and play! || Commands, map, quest, and player info here: http://irpg.ricin.us/ | Join ##idlerpg to discuss the game
+2013-05-24 12:38:30	###	#r4r-Florida(24): R4R Florida /r/floridaR4R | Please familiarize yourself with our rules and guide: http://bit.ly/V9QN6O  | Stats: http://bit.ly/ILhDxX | Add yourself to our map: http://goo.gl/NOiVi | Community WhiteSpace --> [Anybody can add events here]
+2013-05-24 12:38:30	###	#silkroad(3)
+2013-05-24 12:38:30	###	#calgary(5): http://www.reddit.com/r/Calgary/
+2013-05-24 12:38:30	###	#circlejerk(4): http://i.imgur.com/V2uY2.gif - Me vs. Fundies
+2013-05-24 12:38:30	###	#conspiracy(4): IS BEAR ACTUALLY SRDBROKE? ALL JOOZ POINT TO YES.
+2013-05-24 12:38:30	###	#kinkyoffensiveshit(8): Kinky Offensive Shit
+2013-05-24 12:38:30	###	#f1streaming(8): Race Streams! http://veetle.com/v/50695b6729269
+2013-05-24 12:38:30	###	#circlebroke(22): http://i.imgur.com/6MnJKOz.jpg | Official CB Harlem Shake video- http://www.youtube.com/watch?v=4VWPBP5k-00
+2013-05-24 12:38:30	###	#OFWGKTA(5): The official channel of /r/OFWGKTA | to change your nick, type /nick xxx
+2013-05-24 12:38:30	###	#breakingbad(15): Welcome to #breakingbad! [] Watch Durham County! [] Stats: http://za.chary.us/projects/ircstats/snoonet/breakingbad.html [] Season 5A on DVD June 3rd! NEW EPISODES AUGUST 11TH! | [20:13] <brachyonic> wanna help me drown small animals later [20:14] <wonga_taa> yes [20:31] <wonga_taa> well how else am i going to get an erection [] 3 MORE FUCKING MONTHS STILL
+2013-05-24 12:38:30	###	#programming(17): Programming and coding discussion. Sign up for the Coursera Python Intro course (free): https://www.coursera.org/course/interactivepython
+2013-05-24 12:38:30	###	#warroom(4): The War Room.
+2013-05-24 12:38:30	###	#castlestory(3)
+2013-05-24 12:38:30	###	#spicy(4): This topic intentionally left blank.
+2013-05-24 12:38:30	###	#denmark(5)
+2013-05-24 12:38:30	###	#intp(3)
+2013-05-24 12:38:30	###	#rpg(3): People live here! You've just gotta stick around to see the life bloom. | Check out #DnD, too!
+2013-05-24 12:38:30	###	#drugscirclejerk(13): reddit.com/r/drugscirclejerk | Last One On The Cracker Has To Eat it | Do you even testkit?
+2013-05-24 12:38:30	###	#ta-gonewild(3)
+2013-05-24 12:38:30	###	#googleglass(4): Google Glass | http://www.reddit.com/r/googleglass | Say hello!
+2013-05-24 12:38:30	###	#androidcirclejerk(5): #HOLO
+2013-05-24 12:38:30	###	#linux(18): Welcome to #Linux ! Snoonet's general Linux support/discussion channel.
+2013-05-24 12:38:30	###	#reactiongifs(4): IRC Channel for /r/ReactionGifs discussion
+2013-05-24 12:38:30	###	#singularitynetwork(5): This is the IRC Channel of the Singularity Network on reddit | The main subreddit is http://reddit.com/r/Futurology where you also find the menu-bar | The "finnbawt" bot is producing a live feed of all submissions posted anywhere on the SFT-Network
+2013-05-24 12:38:30	###	#missoula(3): Welcome to #missoula, home of the Griz!  Enter the banner contest: http://www.reddit.com/r/missoula/comments/1cr65q/choose_your_banner_image/
+2013-05-24 12:38:30	###	##qorean(3)
+2013-05-24 12:38:30	###	#drugs(115): #drugs - Welcome! | Rules: http://tripsit.me/ircrules | Help support us, buy stickers and a shirt: http://www.gofundme.com/tripsit | Erowid Monthly: http://ur1.ca/dzxqb | JOIN THE NEXUS - http://nexus.tripsit.me | VIP Chat: #DrugsVIP | Live Music: www.tripsit.fm | Donations (BTC): 1EDqf32gw73tc1WtgdT2FymfmDN4RyC9RN | Commands: http://u.tripsit.me/bots |
+2013-05-24 12:38:30	###	#subredditoftheday(3)
+2013-05-24 12:38:30	###	#togetheralone(4)
+2013-05-24 12:38:30	###	#conspiratard(6)
+2013-05-24 12:38:30	###	#duckhunt(7): Welcome to #duckhunt | A duck has entered the room when the bot says, "\_o< quack!" | In order to shoot a duck, type ".bang" | Hunting happens in rounds, scores are displayed at the end of every round | Scripts/bots are forbidden
+2013-05-24 12:38:30	###	#theredpill(18): Respect women month
+2013-05-24 12:38:30	###	#b(3)
+2013-05-24 12:38:30	###	#Nesika(3): Welcome to the NesikaBeach.org chatroom.  Type "memefilter" or "A_G1RL" to get our attention.  "Don't ask to ask" - just ask!  8'x12' enclosed trailer for sale!
+2013-05-24 12:38:30	###	#thewalkingdead(7): /r/thewalkingdead - Be sure to click settings (gears) to hide joins parts and quits! Don't flood, don't spam. Be friendly! | Streams: http://misclivestream.blogspot.com/p/the-walking-dead.html | http://www.ustream.tv/channel/kow13oy-s-hot-tvlinks | http://www.stream2watch.me/live-tv/amc-live-stream | Stream the latest episode: http://www.putlocker.com/file/2758F72C7DDC4DA3#
+2013-05-24 12:38:30	###	#news(61): Welcome to #news, official IRC channel of /r/news | SNOO NICKS: please get a name with /nick NEWNICKHERE
+2013-05-24 12:38:30	###	End of /LIST
+2013-05-24 22:04:50	=!=	irc: reading data on socket: error 60 Operation timed out
+2013-05-24 22:04:50	###	irc: disconnecting from server...
+2013-05-24 22:04:50	###	irc: disconnected from server
+2013-05-24 22:04:50	###	irc: reconnecting to server in 10 seconds
+2013-05-24 22:05:00	###	irc: reconnecting to server...
+2013-05-24 22:05:00	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-24 22:05:00	###	irc: connected to irc.snoonet.org/6667 (54.248.33.224)
+2013-05-24 22:05:00	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Looking up your hostname...
+2013-05-24 22:05:01	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Checking Ident
+2013-05-24 22:05:01	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Found your hostname
+2013-05-24 22:05:10	###	tokyo.snoonet.org (tokyo.snoonet.org): *** No Ident response
+2013-05-24 22:05:10	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-05-24 22:05:10	###	Your host is tokyo.snoonet.org[tokyo.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-05-24 22:05:10	###	This server was created Sun Feb 3 2013 at 07:24:09 UTC
+2013-05-24 22:05:10	###	tokyo.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-05-24 22:05:10	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-05-24 22:05:10	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-05-24 22:05:10	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-05-24 22:05:10	###	There are 3 users and 1084 invisible on 13 servers
+2013-05-24 22:05:10	###	16 :IRC Operators online
+2013-05-24 22:05:10	###	523 :channels formed
+2013-05-24 22:05:10	###	I have 125 clients and 1 servers
+2013-05-24 22:05:10	###	125 203 :Current local users 125, max 203
+2013-05-24 22:05:10	###	1087 1782 :Current global users 1087, max 1782
+2013-05-24 22:05:10	###	Highest connection count: 204 (203 clients) (22475 connections received)
+2013-05-24 22:05:10	###	- tokyo.snoonet.org Message of the Day -
+2013-05-24 22:05:10	###	-   _________                                   __
+2013-05-24 22:05:10	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-05-24 22:05:10	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-05-24 22:05:10	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-05-24 22:05:10	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-05-24 22:05:10	###	-         \/     \/                   \/     \/
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-   By connecting to Snoonet,
+2013-05-24 22:05:10	###	-   You have agreed you will follow all network policies
+2013-05-24 22:05:10	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-05-24 22:05:10	###	-   We do not log public or private chats.
+2013-05-24 22:05:10	###	-   Our network is intra-connected via SSL to make sure
+2013-05-24 22:05:10	###	-   no private information is ever read by big brother.
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-   For more security, please utilize our SSL connectivity by
+2013-05-24 22:05:10	###	-   connecting to irc.snoonet.org port 6697
+2013-05-24 22:05:10	###	-   For our security-conscious clients, the below fingerprints
+2013-05-24 22:05:10	###	-   may be used to verify the identity of a Snoonet server:
+2013-05-24 22:05:10	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  Upon your connection,
+2013-05-24 22:05:10	###	-  you have also agreed to being scanned by the
+2013-05-24 22:05:10	###	-  network for any open proxies.
+2013-05-24 22:05:10	###	-  If one is indeed found running you will be removed and
+2013-05-24 22:05:10	###	-  required to
+2013-05-24 22:05:10	###	-  contact the banlist db provider in your disconnect message
+2013-05-24 22:05:10	###	-  Snoonet can not remove you from those banlists.
+2013-05-24 22:05:10	###	-  The IRC network software automatically utilizes these banlists
+2013-05-24 22:05:10	###	-  and bans upon client connect.
+2013-05-24 22:05:10	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-05-24 22:05:10	###	-  or was a part of a malicious bot or bot network.
+2013-05-24 22:05:10	###	-  Contact the banlist website provided to be removed,
+2013-05-24 22:05:10	###	-  and e-mail support@snoonet.org
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-05-24 22:05:10	###	-  please
+2013-05-24 22:05:10	###	-  /join #help
+2013-05-24 22:05:10	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you ASAP.
+2013-05-24 22:05:10	###	-  Most Services help can be found by typing /msg NickServ help
+2013-05-24 22:05:10	###	-  and /msg ChanServ help
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-05-24 22:05:10	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-05-24 22:05:10	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-05-24 22:05:10	###	-  For other ways to authorize your IRC client upon connect
+2013-05-24 22:05:10	###	-  please read
+2013-05-24 22:05:10	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-05-24 22:05:10	###	-  and other services methods to identify to your account.
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-05-24 22:05:10	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-05-24 22:05:10	###	-  IP address/hostname
+2013-05-24 22:05:10	###	-  This is for your security!
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-05-24 22:05:10	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-05-24 22:05:10	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-05-24 22:05:10	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-05-24 22:05:10	###	-  Example: http://webchat.snoonet.org/reddit
+2013-05-24 22:05:10	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  Snoonet is a network for all communities to host live chat.
+2013-05-24 22:05:10	###	-  We will do our best to make sure your communities have a great experience!
+2013-05-24 22:05:10	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-05-24 22:05:10	###	-  Channel management is up to the channel operators.
+2013-05-24 22:05:10	###	-  To report abuse, please contact an operator in #help
+2013-05-24 22:05:10	###	-
+2013-05-24 22:05:10	###	-  Please visit www.snoonet.org regularly!
+2013-05-24 22:05:11	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-05-24 22:05:11	###	-  Please type /list to find chats meeting your interests!
+2013-05-24 22:05:11	###	-  -
+2013-05-24 22:05:11	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-05-24 22:05:11	###	-  Enjoy Minecraft?
+2013-05-24 22:05:11	###	-  Come check out our Minecraft server, at
+2013-05-24 22:05:11	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-05-24 22:05:11	###	-  -
+2013-05-24 22:05:11	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-05-24 22:05:11	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-05-24 22:05:11	###	-  -
+2013-05-24 22:05:11	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-05-24 22:05:11	###	-  completing the e-mail process. After registering
+2013-05-24 22:05:11	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-05-24 22:05:11	###	End of /MOTD command.
+2013-05-24 22:05:11	###	User mode [+iwx] by greggroth
+2013-05-24 22:05:11	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-05-24 22:05:11	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-05-24 22:05:11	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-05-24 22:05:11	###	CTCP requested by SnooStat: VERSION
+2013-05-24 22:05:11	###	CTCP reply to SnooStat: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-05-24 22:05:11	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Chinese GP April 12-14.
+2013-05-24 23:11:37	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-05-24 23:11:37	###	irc: disconnecting from server...
+2013-05-24 23:11:37	###	irc: disconnected from server
+2013-05-24 23:11:37	###	irc: reconnecting to server in 10 seconds
+2013-05-24 23:11:47	###	irc: reconnecting to server...
+2013-05-24 23:11:47	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-24 23:11:47	=!=	irc: address "irc.snoonet.org" not found
+2013-05-24 23:11:47	=!=	irc: error: nodename nor servname provided, or not known
+2013-05-24 23:11:47	###	irc: reconnecting to server in 20 seconds
+2013-05-24 23:12:07	###	irc: reconnecting to server...
+2013-05-24 23:12:07	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-24 23:12:07	###	irc: connected to irc.snoonet.org/6667 (198.245.63.156)
+2013-05-24 23:12:07	###	courier.snoonet.org (courier.snoonet.org): *** Looking up your hostname...
+2013-05-24 23:12:07	###	courier.snoonet.org (courier.snoonet.org): *** Checking Ident
+2013-05-24 23:12:07	###	courier.snoonet.org (courier.snoonet.org): *** Found your hostname
+2013-05-24 23:12:17	###	courier.snoonet.org (courier.snoonet.org): *** No Ident response
+2013-05-24 23:12:17	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-05-24 23:12:17	###	Your host is courier.snoonet.org[courier.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-05-24 23:12:17	###	This server was created Tue Apr 9 2013 at 18:16:48 EDT
+2013-05-24 23:12:17	###	courier.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-05-24 23:12:17	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-05-24 23:12:17	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-05-24 23:12:17	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-05-24 23:12:17	###	There are 3 users and 1085 invisible on 13 servers
+2013-05-24 23:12:17	###	16 :IRC Operators online
+2013-05-24 23:12:17	###	521 :channels formed
+2013-05-24 23:12:17	###	I have 147 clients and 1 servers
+2013-05-24 23:12:17	###	147 227 :Current local users 147, max 227
+2013-05-24 23:12:17	###	1088 1782 :Current global users 1088, max 1782
+2013-05-24 23:12:17	###	Highest connection count: 228 (227 clients) (16098 connections received)
+2013-05-24 23:12:17	###	- courier.snoonet.org Message of the Day -
+2013-05-24 23:12:17	###	-   _________                                   __
+2013-05-24 23:12:17	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-05-24 23:12:17	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-05-24 23:12:17	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-05-24 23:12:17	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-05-24 23:12:17	###	-         \/     \/                   \/     \/
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-   By connecting to Snoonet,
+2013-05-24 23:12:17	###	-   You have agreed you will follow all network policies
+2013-05-24 23:12:17	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-05-24 23:12:17	###	-   We do not log public or private chats.
+2013-05-24 23:12:17	###	-   Our network is intra-connected via SSL to make sure
+2013-05-24 23:12:17	###	-   no private information is ever read by big brother.
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-   For more security, please utilize our SSL connectivity by
+2013-05-24 23:12:17	###	-   connecting to irc.snoonet.org port 6697
+2013-05-24 23:12:17	###	-   For our security-conscious clients, the below fingerprints
+2013-05-24 23:12:17	###	-   may be used to verify the identity of a Snoonet server:
+2013-05-24 23:12:17	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  Upon your connection,
+2013-05-24 23:12:17	###	-  you have also agreed to being scanned by the
+2013-05-24 23:12:17	###	-  network for any open proxies.
+2013-05-24 23:12:17	###	-  If one is indeed found running you will be removed and
+2013-05-24 23:12:17	###	-  required to
+2013-05-24 23:12:17	###	-  contact the banlist db provider in your disconnect message
+2013-05-24 23:12:17	###	-  Snoonet can not remove you from those banlists.
+2013-05-24 23:12:17	###	-  The IRC network software automatically utilizes these banlists
+2013-05-24 23:12:17	###	-  and bans upon client connect.
+2013-05-24 23:12:17	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-05-24 23:12:17	###	-  or was a part of a malicious bot or bot network.
+2013-05-24 23:12:17	###	-  Contact the banlist website provided to be removed,
+2013-05-24 23:12:17	###	-  and e-mail support@snoonet.org
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-05-24 23:12:17	###	-  please
+2013-05-24 23:12:17	###	-  /join #help
+2013-05-24 23:12:17	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you ASAP.
+2013-05-24 23:12:17	###	-  Most Services help can be found by typing /msg NickServ help
+2013-05-24 23:12:17	###	-  and /msg ChanServ help
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-05-24 23:12:17	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-05-24 23:12:17	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-05-24 23:12:17	###	-  For other ways to authorize your IRC client upon connect
+2013-05-24 23:12:17	###	-  please read
+2013-05-24 23:12:17	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-05-24 23:12:17	###	-  and other services methods to identify to your account.
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-05-24 23:12:17	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-05-24 23:12:17	###	-  IP address/hostname
+2013-05-24 23:12:17	###	-  This is for your security!
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-05-24 23:12:17	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-05-24 23:12:17	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-05-24 23:12:17	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-05-24 23:12:17	###	-  Example: http://webchat.snoonet.org/reddit
+2013-05-24 23:12:17	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  Snoonet is a network for all communities to host live chat.
+2013-05-24 23:12:17	###	-  We will do our best to make sure your communities have a great experience!
+2013-05-24 23:12:17	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-05-24 23:12:17	###	-  Channel management is up to the channel operators.
+2013-05-24 23:12:17	###	-  To report abuse, please contact an operator in #help
+2013-05-24 23:12:17	###	-
+2013-05-24 23:12:17	###	-  Please visit www.snoonet.org regularly!
+2013-05-24 23:12:17	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-05-24 23:12:17	###	-  Please type /list to find chats meeting your interests!
+2013-05-24 23:12:17	###	-  -
+2013-05-24 23:12:17	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-05-24 23:12:17	###	-  Enjoy Minecraft?
+2013-05-24 23:12:17	###	-  Come check out our Minecraft server, at
+2013-05-24 23:12:17	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-05-24 23:12:17	###	-  -
+2013-05-24 23:12:17	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-05-24 23:12:17	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-05-24 23:12:17	###	-  -
+2013-05-24 23:12:17	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-05-24 23:12:17	###	-  completing the e-mail process. After registering
+2013-05-24 23:12:17	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-05-24 23:12:17	###	End of /MOTD command.
+2013-05-24 23:12:17	###	User mode [+iwx] by greggroth
+2013-05-24 23:12:17	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-05-24 23:12:17	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-05-24 23:12:17	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-05-24 23:12:17	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Chinese GP April 12-14.
+2013-05-24 23:12:17	###	CTCP requested by SnooStat: VERSION
+2013-05-24 23:12:17	###	CTCP reply to SnooStat: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-05-25 11:56:12	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-05-25 11:56:12	###	irc: disconnecting from server...
+2013-05-25 11:56:12	###	irc: disconnected from server
+2013-05-25 11:56:12	###	irc: reconnecting to server in 10 seconds
+2013-05-25 11:56:22	###	irc: reconnecting to server...
+2013-05-25 11:56:22	###	irc: connecting to server irc.snoonet.org/6667...
+2013-05-25 11:56:22	###	irc: connected to irc.snoonet.org/6667 (87.117.247.15)
+2013-05-25 11:56:22	###	bathory.snoonet.org (bathory.snoonet.org): *** Looking up your hostname...
+2013-05-25 11:56:22	###	bathory.snoonet.org (bathory.snoonet.org): *** Checking Ident
+2013-05-25 11:56:22	###	bathory.snoonet.org (bathory.snoonet.org): *** Found your hostname
+2013-05-25 11:56:32	###	bathory.snoonet.org (bathory.snoonet.org): *** No Ident response
+2013-05-25 11:56:32	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-05-25 11:56:32	###	Your host is bathory.snoonet.org[bathory.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-05-25 11:56:32	###	This server was created Mon Jan 7 2013 at 03:35:58 EST
+2013-05-25 11:56:32	###	bathory.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-05-25 11:56:32	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-05-25 11:56:32	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-05-25 11:56:32	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-05-25 11:56:32	###	There are 4 users and 1010 invisible on 13 servers
+2013-05-25 11:56:32	###	16 :IRC Operators online
+2013-05-25 11:56:32	###	515 :channels formed
+2013-05-25 11:56:32	###	I have 121 clients and 1 servers
+2013-05-25 11:56:32	###	121 264 :Current local users 121, max 264
+2013-05-25 11:56:32	###	1014 1782 :Current global users 1014, max 1782
+2013-05-25 11:56:32	###	Highest connection count: 265 (264 clients) (35576 connections received)
+2013-05-25 11:56:32	###	- bathory.snoonet.org Message of the Day -
+2013-05-25 11:56:32	###	-   _________                                   __
+2013-05-25 11:56:32	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-05-25 11:56:32	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-05-25 11:56:32	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-05-25 11:56:32	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-05-25 11:56:32	###	-         \/     \/                   \/     \/
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-   By connecting to Snoonet,
+2013-05-25 11:56:32	###	-   You have agreed you will follow all network policies
+2013-05-25 11:56:32	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-05-25 11:56:32	###	-   We do not log public or private chats.
+2013-05-25 11:56:32	###	-   Our network is intra-connected via SSL to make sure
+2013-05-25 11:56:32	###	-   no private information is ever read by big brother.
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-   For more security, please utilize our SSL connectivity by
+2013-05-25 11:56:32	###	-   connecting to irc.snoonet.org port 6697
+2013-05-25 11:56:32	###	-   For our security-conscious clients, the below fingerprints
+2013-05-25 11:56:32	###	-   may be used to verify the identity of a Snoonet server:
+2013-05-25 11:56:32	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  Upon your connection,
+2013-05-25 11:56:32	###	-  you have also agreed to being scanned by the
+2013-05-25 11:56:32	###	-  network for any open proxies.
+2013-05-25 11:56:32	###	-  If one is indeed found running you will be removed and
+2013-05-25 11:56:32	###	-  required to
+2013-05-25 11:56:32	###	-  contact the banlist db provider in your disconnect message
+2013-05-25 11:56:32	###	-  Snoonet can not remove you from those banlists.
+2013-05-25 11:56:32	###	-  The IRC network software automatically utilizes these banlists
+2013-05-25 11:56:32	###	-  and bans upon client connect.
+2013-05-25 11:56:32	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-05-25 11:56:32	###	-  or was a part of a malicious bot or bot network.
+2013-05-25 11:56:32	###	-  Contact the banlist website provided to be removed,
+2013-05-25 11:56:32	###	-  and e-mail support@snoonet.org
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-05-25 11:56:32	###	-  please
+2013-05-25 11:56:32	###	-  /join #help
+2013-05-25 11:56:32	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you
+2013-05-25 11:56:32	###	-  Most Services help can be found by typing /msg NickServ help
+2013-05-25 11:56:32	###	-  and /msg ChanServ help
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-05-25 11:56:32	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-05-25 11:56:32	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-05-25 11:56:32	###	-  For other ways to authorize your IRC client upon connect
+2013-05-25 11:56:32	###	-  please read
+2013-05-25 11:56:32	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-05-25 11:56:32	###	-  and other services methods to identify to your account.
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-05-25 11:56:32	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-05-25 11:56:32	###	-  IP address/hostname
+2013-05-25 11:56:32	###	-  This is for your security!
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-05-25 11:56:32	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-05-25 11:56:32	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-05-25 11:56:32	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-05-25 11:56:32	###	-  Example: http://webchat.snoonet.org/reddit
+2013-05-25 11:56:32	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  Snoonet is a network for all communities to host live chat.
+2013-05-25 11:56:32	###	-  We will do our best to make sure your communities have a great experience!
+2013-05-25 11:56:32	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-05-25 11:56:32	###	-  Channel management is up to the channel operators.
+2013-05-25 11:56:32	###	-  To report abuse, please contact an operator in #help
+2013-05-25 11:56:32	###	-
+2013-05-25 11:56:32	###	-  Please visit www.snoonet.org regularly!
+2013-05-25 11:56:32	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-05-25 11:56:32	###	-  Please type /list to find chats meeting your interests!
+2013-05-25 11:56:32	###	-  -
+2013-05-25 11:56:32	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-05-25 11:56:32	###	-  Enjoy Minecraft?
+2013-05-25 11:56:32	###	-  Come check out our Minecraft server, at
+2013-05-25 11:56:32	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-05-25 11:56:32	###	-  -
+2013-05-25 11:56:32	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-05-25 11:56:32	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-05-25 11:56:32	###	-  -
+2013-05-25 11:56:32	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-05-25 11:56:32	###	-  completing the e-mail process. After registering
+2013-05-25 11:56:32	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-05-25 11:56:32	###	End of /MOTD command.
+2013-05-25 11:56:32	###	User mode [+iwx] by greggroth
+2013-05-25 11:56:32	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-05-25 11:56:32	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-05-25 11:56:32	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-05-25 11:56:32	###	CTCP requested by SnooStat: VERSION
+2013-05-25 11:56:32	###	CTCP reply to SnooStat: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-05-25 11:56:32	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Chinese GP April 12-14.
+2013-06-20 12:47:45	###	irc: connecting to server irc.snoonet.org/6667...
+2013-06-20 12:47:45	###	irc: connected to irc.snoonet.org/6667 (198.245.51.167)
+2013-06-20 12:47:45	###	veronica.snoonet.org (veronica.snoonet.org): *** Looking up your hostname...
+2013-06-20 12:47:45	###	veronica.snoonet.org (veronica.snoonet.org): *** Checking Ident
+2013-06-20 12:47:45	###	veronica.snoonet.org (veronica.snoonet.org): *** Couldn't look up your hostname
+2013-06-20 12:47:52	###	veronica.snoonet.org (veronica.snoonet.org): *** No Ident response
+2013-06-20 12:47:52	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-06-20 12:47:52	###	Your host is veronica.snoonet.org[veronica.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-06-20 12:47:52	###	This server was created Mon Apr 15 2013 at 19:50:14 EDT
+2013-06-20 12:47:52	###	veronica.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-06-20 12:47:52	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-06-20 12:47:52	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-06-20 12:47:52	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-06-20 12:47:52	###	There are 2 users and 1229 invisible on 14 servers
+2013-06-20 12:47:52	###	16 :IRC Operators online
+2013-06-20 12:47:52	###	701 :channels formed
+2013-06-20 12:47:52	###	I have 142 clients and 1 servers
+2013-06-20 12:47:52	###	142 220 :Current local users 142, max 220
+2013-06-20 12:47:52	###	1231 1805 :Current global users 1231, max 1805
+2013-06-20 12:47:52	###	Highest connection count: 221 (220 clients) (14394 connections received)
+2013-06-20 12:47:52	###	- veronica.snoonet.org Message of the Day -
+2013-06-20 12:47:52	###	-   _________                                   __
+2013-06-20 12:47:52	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-06-20 12:47:52	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-06-20 12:47:52	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-06-20 12:47:52	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-06-20 12:47:52	###	-         \/     \/                   \/     \/
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-   By connecting to Snoonet,
+2013-06-20 12:47:52	###	-   You have agreed you will follow all network policies
+2013-06-20 12:47:52	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-06-20 12:47:52	###	-   We do not log public or private chats.
+2013-06-20 12:47:52	###	-   Our network is intra-connected via SSL to make sure
+2013-06-20 12:47:52	###	-   no private information is ever read by big brother.
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-   For more security, please utilize our SSL connectivity by
+2013-06-20 12:47:52	###	-   connecting to irc.snoonet.org port 6697
+2013-06-20 12:47:52	###	-   For our security-conscious clients, the below fingerprints
+2013-06-20 12:47:52	###	-   may be used to verify the identity of a Snoonet server:
+2013-06-20 12:47:52	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  Upon your connection,
+2013-06-20 12:47:52	###	-  you have also agreed to being scanned by the
+2013-06-20 12:47:52	###	-  network for any open proxies.
+2013-06-20 12:47:52	###	-  If one is indeed found running you will be removed and
+2013-06-20 12:47:52	###	-  required to
+2013-06-20 12:47:52	###	-  contact the banlist db provider in your disconnect message
+2013-06-20 12:47:52	###	-  Snoonet can not remove you from those banlists.
+2013-06-20 12:47:52	###	-  The IRC network software automatically utilizes these banlists
+2013-06-20 12:47:52	###	-  and bans upon client connect.
+2013-06-20 12:47:52	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-06-20 12:47:52	###	-  or was a part of a malicious bot or bot network.
+2013-06-20 12:47:52	###	-  Contact the banlist website provided to be removed,
+2013-06-20 12:47:52	###	-  and e-mail support@snoonet.org
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-06-20 12:47:52	###	-  please
+2013-06-20 12:47:52	###	-  /join #help
+2013-06-20 12:47:52	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you ASAP.
+2013-06-20 12:47:52	###	-  Most Services help can be found by typing /msg NickServ help
+2013-06-20 12:47:52	###	-  and /msg ChanServ help
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-06-20 12:47:52	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-06-20 12:47:52	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-06-20 12:47:52	###	-  For other ways to authorize your IRC client upon connect
+2013-06-20 12:47:52	###	-  please read
+2013-06-20 12:47:52	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-06-20 12:47:52	###	-  and other services methods to identify to your account.
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-06-20 12:47:52	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-06-20 12:47:52	###	-  IP address/hostname
+2013-06-20 12:47:52	###	-  This is for your security!
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-06-20 12:47:52	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-06-20 12:47:52	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-06-20 12:47:52	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-06-20 12:47:52	###	-  Example: http://webchat.snoonet.org/reddit
+2013-06-20 12:47:52	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  Snoonet is a network for all communities to host live chat.
+2013-06-20 12:47:52	###	-  We will do our best to make sure your communities have a great experience!
+2013-06-20 12:47:52	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-06-20 12:47:52	###	-  Channel management is up to the channel operators.
+2013-06-20 12:47:52	###	-  To report abuse, please contact an operator in #help
+2013-06-20 12:47:52	###	-
+2013-06-20 12:47:52	###	-  Please visit www.snoonet.org regularly!
+2013-06-20 12:47:52	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-06-20 12:47:52	###	-  Please type /list to find chats meeting your interests!
+2013-06-20 12:47:52	###	-  -
+2013-06-20 12:47:52	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-06-20 12:47:52	###	-  Enjoy Minecraft?
+2013-06-20 12:47:52	###	-  Come check out our Minecraft server, at
+2013-06-20 12:47:52	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-06-20 12:47:52	###	-  -
+2013-06-20 12:47:52	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-06-20 12:47:52	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-06-20 12:47:52	###	-  -
+2013-06-20 12:47:52	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-06-20 12:47:52	###	-  completing the e-mail process. After registering
+2013-06-20 12:47:52	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-06-20 12:47:52	###	End of /MOTD command.
+2013-06-20 12:47:52	###	User mode [+iwx] by greggroth
+2013-06-20 12:47:52	###	216.235.pxj.zhl :is now your hidden host
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-06-20 12:47:52	###	CTCP requested by SnooBot: VERSION
+2013-06-20 12:47:52	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-06-20 12:47:52	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-06-20 12:47:52	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-06-20 12:49:08	###	Channel Users  Name
+2013-06-20 12:49:08	###	End of /LIST
+2013-06-20 12:49:25	###	Channel Users  Name
+2013-06-20 12:49:25	###	End of /LIST
+2013-06-20 12:49:49	###	ChanServ (ChanServ@services.): [#F1] Welcome to The Official /r/Formula1 Channel. 1. No spamming. 2. Be civil 3. No racism/bigotry/anything derogatory. Next Race: Canadian GP June 7-9
+2013-06-20 15:05:51	=!=	irc: reading data on socket: error 50 Network is down
+2013-06-20 15:05:51	###	irc: disconnecting from server...
+2013-06-20 15:05:51	###	irc: disconnected from server
+2013-06-20 15:05:51	###	irc: reconnecting to server in 10 seconds
+2013-06-20 15:06:01	###	irc: reconnecting to server...
+2013-06-20 15:06:01	###	irc: connecting to server irc.snoonet.org/6667...
+2013-06-20 15:06:01	###	irc: connected to irc.snoonet.org/6667 (198.245.51.167)
+2013-06-20 15:06:01	###	veronica.snoonet.org (veronica.snoonet.org): *** Looking up your hostname...
+2013-06-20 15:06:01	###	veronica.snoonet.org (veronica.snoonet.org): *** Checking Ident
+2013-06-20 15:06:01	###	veronica.snoonet.org (veronica.snoonet.org): *** Found your hostname
+2013-06-20 15:06:11	###	veronica.snoonet.org (veronica.snoonet.org): *** No Ident response
+2013-06-20 15:06:11	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-06-20 15:06:11	###	Your host is veronica.snoonet.org[veronica.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-06-20 15:06:11	###	This server was created Mon Apr 15 2013 at 19:50:14 EDT
+2013-06-20 15:06:11	###	veronica.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-06-20 15:06:11	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-06-20 15:06:11	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-06-20 15:06:11	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-06-20 15:06:11	###	There are 2 users and 1292 invisible on 14 servers
+2013-06-20 15:06:11	###	15 :IRC Operators online
+2013-06-20 15:06:11	###	704 :channels formed
+2013-06-20 15:06:11	###	I have 150 clients and 1 servers
+2013-06-20 15:06:11	###	150 220 :Current local users 150, max 220
+2013-06-20 15:06:11	###	1294 1805 :Current global users 1294, max 1805
+2013-06-20 15:06:11	###	Highest connection count: 221 (220 clients) (14451 connections received)
+2013-06-20 15:06:11	###	- veronica.snoonet.org Message of the Day -
+2013-06-20 15:06:11	###	-   _________                                   __
+2013-06-20 15:06:11	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-06-20 15:06:11	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-06-20 15:06:11	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-06-20 15:06:11	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-06-20 15:06:11	###	-         \/     \/                   \/     \/
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-   By connecting to Snoonet,
+2013-06-20 15:06:11	###	-   You have agreed you will follow all network policies
+2013-06-20 15:06:11	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-06-20 15:06:11	###	-   We do not log public or private chats.
+2013-06-20 15:06:11	###	-   Our network is intra-connected via SSL to make sure
+2013-06-20 15:06:11	###	-   no private information is ever read by big brother.
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-   For more security, please utilize our SSL connectivity by
+2013-06-20 15:06:11	###	-   connecting to irc.snoonet.org port 6697
+2013-06-20 15:06:11	###	-   For our security-conscious clients, the below fingerprints
+2013-06-20 15:06:11	###	-   may be used to verify the identity of a Snoonet server:
+2013-06-20 15:06:11	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  Upon your connection,
+2013-06-20 15:06:11	###	-  you have also agreed to being scanned by the
+2013-06-20 15:06:11	###	-  network for any open proxies.
+2013-06-20 15:06:11	###	-  If one is indeed found running you will be removed and
+2013-06-20 15:06:11	###	-  required to
+2013-06-20 15:06:11	###	-  contact the banlist db provider in your disconnect message
+2013-06-20 15:06:11	###	-  Snoonet can not remove you from those banlists.
+2013-06-20 15:06:11	###	-  The IRC network software automatically utilizes these banlists
+2013-06-20 15:06:11	###	-  and bans upon client connect.
+2013-06-20 15:06:11	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-06-20 15:06:11	###	-  or was a part of a malicious bot or bot network.
+2013-06-20 15:06:11	###	-  Contact the banlist website provided to be removed,
+2013-06-20 15:06:11	###	-  and e-mail support@snoonet.org
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-06-20 15:06:11	###	-  please
+2013-06-20 15:06:11	###	-  /join #help
+2013-06-20 15:06:11	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you ASAP.
+2013-06-20 15:06:11	###	-  Most Services help can be found by typing /msg NickServ help
+2013-06-20 15:06:11	###	-  and /msg ChanServ help
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-06-20 15:06:11	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-06-20 15:06:11	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-06-20 15:06:11	###	-  For other ways to authorize your IRC client upon connect
+2013-06-20 15:06:11	###	-  please read
+2013-06-20 15:06:11	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-06-20 15:06:11	###	-  and other services methods to identify to your account.
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-06-20 15:06:11	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-06-20 15:06:11	###	-  IP address/hostname
+2013-06-20 15:06:11	###	-  This is for your security!
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-06-20 15:06:11	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-06-20 15:06:11	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-06-20 15:06:11	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-06-20 15:06:11	###	-  Example: http://webchat.snoonet.org/reddit
+2013-06-20 15:06:11	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  Snoonet is a network for all communities to host live chat.
+2013-06-20 15:06:11	###	-  We will do our best to make sure your communities have a great experience!
+2013-06-20 15:06:11	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-06-20 15:06:11	###	-  Channel management is up to the channel operators.
+2013-06-20 15:06:11	###	-  To report abuse, please contact an operator in #help
+2013-06-20 15:06:11	###	-
+2013-06-20 15:06:11	###	-  Please visit www.snoonet.org regularly!
+2013-06-20 15:06:11	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-06-20 15:06:11	###	-  Please type /list to find chats meeting your interests!
+2013-06-20 15:06:11	###	-  -
+2013-06-20 15:06:11	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-06-20 15:06:11	###	-  Enjoy Minecraft?
+2013-06-20 15:06:11	###	-  Come check out our Minecraft server, at
+2013-06-20 15:06:11	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-06-20 15:06:11	###	-  -
+2013-06-20 15:06:11	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-06-20 15:06:11	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-06-20 15:06:11	###	-  -
+2013-06-20 15:06:11	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-06-20 15:06:11	###	-  completing the e-mail process. After registering
+2013-06-20 15:06:11	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-06-20 15:06:11	###	End of /MOTD command.
+2013-06-20 15:06:11	###	User mode [+iwx] by greggroth
+2013-06-20 15:06:11	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-06-20 15:06:11	###	CTCP requested by SnooBot: VERSION
+2013-06-20 15:06:11	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-06-20 15:06:11	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-06-20 15:06:11	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-06-20 15:29:48	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-06-20 15:29:48	###	irc: disconnecting from server...
+2013-06-20 15:29:48	###	irc: disconnected from server
+2013-06-20 15:29:48	###	irc: reconnecting to server in 10 seconds
+2013-06-20 15:29:58	###	irc: reconnecting to server...
+2013-06-20 15:29:58	###	irc: connecting to server irc.snoonet.org/6667...
+2013-06-20 15:29:58	###	irc: connected to irc.snoonet.org/6667 (54.248.33.224)
+2013-06-20 15:29:58	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Looking up your hostname...
+2013-06-20 15:29:58	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Checking Ident
+2013-06-20 15:29:58	###	tokyo.snoonet.org (tokyo.snoonet.org): *** Found your hostname
+2013-06-20 15:30:05	###	tokyo.snoonet.org (tokyo.snoonet.org): *** No Ident response
+2013-06-20 15:30:05	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-06-20 15:30:05	###	Your host is tokyo.snoonet.org[tokyo.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-06-20 15:30:05	###	This server was created Sun Feb 3 2013 at 07:24:09 UTC
+2013-06-20 15:30:05	###	tokyo.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-06-20 15:30:05	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-06-20 15:30:05	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-06-20 15:30:05	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-06-20 15:30:05	###	There are 2 users and 1294 invisible on 14 servers
+2013-06-20 15:30:05	###	15 :IRC Operators online
+2013-06-20 15:30:05	###	706 :channels formed
+2013-06-20 15:30:05	###	I have 172 clients and 1 servers
+2013-06-20 15:30:05	###	172 222 :Current local users 172, max 222
+2013-06-20 15:30:05	###	1296 1805 :Current global users 1296, max 1805
+2013-06-20 15:30:05	###	Highest connection count: 223 (222 clients) (34094 connections received)
+2013-06-20 15:30:05	###	- tokyo.snoonet.org Message of the Day -
+2013-06-20 15:30:05	###	-   _________                                   __
+2013-06-20 15:30:05	###	-  /   _____/ ____   ____   ____   ____   _____/  |_
+2013-06-20 15:30:05	###	-  \_____  \ /    \ /  _ \ /  _ \ /    \_/ __ \   __\
+2013-06-20 15:30:05	###	-  /        \   |  (  <_> |  <_> )   |  \  ___/|  |
+2013-06-20 15:30:05	###	- /_______  /___|  /\____/ \____/|___|  /\___  >__|
+2013-06-20 15:30:05	###	-         \/     \/                   \/     \/
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-   By connecting to Snoonet,
+2013-06-20 15:30:05	###	-   You have agreed you will follow all network policies
+2013-06-20 15:30:05	###	-   listed on http://www.snoonet.org - We comply with U.S. law
+2013-06-20 15:30:05	###	-   We do not log public or private chats.
+2013-06-20 15:30:05	###	-   Our network is intra-connected via SSL to make sure
+2013-06-20 15:30:05	###	-   no private information is ever read by big brother.
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-   For more security, please utilize our SSL connectivity by
+2013-06-20 15:30:05	###	-   connecting to irc.snoonet.org port 6697
+2013-06-20 15:30:05	###	-   For our security-conscious clients, the below fingerprints
+2013-06-20 15:30:05	###	-   may be used to verify the identity of a Snoonet server:
+2013-06-20 15:30:05	###	-   99:5B:AC:FE:E6:A4:22:8F:51:2D:21:63:4B:5F:05:4D:E1:61:8D:6B
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  Upon your connection,
+2013-06-20 15:30:05	###	-  you have also agreed to being scanned by the
+2013-06-20 15:30:05	###	-  network for any open proxies.
+2013-06-20 15:30:05	###	-  If one is indeed found running you will be removed and
+2013-06-20 15:30:05	###	-  required to
+2013-06-20 15:30:05	###	-  contact the banlist db provider in your disconnect message
+2013-06-20 15:30:05	###	-  Snoonet can not remove you from those banlists.
+2013-06-20 15:30:05	###	-  The IRC network software automatically utilizes these banlists
+2013-06-20 15:30:05	###	-  and bans upon client connect.
+2013-06-20 15:30:05	###	-  Bans of this instance are usually because a past owner of the IP address ran,
+2013-06-20 15:30:05	###	-  or was a part of a malicious bot or bot network.
+2013-06-20 15:30:05	###	-  Contact the banlist website provided to be removed,
+2013-06-20 15:30:05	###	-  and e-mail support@snoonet.org
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  If you need any network related help such as ChanServ or NickServ help,
+2013-06-20 15:30:05	###	-  please
+2013-06-20 15:30:05	###	-  /join #help
+2013-06-20 15:30:05	###	-  or type: /hls REQUEST <detailed help messages> and an operator will contact you ASAP.
+2013-06-20 15:30:05	###	-  Most Services help can be found by typing /msg NickServ help
+2013-06-20 15:30:05	###	-  and /msg ChanServ help
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  We utilize Atheme services. (http://www.atheme.net)
+2013-06-20 15:30:05	###	-  Channel mode help can be found here: http://www.snoonet.org/modes
+2013-06-20 15:30:05	###	-  This is detailed channel mode listings to better operator your IRC channel.
+2013-06-20 15:30:05	###	-  For other ways to authorize your IRC client upon connect
+2013-06-20 15:30:05	###	-  please read
+2013-06-20 15:30:05	###	-  http://www.snoonet.org/connect-auth for SASL,
+2013-06-20 15:30:05	###	-  and other services methods to identify to your account.
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  Snoonet does offer vhosting/IP address cloaking by default.
+2013-06-20 15:30:05	###	-  Upon connect, you are issued usermode +x which will scramble your
+2013-06-20 15:30:05	###	-  IP address/hostname
+2013-06-20 15:30:05	###	-  This is for your security!
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  To obtain a vhost/cloak, /msg sysop ~cloakme
+2013-06-20 15:30:05	###	-  You MUST be identified by NickServ to be issued a permanent vhost/cloak
+2013-06-20 15:30:05	###	-  We offer a custom webchat by our sponsor www.kiwiirc.com
+2013-06-20 15:30:05	###	-  it may be utilized by using http://webchat.snoonet.org/channelname
+2013-06-20 15:30:05	###	-  Example: http://webchat.snoonet.org/reddit
+2013-06-20 15:30:05	###	-  The custom webchat is easily linkable in reddit sidebars.
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  Snoonet is a network for all communities to host live chat.
+2013-06-20 15:30:05	###	-  We will do our best to make sure your communities have a great experience!
+2013-06-20 15:30:05	###	-  Snoonet does not control or endorse the chats in non-network related channels.
+2013-06-20 15:30:05	###	-  Channel management is up to the channel operators.
+2013-06-20 15:30:05	###	-  To report abuse, please contact an operator in #help
+2013-06-20 15:30:05	###	-
+2013-06-20 15:30:05	###	-  Please visit www.snoonet.org regularly!
+2013-06-20 15:30:06	###	-  Our network staff can be found at http://www.snoonet.org/staff
+2013-06-20 15:30:06	###	-  Please type /list to find chats meeting your interests!
+2013-06-20 15:30:06	###	-  -
+2013-06-20 15:30:06	###	-  Snoonet Gaming is proud to announce two of our latest initiatives.
+2013-06-20 15:30:06	###	-  Enjoy Minecraft?
+2013-06-20 15:30:06	###	-  Come check out our Minecraft server, at
+2013-06-20 15:30:06	###	-  minecraft.snoonet.org, or join the chat #snoonet-minecraft.
+2013-06-20 15:30:06	###	-  -
+2013-06-20 15:30:06	###	-  Pop culture buff? Check out our new #trivia channel,
+2013-06-20 15:30:06	###	-  24 hour competitive trivia on a wide variety of topics.
+2013-06-20 15:30:06	###	-  -
+2013-06-20 15:30:06	###	-  You may request a vhost/cloak by registering with nickserv,
+2013-06-20 15:30:06	###	-  completing the e-mail process. After registering
+2013-06-20 15:30:06	###	-  ' /msg sysop ~cloakme ' exactly.
+2013-06-20 15:30:06	###	End of /MOTD command.
+2013-06-20 15:30:06	###	User mode [+iwx] by greggroth
+2013-06-20 15:30:06	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-06-20 15:30:06	###	CTCP requested by SnooBot: VERSION
+2013-06-20 15:30:06	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 00:06 on 04/12/2013:
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 02:42 on 03/13/2013:
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 16:50 on 01/13/2013:
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-06-20 15:30:06	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-06-20 15:30:06	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-23 12:14:32	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-23 12:14:33	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-23 12:14:33	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-23 12:14:33	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-23 12:14:33	###	chapek.snoonet.org (chapek.snoonet.org): *** Couldn't look up your hostname
+2013-08-23 12:14:43	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-23 12:14:43	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-08-23 12:14:43	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-23 12:14:43	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-23 12:14:43	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-23 12:14:43	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-23 12:14:43	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-23 12:14:43	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-23 12:14:43	###	There are 2 users and 1403 invisible on 12 servers
+2013-08-23 12:14:43	###	20 :IRC Operators online
+2013-08-23 12:14:43	###	807 :channels formed
+2013-08-23 12:14:43	###	I have 153 clients and 1 servers
+2013-08-23 12:14:43	###	153 282 :Current local users 153, max 282
+2013-08-23 12:14:43	###	1405 2195 :Current global users 1405, max 2195
+2013-08-23 12:14:43	###	Highest connection count: 283 (282 clients) (68466 connections received)
+2013-08-23 12:14:43	###	- chapek.snoonet.org Message of the Day -
+2013-08-23 12:14:43	###	- Welcome to the Snoonet IRC Network
+2013-08-23 12:14:43	###	- The home of Reddit communities on IRC!
+2013-08-23 12:14:43	###	- Type /list to see which communities might
+2013-08-23 12:14:43	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-23 12:14:43	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- We offer channel and user statistics for communities who wish to
+2013-08-23 12:14:43	###	- have them at http://stats.snoonet.org
+2013-08-23 12:14:43	###	- To request the stats services bot for your channel, please
+2013-08-23 12:14:43	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-23 12:14:43	###	- and
+2013-08-23 12:14:43	###	- /msg policy .requeststats #yourircchan
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-23 12:14:43	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-23 12:14:43	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-23 12:14:43	###	- please /join #help and you will be assisted.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- TOR users may access our services by viewing
+2013-08-23 12:14:43	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-23 12:14:43	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-23 12:14:43	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-23 12:14:43	###	- After verifying the e-mail address used and successfully logging in
+2013-08-23 12:14:43	###	- type /msg sysop ~cloakme
+2013-08-23 12:14:43	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-23 12:14:43	###	- account upon every identify.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- We offer channel protection services, if you are a super-op or
+2013-08-23 12:14:43	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- Please view our short ruleset on www.snoonet.org
+2013-08-23 12:14:43	###	- We do not have very many rules, but our network is fully protected
+2013-08-23 12:14:43	###	- by automation. Failure to comply will result in a network ban.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-23 12:14:43	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-23 12:14:43	###	- network news, and all Snoonet.org related news.
+2013-08-23 12:14:43	###	- For more detailed updates and network news, subscribe to
+2013-08-23 12:14:43	###	- www.reddit.com/r/snoonet on reddit
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- This network is based on www.reddit.com communities
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- Our IRC Operators can be found by typing /stats p
+2013-08-23 12:14:43	###	- Viewing http://www.snoonet.org/staff
+2013-08-23 12:14:43	###	- Our staff will continue to work closely with users and communities
+2013-08-23 12:14:43	###	-  to develop new features and accommodations for events communities may
+2013-08-23 12:14:43	###	- be having.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- Need help? /join #help
+2013-08-23 12:14:43	###	- Have ideas/requests? /join #snoonet
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-23 12:14:43	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-23 12:14:43	###	- and any issues you may have.
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	-
+2013-08-23 12:14:43	###	End of /MOTD command.
+2013-08-23 12:14:43	###	User mode [+iwx] by greggroth
+2013-08-23 12:14:43	###	216.235.pxj.zhl :is now your hidden host
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-23 12:14:43	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-23 12:14:43	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-23 12:14:43	###	CTCP requested by SnooBot: VERSION
+2013-08-23 12:14:43	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-23 12:14:53	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-23 15:48:58	=!=	irc: reading data on socket: error 60 Operation timed out
+2013-08-23 15:48:58	###	irc: disconnecting from server...
+2013-08-23 15:48:58	###	irc: disconnected from server
+2013-08-23 15:48:58	###	irc: reconnecting to server in 10 seconds
+2013-08-23 15:49:08	###	irc: reconnecting to server...
+2013-08-23 15:49:08	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-23 15:49:08	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-23 15:49:08	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-23 15:49:08	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-23 15:49:08	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-23 15:49:18	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-23 15:49:18	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-08-23 15:49:18	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-23 15:49:18	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-23 15:49:18	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-23 15:49:18	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-23 15:49:18	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-23 15:49:18	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-23 15:49:18	###	There are 2 users and 1479 invisible on 12 servers
+2013-08-23 15:49:18	###	20 :IRC Operators online
+2013-08-23 15:49:18	###	807 :channels formed
+2013-08-23 15:49:18	###	I have 166 clients and 1 servers
+2013-08-23 15:49:18	###	166 282 :Current local users 166, max 282
+2013-08-23 15:49:18	###	1481 2195 :Current global users 1481, max 2195
+2013-08-23 15:49:18	###	Highest connection count: 283 (282 clients) (68547 connections received)
+2013-08-23 15:49:18	###	- chapek.snoonet.org Message of the Day -
+2013-08-23 15:49:18	###	- Welcome to the Snoonet IRC Network
+2013-08-23 15:49:18	###	- The home of Reddit communities on IRC!
+2013-08-23 15:49:18	###	- Type /list to see which communities might
+2013-08-23 15:49:18	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-23 15:49:18	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- We offer channel and user statistics for communities who wish to
+2013-08-23 15:49:18	###	- have them at http://stats.snoonet.org
+2013-08-23 15:49:18	###	- To request the stats services bot for your channel, please
+2013-08-23 15:49:18	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-23 15:49:18	###	- and
+2013-08-23 15:49:18	###	- /msg policy .requeststats #yourircchan
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-23 15:49:18	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-23 15:49:18	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-23 15:49:18	###	- please /join #help and you will be assisted.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- TOR users may access our services by viewing
+2013-08-23 15:49:18	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-23 15:49:18	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-23 15:49:18	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-23 15:49:18	###	- After verifying the e-mail address used and successfully logging in
+2013-08-23 15:49:18	###	- type /msg sysop ~cloakme
+2013-08-23 15:49:18	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-23 15:49:18	###	- account upon every identify.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- We offer channel protection services, if you are a super-op or
+2013-08-23 15:49:18	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- Please view our short ruleset on www.snoonet.org
+2013-08-23 15:49:18	###	- We do not have very many rules, but our network is fully protected
+2013-08-23 15:49:18	###	- by automation. Failure to comply will result in a network ban.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-23 15:49:18	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-23 15:49:18	###	- network news, and all Snoonet.org related news.
+2013-08-23 15:49:18	###	- For more detailed updates and network news, subscribe to
+2013-08-23 15:49:18	###	- www.reddit.com/r/snoonet on reddit
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- This network is based on www.reddit.com communities
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- Our IRC Operators can be found by typing /stats p
+2013-08-23 15:49:18	###	- Viewing http://www.snoonet.org/staff
+2013-08-23 15:49:18	###	- Our staff will continue to work closely with users and communities
+2013-08-23 15:49:18	###	-  to develop new features and accommodations for events communities may
+2013-08-23 15:49:18	###	- be having.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- Need help? /join #help
+2013-08-23 15:49:18	###	- Have ideas/requests? /join #snoonet
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-23 15:49:18	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-23 15:49:18	###	- and any issues you may have.
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	-
+2013-08-23 15:49:18	###	End of /MOTD command.
+2013-08-23 15:49:18	###	User mode [+iwx] by greggroth
+2013-08-23 15:49:18	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-23 15:49:18	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-23 15:49:18	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-23 15:49:18	###	CTCP requested by SnooBot: VERSION
+2013-08-23 15:49:18	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-23 15:49:18	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-23 18:50:02	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-23 18:50:02	###	irc: disconnecting from server...
+2013-08-23 18:50:02	###	irc: disconnected from server
+2013-08-23 18:50:02	###	irc: reconnecting to server in 10 seconds
+2013-08-23 18:50:12	###	irc: reconnecting to server...
+2013-08-23 18:50:12	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-23 18:50:12	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-23 18:50:12	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-23 18:50:12	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-23 18:50:12	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-23 18:50:19	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-23 18:50:19	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-08-23 18:50:19	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-23 18:50:19	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-23 18:50:19	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-23 18:50:19	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-23 18:50:19	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-23 18:50:19	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-23 18:50:19	###	There are 2 users and 1458 invisible on 12 servers
+2013-08-23 18:50:19	###	21 :IRC Operators online
+2013-08-23 18:50:19	###	811 :channels formed
+2013-08-23 18:50:19	###	I have 164 clients and 1 servers
+2013-08-23 18:50:19	###	164 282 :Current local users 164, max 282
+2013-08-23 18:50:19	###	1460 2195 :Current global users 1460, max 2195
+2013-08-23 18:50:19	###	Highest connection count: 283 (282 clients) (68612 connections received)
+2013-08-23 18:50:19	###	- chapek.snoonet.org Message of the Day -
+2013-08-23 18:50:19	###	- Welcome to the Snoonet IRC Network
+2013-08-23 18:50:19	###	- The home of Reddit communities on IRC!
+2013-08-23 18:50:19	###	- Type /list to see which communities might
+2013-08-23 18:50:19	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-23 18:50:19	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- We offer channel and user statistics for communities who wish to
+2013-08-23 18:50:19	###	- have them at http://stats.snoonet.org
+2013-08-23 18:50:19	###	- To request the stats services bot for your channel, please
+2013-08-23 18:50:19	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-23 18:50:19	###	- and
+2013-08-23 18:50:19	###	- /msg policy .requeststats #yourircchan
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-23 18:50:19	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-23 18:50:19	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-23 18:50:19	###	- please /join #help and you will be assisted.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- TOR users may access our services by viewing
+2013-08-23 18:50:19	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-23 18:50:19	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-23 18:50:19	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-23 18:50:19	###	- After verifying the e-mail address used and successfully logging in
+2013-08-23 18:50:19	###	- type /msg sysop ~cloakme
+2013-08-23 18:50:19	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-23 18:50:19	###	- account upon every identify.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- We offer channel protection services, if you are a super-op or
+2013-08-23 18:50:19	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- Please view our short ruleset on www.snoonet.org
+2013-08-23 18:50:19	###	- We do not have very many rules, but our network is fully protected
+2013-08-23 18:50:19	###	- by automation. Failure to comply will result in a network ban.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-23 18:50:19	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-23 18:50:19	###	- network news, and all Snoonet.org related news.
+2013-08-23 18:50:19	###	- For more detailed updates and network news, subscribe to
+2013-08-23 18:50:19	###	- www.reddit.com/r/snoonet on reddit
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- This network is based on www.reddit.com communities
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- Our IRC Operators can be found by typing /stats p
+2013-08-23 18:50:19	###	- Viewing http://www.snoonet.org/staff
+2013-08-23 18:50:19	###	- Our staff will continue to work closely with users and communities
+2013-08-23 18:50:19	###	-  to develop new features and accommodations for events communities may
+2013-08-23 18:50:19	###	- be having.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- Need help? /join #help
+2013-08-23 18:50:19	###	- Have ideas/requests? /join #snoonet
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-23 18:50:19	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-23 18:50:19	###	- and any issues you may have.
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	-
+2013-08-23 18:50:19	###	End of /MOTD command.
+2013-08-23 18:50:19	###	User mode [+iwx] by greggroth
+2013-08-23 18:50:19	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-23 18:50:19	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-23 18:50:19	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-23 18:50:19	###	CTCP requested by SnooBot: VERSION
+2013-08-23 18:50:19	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-23 18:50:19	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-24 12:36:33	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-24 12:36:33	###	irc: disconnecting from server...
+2013-08-24 12:36:33	###	irc: disconnected from server
+2013-08-24 12:36:33	###	irc: reconnecting to server in 10 seconds
+2013-08-24 12:36:43	###	irc: reconnecting to server...
+2013-08-24 12:36:43	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-24 12:36:43	=!=	irc: address "irc.snoonet.org" not found
+2013-08-24 12:36:43	=!=	irc: error: nodename nor servname provided, or not known
+2013-08-24 12:36:43	###	irc: reconnecting to server in 20 seconds
+2013-08-24 12:37:03	###	irc: reconnecting to server...
+2013-08-24 12:37:03	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-24 12:37:05	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-24 12:37:06	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-24 12:37:06	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-24 12:37:06	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-24 12:37:13	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-24 12:37:13	###	Welcome to the Snoonet Internet Relay Chat Network greggroth
+2013-08-24 12:37:13	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-24 12:37:13	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-24 12:37:13	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-24 12:37:13	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-24 12:37:13	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-24 12:37:13	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-24 12:37:13	###	There are 2 users and 1321 invisible on 12 servers
+2013-08-24 12:37:13	###	19 :IRC Operators online
+2013-08-24 12:37:13	###	809 :channels formed
+2013-08-24 12:37:13	###	I have 135 clients and 1 servers
+2013-08-24 12:37:13	###	135 282 :Current local users 135, max 282
+2013-08-24 12:37:13	###	1323 2195 :Current global users 1323, max 2195
+2013-08-24 12:37:13	###	Highest connection count: 283 (282 clients) (68922 connections received)
+2013-08-24 12:37:13	###	- chapek.snoonet.org Message of the Day -
+2013-08-24 12:37:13	###	- Welcome to the Snoonet IRC Network
+2013-08-24 12:37:13	###	- The home of Reddit communities on IRC!
+2013-08-24 12:37:13	###	- Type /list to see which communities might
+2013-08-24 12:37:13	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-24 12:37:13	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- We offer channel and user statistics for communities who wish to
+2013-08-24 12:37:13	###	- have them at http://stats.snoonet.org
+2013-08-24 12:37:13	###	- To request the stats services bot for your channel, please
+2013-08-24 12:37:13	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-24 12:37:13	###	- and
+2013-08-24 12:37:13	###	- /msg policy .requeststats #yourircchan
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-24 12:37:13	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-24 12:37:13	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-24 12:37:13	###	- please /join #help and you will be assisted.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- TOR users may access our services by viewing
+2013-08-24 12:37:13	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-24 12:37:13	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-24 12:37:13	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-24 12:37:13	###	- After verifying the e-mail address used and successfully logging in
+2013-08-24 12:37:13	###	- type /msg sysop ~cloakme
+2013-08-24 12:37:13	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-24 12:37:13	###	- account upon every identify.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- We offer channel protection services, if you are a super-op or
+2013-08-24 12:37:13	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- Please view our short ruleset on www.snoonet.org
+2013-08-24 12:37:13	###	- We do not have very many rules, but our network is fully protected
+2013-08-24 12:37:13	###	- by automation. Failure to comply will result in a network ban.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-24 12:37:13	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-24 12:37:13	###	- network news, and all Snoonet.org related news.
+2013-08-24 12:37:13	###	- For more detailed updates and network news, subscribe to
+2013-08-24 12:37:13	###	- www.reddit.com/r/snoonet on reddit
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- This network is based on www.reddit.com communities
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- Our IRC Operators can be found by typing /stats p
+2013-08-24 12:37:13	###	- Viewing http://www.snoonet.org/staff
+2013-08-24 12:37:13	###	- Our staff will continue to work closely with users and communities
+2013-08-24 12:37:13	###	-  to develop new features and accommodations for events communities may
+2013-08-24 12:37:13	###	- be having.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- Need help? /join #help
+2013-08-24 12:37:13	###	- Have ideas/requests? /join #snoonet
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-24 12:37:13	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-24 12:37:13	###	- and any issues you may have.
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	-
+2013-08-24 12:37:13	###	End of /MOTD command.
+2013-08-24 12:37:13	###	User mode [+iwx] by greggroth
+2013-08-24 12:37:13	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-24 12:37:13	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-24 12:37:13	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggroth! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-24 12:37:13	###	CTCP requested by SnooBot: VERSION
+2013-08-24 12:37:13	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-24 12:37:13	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-24 12:59:07	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-24 12:59:07	###	irc: disconnecting from server...
+2013-08-24 12:59:07	###	irc: disconnected from server
+2013-08-24 12:59:07	###	irc: reconnecting to server in 10 seconds
+2013-08-24 12:59:17	###	irc: reconnecting to server...
+2013-08-24 12:59:17	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-24 12:59:18	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-24 12:59:18	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-24 12:59:18	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-24 12:59:18	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-24 12:59:27	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-24 12:59:27	###	irc: nickname "greggroth" is already in use, trying nickname "greggrot1"
+2013-08-24 12:59:27	###	Welcome to the Snoonet Internet Relay Chat Network greggrot1
+2013-08-24 12:59:27	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-24 12:59:27	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-24 12:59:27	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-24 12:59:27	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-24 12:59:27	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-24 12:59:27	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-24 12:59:27	###	There are 2 users and 1331 invisible on 12 servers
+2013-08-24 12:59:27	###	19 :IRC Operators online
+2013-08-24 12:59:27	###	809 :channels formed
+2013-08-24 12:59:27	###	I have 138 clients and 1 servers
+2013-08-24 12:59:27	###	138 282 :Current local users 138, max 282
+2013-08-24 12:59:27	###	1333 2195 :Current global users 1333, max 2195
+2013-08-24 12:59:27	###	Highest connection count: 283 (282 clients) (68929 connections received)
+2013-08-24 12:59:27	###	- chapek.snoonet.org Message of the Day -
+2013-08-24 12:59:27	###	- Welcome to the Snoonet IRC Network
+2013-08-24 12:59:27	###	- The home of Reddit communities on IRC!
+2013-08-24 12:59:27	###	- Type /list to see which communities might
+2013-08-24 12:59:27	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-24 12:59:27	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- We offer channel and user statistics for communities who wish to
+2013-08-24 12:59:27	###	- have them at http://stats.snoonet.org
+2013-08-24 12:59:27	###	- To request the stats services bot for your channel, please
+2013-08-24 12:59:27	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-24 12:59:27	###	- and
+2013-08-24 12:59:27	###	- /msg policy .requeststats #yourircchan
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-24 12:59:27	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-24 12:59:27	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-24 12:59:27	###	- please /join #help and you will be assisted.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- TOR users may access our services by viewing
+2013-08-24 12:59:27	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-24 12:59:27	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-24 12:59:27	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-24 12:59:27	###	- After verifying the e-mail address used and successfully logging in
+2013-08-24 12:59:27	###	- type /msg sysop ~cloakme
+2013-08-24 12:59:27	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-24 12:59:27	###	- account upon every identify.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- We offer channel protection services, if you are a super-op or
+2013-08-24 12:59:27	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- Please view our short ruleset on www.snoonet.org
+2013-08-24 12:59:27	###	- We do not have very many rules, but our network is fully protected
+2013-08-24 12:59:27	###	- by automation. Failure to comply will result in a network ban.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-24 12:59:27	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-24 12:59:27	###	- network news, and all Snoonet.org related news.
+2013-08-24 12:59:27	###	- For more detailed updates and network news, subscribe to
+2013-08-24 12:59:27	###	- www.reddit.com/r/snoonet on reddit
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- This network is based on www.reddit.com communities
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- Our IRC Operators can be found by typing /stats p
+2013-08-24 12:59:27	###	- Viewing http://www.snoonet.org/staff
+2013-08-24 12:59:27	###	- Our staff will continue to work closely with users and communities
+2013-08-24 12:59:27	###	-  to develop new features and accommodations for events communities may
+2013-08-24 12:59:27	###	- be having.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- Need help? /join #help
+2013-08-24 12:59:27	###	- Have ideas/requests? /join #snoonet
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-24 12:59:27	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-24 12:59:27	###	- and any issues you may have.
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	-
+2013-08-24 12:59:27	###	End of /MOTD command.
+2013-08-24 12:59:27	###	User mode [+iwx] by greggrot1
+2013-08-24 12:59:27	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-24 12:59:27	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-24 12:59:27	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggrot1! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-24 12:59:27	###	CTCP requested by SnooBot: VERSION
+2013-08-24 12:59:27	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-24 12:59:27	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-24 16:30:16	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-24 16:30:16	###	irc: disconnecting from server...
+2013-08-24 16:30:16	###	irc: disconnected from server
+2013-08-24 16:30:16	###	irc: reconnecting to server in 10 seconds
+2013-08-24 16:30:26	###	irc: reconnecting to server...
+2013-08-24 16:30:26	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-24 16:30:26	=!=	irc: address "irc.snoonet.org" not found
+2013-08-24 16:30:26	=!=	irc: error: nodename nor servname provided, or not known
+2013-08-24 16:30:26	###	irc: reconnecting to server in 20 seconds
+2013-08-24 16:30:46	###	irc: reconnecting to server...
+2013-08-24 16:30:46	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-24 16:30:47	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-24 16:30:47	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-24 16:30:47	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-24 16:30:47	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-24 16:30:56	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-24 16:30:56	###	Welcome to the Snoonet Internet Relay Chat Network greggrot1
+2013-08-24 16:30:56	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-24 16:30:56	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-24 16:30:56	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-24 16:30:56	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-24 16:30:56	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-24 16:30:56	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-24 16:30:56	###	There are 2 users and 1414 invisible on 12 servers
+2013-08-24 16:30:56	###	19 :IRC Operators online
+2013-08-24 16:30:56	###	1 :unknown connection(s)
+2013-08-24 16:30:56	###	814 :channels formed
+2013-08-24 16:30:56	###	I have 148 clients and 1 servers
+2013-08-24 16:30:56	###	148 282 :Current local users 148, max 282
+2013-08-24 16:30:56	###	1416 2195 :Current global users 1416, max 2195
+2013-08-24 16:30:56	###	Highest connection count: 283 (282 clients) (69005 connections received)
+2013-08-24 16:30:56	###	- chapek.snoonet.org Message of the Day -
+2013-08-24 16:30:56	###	- Welcome to the Snoonet IRC Network
+2013-08-24 16:30:56	###	- The home of Reddit communities on IRC!
+2013-08-24 16:30:56	###	- Type /list to see which communities might
+2013-08-24 16:30:56	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-24 16:30:56	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- We offer channel and user statistics for communities who wish to
+2013-08-24 16:30:56	###	- have them at http://stats.snoonet.org
+2013-08-24 16:30:56	###	- To request the stats services bot for your channel, please
+2013-08-24 16:30:56	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-24 16:30:56	###	- and
+2013-08-24 16:30:56	###	- /msg policy .requeststats #yourircchan
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-24 16:30:56	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-24 16:30:56	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-24 16:30:56	###	- please /join #help and you will be assisted.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- TOR users may access our services by viewing
+2013-08-24 16:30:56	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-24 16:30:56	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-24 16:30:56	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-24 16:30:56	###	- After verifying the e-mail address used and successfully logging in
+2013-08-24 16:30:56	###	- type /msg sysop ~cloakme
+2013-08-24 16:30:56	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-24 16:30:56	###	- account upon every identify.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- We offer channel protection services, if you are a super-op or
+2013-08-24 16:30:56	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- Please view our short ruleset on www.snoonet.org
+2013-08-24 16:30:56	###	- We do not have very many rules, but our network is fully protected
+2013-08-24 16:30:56	###	- by automation. Failure to comply will result in a network ban.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-24 16:30:56	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-24 16:30:56	###	- network news, and all Snoonet.org related news.
+2013-08-24 16:30:56	###	- For more detailed updates and network news, subscribe to
+2013-08-24 16:30:56	###	- www.reddit.com/r/snoonet on reddit
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- This network is based on www.reddit.com communities
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- Our IRC Operators can be found by typing /stats p
+2013-08-24 16:30:56	###	- Viewing http://www.snoonet.org/staff
+2013-08-24 16:30:56	###	- Our staff will continue to work closely with users and communities
+2013-08-24 16:30:56	###	-  to develop new features and accommodations for events communities may
+2013-08-24 16:30:56	###	- be having.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- Need help? /join #help
+2013-08-24 16:30:56	###	- Have ideas/requests? /join #snoonet
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-24 16:30:56	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-24 16:30:56	###	- and any issues you may have.
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	-
+2013-08-24 16:30:56	###	End of /MOTD command.
+2013-08-24 16:30:56	###	User mode [+iwx] by greggrot1
+2013-08-24 16:30:56	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-24 16:30:56	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-24 16:30:56	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggrot1! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-24 16:30:56	###	CTCP requested by SnooBot: VERSION
+2013-08-24 16:30:56	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-24 16:30:56	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-25 08:27:55	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-25 08:27:55	###	irc: disconnecting from server...
+2013-08-25 08:27:55	###	irc: disconnected from server
+2013-08-25 08:27:55	###	irc: reconnecting to server in 10 seconds
+2013-08-25 08:28:05	###	irc: reconnecting to server...
+2013-08-25 08:28:05	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-25 08:28:05	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-25 08:28:05	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-25 08:28:05	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-25 08:28:05	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-25 08:28:15	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-25 08:28:15	###	Welcome to the Snoonet Internet Relay Chat Network greggrot1
+2013-08-25 08:28:15	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-25 08:28:15	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-25 08:28:15	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-25 08:28:15	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-25 08:28:15	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-25 08:28:15	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-25 08:28:15	###	There are 2 users and 1380 invisible on 12 servers
+2013-08-25 08:28:15	###	19 :IRC Operators online
+2013-08-25 08:28:15	###	818 :channels formed
+2013-08-25 08:28:15	###	I have 160 clients and 1 servers
+2013-08-25 08:28:15	###	160 282 :Current local users 160, max 282
+2013-08-25 08:28:15	###	1382 2195 :Current global users 1382, max 2195
+2013-08-25 08:28:15	###	Highest connection count: 283 (282 clients) (69317 connections received)
+2013-08-25 08:28:15	###	- chapek.snoonet.org Message of the Day -
+2013-08-25 08:28:15	###	- Welcome to the Snoonet IRC Network
+2013-08-25 08:28:15	###	- The home of Reddit communities on IRC!
+2013-08-25 08:28:15	###	- Type /list to see which communities might
+2013-08-25 08:28:15	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-25 08:28:15	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- We offer channel and user statistics for communities who wish to
+2013-08-25 08:28:15	###	- have them at http://stats.snoonet.org
+2013-08-25 08:28:15	###	- To request the stats services bot for your channel, please
+2013-08-25 08:28:15	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-25 08:28:15	###	- and
+2013-08-25 08:28:15	###	- /msg policy .requeststats #yourircchan
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-25 08:28:15	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-25 08:28:15	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-25 08:28:15	###	- please /join #help and you will be assisted.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- TOR users may access our services by viewing
+2013-08-25 08:28:15	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-25 08:28:15	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-25 08:28:15	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-25 08:28:15	###	- After verifying the e-mail address used and successfully logging in
+2013-08-25 08:28:15	###	- type /msg sysop ~cloakme
+2013-08-25 08:28:15	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-25 08:28:15	###	- account upon every identify.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- We offer channel protection services, if you are a super-op or
+2013-08-25 08:28:15	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- Please view our short ruleset on www.snoonet.org
+2013-08-25 08:28:15	###	- We do not have very many rules, but our network is fully protected
+2013-08-25 08:28:15	###	- by automation. Failure to comply will result in a network ban.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-25 08:28:15	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-25 08:28:15	###	- network news, and all Snoonet.org related news.
+2013-08-25 08:28:15	###	- For more detailed updates and network news, subscribe to
+2013-08-25 08:28:15	###	- www.reddit.com/r/snoonet on reddit
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- This network is based on www.reddit.com communities
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- Our IRC Operators can be found by typing /stats p
+2013-08-25 08:28:15	###	- Viewing http://www.snoonet.org/staff
+2013-08-25 08:28:15	###	- Our staff will continue to work closely with users and communities
+2013-08-25 08:28:15	###	-  to develop new features and accommodations for events communities may
+2013-08-25 08:28:15	###	- be having.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- Need help? /join #help
+2013-08-25 08:28:15	###	- Have ideas/requests? /join #snoonet
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-25 08:28:15	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-25 08:28:15	###	- and any issues you may have.
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	-
+2013-08-25 08:28:15	###	End of /MOTD command.
+2013-08-25 08:28:15	###	User mode [+iwx] by greggrot1
+2013-08-25 08:28:15	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-25 08:28:15	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-25 08:28:15	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggrot1! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-25 08:28:15	###	CTCP requested by SnooBot: VERSION
+2013-08-25 08:28:15	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-25 08:28:15	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-25 11:54:42	=!=	irc: reading data on socket: error 54 Connection reset by peer
+2013-08-25 11:54:42	###	irc: disconnecting from server...
+2013-08-25 11:54:42	###	irc: disconnected from server
+2013-08-25 11:54:42	###	irc: reconnecting to server in 10 seconds
+2013-08-25 11:54:52	###	irc: reconnecting to server...
+2013-08-25 11:54:52	###	irc: connecting to server irc.snoonet.org/6667...
+2013-08-25 11:54:52	###	irc: connected to irc.snoonet.org/6667 (208.68.36.22)
+2013-08-25 11:54:52	###	chapek.snoonet.org (chapek.snoonet.org): *** Looking up your hostname...
+2013-08-25 11:54:52	###	chapek.snoonet.org (chapek.snoonet.org): *** Checking Ident
+2013-08-25 11:54:52	###	chapek.snoonet.org (chapek.snoonet.org): *** Found your hostname
+2013-08-25 11:55:02	###	chapek.snoonet.org (chapek.snoonet.org): *** No Ident response
+2013-08-25 11:55:02	###	Welcome to the Snoonet Internet Relay Chat Network greggrot1
+2013-08-25 11:55:02	###	Your host is chapek.snoonet.org[chapek.snoonet.org/6667], running version charybdis-3.5.0-dev
+2013-08-25 11:55:02	###	This server was created Wed Jan 30 2013 at 00:37:09 UTC
+2013-08-25 11:55:02	###	chapek.snoonet.org charybdis-3.5.0-dev DQRSZagilopswxz CFILPQbcefgijklmnopqrstvz bkloveqjfI
+2013-08-25 11:55:02	###	SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLPQcgimnprstz CHANLIMIT=#:50 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Snoonet KNOCK :are supported by this server
+2013-08-25 11:55:02	###	STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 MAXNICKLEN=31 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D :are supported by this server
+2013-08-25 11:55:02	###	MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,acjrxz WHOX CLIENTVER=3.0 :are supported by this server
+2013-08-25 11:55:02	###	There are 2 users and 1378 invisible on 12 servers
+2013-08-25 11:55:02	###	18 :IRC Operators online
+2013-08-25 11:55:02	###	820 :channels formed
+2013-08-25 11:55:02	###	I have 154 clients and 1 servers
+2013-08-25 11:55:02	###	154 282 :Current local users 154, max 282
+2013-08-25 11:55:02	###	1380 2195 :Current global users 1380, max 2195
+2013-08-25 11:55:02	###	Highest connection count: 283 (282 clients) (69367 connections received)
+2013-08-25 11:55:02	###	- chapek.snoonet.org Message of the Day -
+2013-08-25 11:55:02	###	- Welcome to the Snoonet IRC Network
+2013-08-25 11:55:02	###	- The home of Reddit communities on IRC!
+2013-08-25 11:55:02	###	- Type /list to see which communities might
+2013-08-25 11:55:02	###	- interest you! The full channel list (with more detailed info) may also
+2013-08-25 11:55:02	###	- be found at http://stats.snoonet.org/index.php/channel.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- We offer channel and user statistics for communities who wish to
+2013-08-25 11:55:02	###	- have them at http://stats.snoonet.org
+2013-08-25 11:55:02	###	- To request the stats services bot for your channel, please
+2013-08-25 11:55:02	###	- /msg ChanServ set #YOURIRCCHAN property stats on
+2013-08-25 11:55:02	###	- and
+2013-08-25 11:55:02	###	- /msg policy .requeststats #yourircchan
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- New to IRC? Please view http://www.irchelp.org/irchelp/new2irc.html
+2013-08-25 11:55:02	###	- to make sure you're up to par! It's not as hard as you think!
+2013-08-25 11:55:02	###	- If you need any help for Snoonet or IRC related questions,
+2013-08-25 11:55:02	###	- please /join #help and you will be assisted.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- TOR users may access our services by viewing
+2013-08-25 11:55:02	###	- http://www.snoonet.org/tor and following its instructions.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- We encourage the use of SASL identification, but do not require it.
+2013-08-25 11:55:02	###	- http://www.snoonet.org/connect-auth for information on SASL connectivity.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- vHosts (hiding your scrambled IP address) may be obtained
+2013-08-25 11:55:02	###	- after fully registering with NickServ (/msg nickserv help register)
+2013-08-25 11:55:02	###	- After verifying the e-mail address used and successfully logging in
+2013-08-25 11:55:02	###	- type /msg sysop ~cloakme
+2013-08-25 11:55:02	###	- You will be assigned a vhost that will be automatically placed on your
+2013-08-25 11:55:02	###	- account upon every identify.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- We offer channel protection services, if you are a super-op or
+2013-08-25 11:55:02	###	- a channel owner, please /msg policy .help and follow the instructions.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- Please view our short ruleset on www.snoonet.org
+2013-08-25 11:55:02	###	- We do not have very many rules, but our network is fully protected
+2013-08-25 11:55:02	###	- by automation. Failure to comply will result in a network ban.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- Our twitter may be found at http://www.twitter.com/snoonetwork
+2013-08-25 11:55:02	###	- Or @snoonetwork - Feel free to follow us on events, give-aways, tournaments,
+2013-08-25 11:55:02	###	- network news, and all Snoonet.org related news.
+2013-08-25 11:55:02	###	- For more detailed updates and network news, subscribe to
+2013-08-25 11:55:02	###	- www.reddit.com/r/snoonet on reddit
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- This network is based on www.reddit.com communities
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- Our IRC Operators can be found by typing /stats p
+2013-08-25 11:55:02	###	- Viewing http://www.snoonet.org/staff
+2013-08-25 11:55:02	###	- Our staff will continue to work closely with users and communities
+2013-08-25 11:55:02	###	-  to develop new features and accommodations for events communities may
+2013-08-25 11:55:02	###	- be having.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- Need help? /join #help
+2013-08-25 11:55:02	###	- Have ideas/requests? /join #snoonet
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	- You may modmail /r/snoonet (http://goo.gl/WYIs1P) for web based support.
+2013-08-25 11:55:02	###	- Please be specific in details, be sure to include your NickServ name
+2013-08-25 11:55:02	###	- and any issues you may have.
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	-
+2013-08-25 11:55:02	###	End of /MOTD command.
+2013-08-25 11:55:02	###	User mode [+iwx] by greggrot1
+2013-08-25 11:55:02	###	r-78-46-263-285.hsd8.ga.comcast.net :is now your hidden host
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): *** Message(s) of the Day ***
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): [VHOSTS and Network Info] Notice from rdv, posted 03:06 on 04/12/2013:
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): Please type /motd if hasn't been presented already for information regarding policies, vhosts (IP Spoofing), and network events such as gaming channels etc.
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): [Webchat] Notice from rdv, posted 05:42 on 03/13/2013:
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): For communities http://webchat.snoonet.org/yourchannel will link users directly to your IRC channel - We will be making webchat more user-friendly as time progresses, for those that do not know IRC too well. An example of webchat linking to reddit would be: http://webchat.snoonet.org/reddit - If you'd like to donate/help snoonet, contact us in #snoonet !
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): [VHOSTS] Notice from rdv, posted 19:50 on 01/13/2013:
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): You may request a vhost/cloak by registering with nickserv/completing the e-mail process. After registering ' /msg sysop ~cloakme ' exactly.
+2013-08-25 11:55:02	###	InfoServ (InfoServ@services.): *** End of Message(s) of the Day ***
+2013-08-25 11:55:02	###	NickServ (NickServ@services.): Welcome to Snoonet IRC Network, greggrot1! Here on Snoonet IRC Network, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+2013-08-25 11:55:02	###	CTCP requested by SnooBot: VERSION
+2013-08-25 11:55:02	###	CTCP reply to SnooBot: VERSION WeeChat 0.3.9.2 (Dec 21 2012)
+2013-08-25 11:55:03	###	GhostOfSenna (ASenna@DaSilvaPromotionsLtd.Br): [#F1] Welcome to the /r/formula IRC channel! | DO NOT BE: disruptive, offensive, malicious. | NEXT UP: BELGIUM! | Fri 23/8: FP1 08:00UTC 04:00EST FP2 12:00UTC 08:00EST | Sat 24/8: FP3 09:00UTC 05:00EST Quali 12:00UTC 08:00 EST | Sun 25/8: Race 12:00 UTC 08:00
+2013-08-25 12:06:27	=!=	irc: this buffer is not a channel!

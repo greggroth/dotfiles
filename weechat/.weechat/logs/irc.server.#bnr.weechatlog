@@ -1,0 +1,6 @@
+2012-12-11 11:57:17	--	irc: connecting to server #bnr/6667...
+2012-12-11 11:57:18	=!=	irc: address "#bnr" not found
+2012-12-11 11:57:18	=!=	irc: error: nodename nor servname provided, or not known
+2012-12-11 11:57:18	--	irc: reconnecting to server in 10 seconds
+2012-12-11 11:57:27		irc: auto-reconnection is cancelled
+2012-12-11 11:57:27	--	irc: disconnected from server
