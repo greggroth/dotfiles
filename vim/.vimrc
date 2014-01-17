@@ -60,7 +60,7 @@ Bundle 'elzr/vim-json'
 Bundle 'scrooloose/syntastic'
 
 " Git
-Bundle 'airblade/vim-gitgutter'
+Bundle 'mhinz/vim-signify'
 Bundle 'tpope/vim-fugitive'
 
 set encoding=utf8
@@ -75,11 +75,6 @@ syntax enable
 filetype plugin indent on
 colorscheme seoul256
 
-" GitGutter Shortcuts
-nnoremap gu :GitGutterPrevHunk<CR>
-nnoremap gn :GitGutterNextHunk<CR>
-let g:gitgutter_realtime = 0
-
 " Remap leader to comma
 let mapleader = ","
 
@@ -90,6 +85,10 @@ set splitbelow
 " set the terminal's title
 set title
 " autocmd BufEnter * let &titlestring = expand("%:t")
+
+"Signify shortcuts
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)
 
 " better command completion
 set path=**
