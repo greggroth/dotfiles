@@ -140,6 +140,8 @@ au BufLeave * :up
 " fugitive shortcuts
 map <leader>gb :Gblame<CR>
 map <leader>gd :Gdiff<CR>
+map <leader>gc :Gcommit --verbose<CR>
+map <leader>gw :Gwrite<CR>
 
 " tabs
 set tabstop=2
