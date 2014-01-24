@@ -13,6 +13,9 @@ alias f "open ."
 # Ruby Aliases
 alias be "bundle exec"
 
+# Vim
+alias vim "mvim -v"
+
 set EDITOR='vim'
 
 # Homewbrew
