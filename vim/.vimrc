@@ -55,6 +55,7 @@ Bundle 'jtratner/vim-flavored-markdown.git'
 Bundle 'tpope/vim-markdown'
 Bundle 'slim-template/vim-slim'
 Bundle 'elzr/vim-json'
+Bundle 'dag/vim-fish'
 
 " Syntax checker
 Bundle 'scrooloose/syntastic'
