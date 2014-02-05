@@ -16,23 +16,23 @@ alias be "bundle exec"
 # Vim
 alias vim "mvim -v"
 
-set EDITOR='vim'
+set EDITOR vim
 
 # Homewbrew
-set PATH=/usr/local/bin:$PATH
-set PATH=$PATH:/usr/local/sbin
+set PATH /usr/local/bin $PATH
+set PATH $PATH /usr/local/sbin
 
 # Scripts
-set PATH=$PATH:$HOME/bin
+set PATH $PATH $HOME/bin
 
 # Postgres.app
-set PATH="$PATH:/Applications/Postgres.app/Contents/MacOS/bin"
-set PGHOST=localhost
+set PATH $PATH /Applications/Postgres.app/Contents/MacOS/bin
+set PGHOST localhost
 
 # Chruby
 source /Users/greggory/code/chruby-fish/share/chruby/chruby.fish
 source /Users/greggory/code/chruby-fish/share/chruby/auto.fish
 
 # GoLang
-set GOPATH=~/code/gocode
+set GOPATH ~/code/gocode
 
