@@ -60,7 +60,7 @@
 [rerere]
 	enabled = true
 [push]
-	default = simple
+	default = current
 [hub]
 	host = code.apple.com
 [init]
