@@ -324,3 +324,10 @@ let g:tmuxline_separators = {
 
 " Gem tags
 " set tags+=gem_tags
+
+
+" vertical resize as 'Z<num><cr>', similar to internal 'z<num><cr>' command
+nn Z :set opfunc=Zop<cr>g@
+fu! Zop(arg)
+    exe 'vert resize ' . v:count
+endf
