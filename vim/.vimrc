@@ -1,71 +1,82 @@
-filetype off                   " required!
+set shell=/bin/sh\ -l
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has('vim_starting')
+set nocompatible               " Be iMproved
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-repeat'
-Bundle 'mileszs/ack.vim'
-" Bundle 'rking/ag.vim'
-Bundle 'benmills/vimux'
-Bundle 'godlygeek/tabular'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'kana/vim-arpeggio'
-Bundle 'tpope/vim-commentary'
-Bundle 'bling/vim-airline'
-Bundle 'edkolev/tmuxline.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'jnwhiteh/vim-golang'
+" Required:
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'mileszs/ack.vim'
+" NeoBundle 'rking/ag.vim'
+NeoBundle 'benmills/vimux'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'kana/vim-arpeggio'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'edkolev/tmuxline.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'rizzatti/funcoo.vim'
+NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'jnwhiteh/vim-golang'
 
 " Docbook Editing
-Bundle 'sukima/vim-docbk'
-Bundle 'othree/xml.vim'
-Bundle 'msanders/snipmate.vim'
+NeoBundle 'sukima/vim-docbk'
+NeoBundle 'othree/xml.vim'
+NeoBundle 'msanders/snipmate.vim'
 
 hi link docbkKeyword String
 hi link xmlTag Identifier
 hi link xmlTagEnd xmlTag
 
 " Ruby stuff
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'skalnik/vim-vroom'
-Bundle 'tpope/vim-rvm'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-cucumber'
-Bundle 'greggroth/vim-cucumber-folding'
-Bundle 'matchit.zip'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'skalnik/vim-vroom'
+NeoBundle 'tpope/vim-rvm'
+NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-cucumber'
+NeoBundle 'greggroth/vim-cucumber-folding'
+NeoBundle 'matchit.zip'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'nelstrom/vim-textobj-rubyblock'
 
 " Pretty colors
-Bundle 'junegunn/seoul256.vim'
+NeoBundle 'junegunn/seoul256.vim'
 
 " Syntax Highlighting
-Bundle 'vim-scripts/VimClojure'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-haml'
-Bundle 'groenewege/vim-less'
-Bundle 'jtratner/vim-flavored-markdown.git'
-Bundle 'tpope/vim-markdown'
-Bundle 'slim-template/vim-slim'
-Bundle 'elzr/vim-json'
-Bundle 'dag/vim-fish'
+NeoBundle 'vim-scripts/VimClojure'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'jtratner/vim-flavored-markdown.git'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'dag/vim-fish'
 
 " Syntax checker
-Bundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/syntastic'
 
 " Git
-Bundle 'mhinz/vim-signify'
-Bundle 'tpope/vim-fugitive'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle 'tpope/vim-fugitive'
+
+" Required:
+filetype plugin indent on
+NeoBundleCheck
 
 set encoding=utf8
-set shell=/bin/sh\ -l
 
 set number
 set relativenumber
@@ -73,7 +84,6 @@ set relativenumber
 " Colorscheme
 set t_Co=256
 syntax enable
-filetype plugin indent on
 colorscheme seoul256
 
 " Remap leader to comma
