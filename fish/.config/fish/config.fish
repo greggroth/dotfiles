@@ -30,8 +30,8 @@ set PATH $PATH /Applications/Postgres.app/Contents/MacOS/bin
 set PGHOST localhost
 
 # Chruby
-source /Users/greggory/code/chruby-fish/share/chruby/chruby.fish
-source /Users/greggory/code/chruby-fish/share/chruby/auto.fish
+source ~/code/chruby-fish/share/chruby/chruby.fish
+source ~/code/chruby-fish/share/chruby/auto.fish
 
 # GoLang
 set GOPATH ~/code/gocode
