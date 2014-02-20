@@ -196,13 +196,13 @@ set noerrorbells  " No noise.
 
 " ViMux Shortcuts
 " Prompt for a command to run
-" map <leader>p :PromptVimTmuxCommand<CR>
+map <leader>: :VimuxPromptCommand<CR>
 " Run last command executed by RunVimTmuxCommand
-map <leader>l :RunLastVimTmuxCommand<CR>
+map <leader>l :VimuxRunLastCommand<CR>
 " Inspect runner pane
-map <leader>i :InspectVimTmuxRunner<CR>
+map <leader>i :VimuxInspectRunner<CR>
 " Close all other tmux panes in current window
-map <leader>x :CloseVimTmuxPanes<CR>
+map <leader>x :VimuxCloseRunner<CR>
 " Interrupt any command running in the runner pane
 " map <leader>s :InterruptVimTmuxRunner<CR>
 
