@@ -1,4 +1,5 @@
 *.log
 *.weechatlog
 vim/.vim/bundle
+vim/.vim/_tmp
 *.swp
