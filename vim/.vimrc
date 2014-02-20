@@ -168,7 +168,6 @@ autocmd FileType ruby set commentstring=#\ %s
 map <leader>ht :runtime! syntax/2html.vim<CR>
 
 " open CtrlP
-let g:ctrlp_map = '<leader>t'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
 
