@@ -143,7 +143,7 @@ nnoremap <leader>- :res -10<CR>
 
 " save/quits
 noremap <leader>w :w<CR>
-noremap <leader>q :q<CR>
+noremap <leader>q :x<CR>
 
 " autosave
 au BufLeave * :up
