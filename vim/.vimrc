@@ -106,7 +106,6 @@ set path=**
 set wildmenu
 set complete=.,b,u,]
 set wildmode=longest,list:longest
-" set wildmode=full
 set completeopt=menu,preview
 
 
