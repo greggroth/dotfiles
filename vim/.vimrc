@@ -17,17 +17,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'mileszs/ack.vim'
-" NeoBundle 'rking/ag.vim'
 NeoBundle 'benmills/vimux'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'kana/vim-arpeggio'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'edkolev/tmuxline.vim'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'rizzatti/funcoo.vim'
-NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'jnwhiteh/vim-golang'
 
 " Docbook Editing
@@ -43,7 +39,6 @@ hi link xmlTagEnd xmlTag
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'skalnik/vim-vroom'
-NeoBundle 'tpope/vim-rvm'
 NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'greggroth/vim-cucumber-folding'
@@ -231,20 +226,6 @@ set directory=~/.vim/_tmp
 " search/replace word under cursor
 nnoremap <C-a> :%s/\<<C-r><C-w>\>//g<Left><Left>
 
-" Tabularize
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a{ :Tabularize /{<CR>
-vmap <Leader>a{ :Tabularize /{<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>a, :Tabularize /,\zs<CR>
-vmap <Leader>a, :Tabularize /,\zs<CR>
-nmap <Leader>a> :Tabularize /=><CR>
-vmap <Leader>a> :Tabularize /=><CR>
-nmap <Leader>a\| :Tabularize /\|<CR>
-vmap <Leader>a\| :Tabularize /\|<CR>
-
 " Use system clipboard
 set clipboard=unnamed
 
@@ -301,10 +282,6 @@ nnoremap <leader>mm :silent !open -a Marked.app '%:p'<cr>
 set foldmethod=syntax
 set foldlevelstart=99 " open all folds by default
 nnoremap <space> za
-
-" Press jk together for <esc>
-call arpeggio#load()
-Arpeggio inoremap jk  <Esc>
 
 " python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
 " python from powerline.vim import VimPowerline
