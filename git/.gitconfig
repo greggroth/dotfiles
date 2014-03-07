@@ -37,7 +37,7 @@
   ra = !git r --all
   l = "!. ~/bin/.githelpers && pretty_git_log"
   la = !git l --all
-	g = grep --break --heading --line-number -B 2 -A 2
+	g = grep --break --heading --line-number
 	ctags = !.git/hooks/ctags
 [web]
 	browser = open
@@ -65,3 +65,6 @@
 	host = code.apple.com
 [init]
 	templatedir = ~/.git_template
+[grep]
+	extendRegexp = true
+	lineNumber = true
