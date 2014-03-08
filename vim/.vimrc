@@ -127,7 +127,6 @@ set title
 
 " Improve performance by lazy-drawing
 set lazyredraw
-set ttyfast
 
 " auto load changed files
 set autoread
@@ -171,7 +170,6 @@ set sidescrolloff=15   " Number of cols from horizontal edge to start scrolling
 set foldmethod=syntax
 set foldlevelstart=99 " open all folds by default
 nnoremap <space> za
-
 " }}}
 
 " {{{ Command completion
