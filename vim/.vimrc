@@ -46,7 +46,7 @@ let g:tmuxline_preset = {
       \'win'  : ['#I', '#W'],
       \'cwin' : ['#I', '#W', '#F'],
       \'y'    : ['%R', '%a', '%Y'],
-      \'z'    : ''}
+      \'z'    : '#h'}
 
 let g:tmuxline_separators = {
     \ 'left' : '',
