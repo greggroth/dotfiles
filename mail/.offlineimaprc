@@ -1,7 +1,7 @@
 [general]
 ui = Blinkenlights
 pythonfile=~/.mutt/offlineimap.py
-accounts = greggroth,bignerdranch
+accounts = greggroth
 fsync = False
 
 [Account greggroth]
