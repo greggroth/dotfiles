@@ -44,19 +44,13 @@ hdr_order from: to: cc: date: subject:  # and in this order
 # Default inbox.
 set spoolfile = "+greggroth-gmail.com/INBOX"
 
+source ~/.mutt/accounts/greggroth.muttrc
+
+folder-hook greggroth-gmail.com/*   source ~/.mutt/accounts/greggroth.muttrc
+folder-hook gregg-bignerdranch.com/* source ~/.mutt/accounts/bignerdranch.muttrc
+
 # Alternate email addresses.
 alternates gregg@bignerdranch.com
-
-# Mailboxes to show in the sidebar.
-mailboxes +greggroth-gmail.com/INBOX \
-          +greggroth-gmail.com/flagged \
-          +greggroth-gmail.com/archive \
-          +greggroth-gmail.com/sent \
-          +greggroth-gmail.com/drafts \
-
-# Other special folders.
-set mbox      = "+greggroth-gmail.com/archive"
-set postponed = "+greggroth-gmail.com/drafts"
 
 # Index View Options ---------------------------------
 set date_format = "%m/%d/%Y"
@@ -136,8 +130,6 @@ set include                          # include message in replies
 set forward_quote                    # include message in forwards
 set editor = "vim"                   # Use terminal Vim to compose email.
 
-set from     = "greggroth@gmail.com"
-set sendmail = "/usr/local/bin/msmtp -a greggroth"
 set sendmail_wait = 0
 unset record
 
@@ -152,3 +144,6 @@ bind editor ^T    complete
 # Searching ------------------------------------------
 bind index N search-opposite
 bind pager N search-opposite
+
+# Gmail stype shortcuts
+macro index,pager y "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
