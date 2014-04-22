@@ -17,7 +17,6 @@ NeoBundle 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
 
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'mileszs/ack.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'tpope/vim-commentary'
@@ -205,6 +204,9 @@ set showmatch
 set hlsearch
 
 nnoremap <leader>/ :noh<CR>
+
+" Search using ack instead of grep.  Results are loaded into the quickfix.
+set grepprg=ack\ -H\ --nocolor\ --nogroup\ --column
 " }}}
 
 " {{{ Promote to let
