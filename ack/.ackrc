@@ -20,7 +20,11 @@
 --ignore-dir=script
 --ignore-dir=system
 #
+--ignore-file=is:tags
+--ignore-file=is:TAGS
+#
 --sort-files
 --color
 --follow
 --group
+
