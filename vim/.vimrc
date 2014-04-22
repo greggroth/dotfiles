@@ -58,16 +58,6 @@ let g:tmuxline_separators = {
 NeoBundle 'jnwhiteh/vim-golang'
 " }}}
 
-" {{{ DocBook
-NeoBundle 'sukima/vim-docbk'
-NeoBundle 'othree/xml.vim'
-NeoBundle 'msanders/snipmate.vim'
-
-hi link docbkKeyword String
-hi link xmlTag Identifier
-hi link xmlTagEnd xmlTag
-" }}}
-
 " {{{ Ruby/Rails
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
