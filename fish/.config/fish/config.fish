@@ -33,6 +33,9 @@ set PGHOST localhost
 source ~/code/chruby-fish/share/chruby/chruby.fish
 source ~/code/chruby-fish/share/chruby/auto.fish
 
+# Autojump
+source /usr/local/Cellar/autojump/HEAD/etc/autojump.fish
+
 # GoLang
 set GOPATH ~/code/gocode
 
