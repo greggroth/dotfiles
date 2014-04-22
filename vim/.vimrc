@@ -21,7 +21,6 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-dispatch'
 " }}}
 
 " {{{ Theming
