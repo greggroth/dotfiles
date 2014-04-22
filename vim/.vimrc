@@ -85,7 +85,6 @@ NeoBundle 'scrooloose/syntastic'
 " {{{ Git
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'gregsexton/gitv'
 
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
