@@ -25,7 +25,6 @@ NeoBundle 'tpope/vim-surround'
 
 " {{{ Theming
 NeoBundle 'bling/vim-airline'
-NeoBundle 'edkolev/tmuxline.vim'
 NeoBundle 'junegunn/seoul256.vim'
 
 set t_Co=256
@@ -38,21 +37,6 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = ''
-
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'win'  : ['#I', '#W'],
-      \'cwin' : ['#I', '#W', '#F'],
-      \'y'    : ['%R', '%a', '%Y', '#h'],
-      \'z'    : ''}
-
-let g:tmuxline_separators = {
-    \ 'left' : '',
-    \ 'left_alt': '|',
-    \ 'right' : '',
-    \ 'right_alt' : '|',
-    \ 'space' : ' '}
-" }}}
 
 " {{{ GoLang
 NeoBundle 'jnwhiteh/vim-golang'
