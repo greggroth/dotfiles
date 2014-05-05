@@ -176,6 +176,13 @@ set hlsearch
 
 nnoremap <leader>/ :noh<CR>
 
+function! Ack(term)
+  silent execute 'grep ' . a:term
+  redraw!
+  copen
+endfunction
+command! -nargs=1 Ack call Ack(<f-args>)
+
 " Search using ack instead of grep.  Results are loaded into the quickfix.
 set grepprg=ack\ -H\ --nocolor\ --nogroup\ --column
 " }}}
