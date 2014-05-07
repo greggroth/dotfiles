@@ -8,3 +8,4 @@ pid
 mail/.offlineimap/Account*
 runit/**/log/logs/*
 runit/**/supervise/*
+fish/.config/fish/fish_history
