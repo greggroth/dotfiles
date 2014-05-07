@@ -6,3 +6,5 @@ vim/.vim/.netrw*
 *.swp
 pid
 mail/.offlineimap/Account*
+runit/**/log/logs/*
+runit/**/supervise/*

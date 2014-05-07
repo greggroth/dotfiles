@@ -1,0 +1,11 @@
+#!/bin/sh
+
+exec 2>&1
+
+echo "Starting to fetch mail"
+
+sudo -H -u greggory bash -c "offlineimap"
+
+echo "Finished fetching mail"
+
+sleep 2h
