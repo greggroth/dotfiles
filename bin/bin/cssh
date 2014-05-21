@@ -1,0 +1,9 @@
+tmux new-window
+
+for host in $@; do
+  tmux split-window -h
+  tmux send-keys 'ssh ' $host 'C-m'
+done
+
+tmux select-layout tiled
+tmux setw synchronize-panes on
