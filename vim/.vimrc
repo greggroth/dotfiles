@@ -21,6 +21,8 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-dispatch'
+
 " }}}
 
 " {{{ Theming
@@ -45,12 +47,21 @@ NeoBundle 'jnwhiteh/vim-golang'
 " {{{ Ruby/Rails
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'skalnik/vim-vroom'
 NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'greggroth/vim-cucumber-folding'
 NeoBundle 'matchit.zip'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'nelstrom/vim-textobj-rubyblock'
+NeoBundle 'thoughtbot/vim-rspec'
+
+let g:rspec_command = "Dispatch rspec {spec}"
+nnoremap <Leader>r :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>R :call RunNearestSpec()<CR>
+" }}}
+
+" {{{ Haskell
+NeoBundle 'wlangstroth/vim-haskell'
+NeoBundle 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM'
 " }}}
 
 " {{{ Syntax Highlighting
@@ -113,6 +124,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
+set smartindent
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
@@ -140,10 +152,14 @@ set sidescrolloff=15   " Number of cols from horizontal edge to start scrolling
 set foldmethod=syntax
 set foldlevelstart=99 " open all folds by default
 nnoremap <space> za
+
+" Use <C-l> to leave insert mode
+imap <C-l> <Esc><CR>
 " }}}
 
 " {{{ Command completion
 set path=**
+set suffixesadd=.rb,.h,.m
 set wildmenu
 set complete=.,b,u,]
 set wildmode=longest,list:longest
@@ -196,4 +212,23 @@ function! PromoteToLet()
 endfunction
 command! PromoteToLet :call PromoteToLet()
 map <leader>p :PromoteToLet<cr>
+" }}}
+
+
+" {{{ cscope
+if has("cscope")
+  set csprg=/usr/local/bin/cscope
+  set cscopequickfix=s-,c-,d-,i-,t-,e-
+  set csto=0
+  set cst
+  set nocsverb
+  " add any database in current directory
+  if filereadable("cscope.out")
+      cs add cscope.out
+  " else add database pointed to by environment
+  elseif $CSCOPE_DB != ""
+      cs add $CSCOPE_DB
+  endif
+  set csverb
+endif
 " }}}
