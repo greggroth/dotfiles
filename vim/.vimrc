@@ -233,3 +233,7 @@ if has("cscope")
   set csverb
 endif
 " }}}
+
+" {{{ folding
+nnoremap zh zMzvzczO  " Fold everything except for the current line
+" }}}
