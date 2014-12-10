@@ -6,13 +6,13 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 " }}}
 
 " {{{ Basic Bundles
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
 
@@ -22,6 +22,11 @@ NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'henrik/vim-indexed-search'
+
+vmap <Enter> <Plug>(EasyAlign)
 
 " }}}
 
@@ -29,20 +34,16 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'junegunn/seoul256.vim'
 
-set t_Co=256
-syntax enable
-colorscheme seoul256
-set laststatus=2
-
-let g:airline_theme='ubaryd'
-let g:airline_powerline_fonts=1
+let g:airline_theme='luna'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = ''
 " }}}
 
 " {{{ GoLang
-NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'fatih/vim-go'
 " }}}
 
 " {{{ Ruby/Rails
@@ -53,11 +54,10 @@ NeoBundle 'greggroth/vim-cucumber-folding'
 NeoBundle 'matchit.zip'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'nelstrom/vim-textobj-rubyblock'
-NeoBundle 'thoughtbot/vim-rspec'
+NeoBundle 'skalnik/vim-vroom'
 
-let g:rspec_command = "Dispatch rspec {spec}"
-nnoremap <Leader>r :call RunCurrentSpecFile()<CR>
-nnoremap <Leader>R :call RunNearestSpec()<CR>
+let g:vroom_use_binstubs=1
+let g:vroom_cucumber_path='./bin/rspec'
 " }}}
 
 " {{{ Haskell
@@ -74,6 +74,7 @@ NeoBundle 'jtratner/vim-flavored-markdown.git'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'dag/vim-fish'
+NeoBundle 'JuliaLang/julia-vim'
 
 NeoBundle 'scrooloose/syntastic'
 " }}}
@@ -87,8 +88,16 @@ nmap <leader>gk <plug>(signify-prev-hunk)
 " }}}
 
 " {{{ Install Bundles
+call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
+" }}}
+
+" {{{ Set Theme
+set t_Co=256
+let g:seoul256_background = 235
+colorscheme seoul256
+set laststatus=2
 " }}}
 
 " {{{ Line Numbers
@@ -129,8 +138,8 @@ set smartindent
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-set novisualbell  " No blinking .
-set noerrorbells  " No noise.
+" Disable all bells
+set noeb vb t_vb=
 
 set nobackup
 set nowritebackup
@@ -193,15 +202,15 @@ set hlsearch
 
 nnoremap <leader>/ :noh<CR>
 
-function! Ack(term)
+function! Ag(term)
   silent execute 'grep ' . a:term
   redraw!
   copen
 endfunction
-command! -nargs=1 Ack call Ack(<f-args>)
+command! -nargs=1 -complete=file Ag call Ag(<f-args>)
 
 " Search using ack instead of grep.  Results are loaded into the quickfix.
-set grepprg=ack\ -H\ --nocolor\ --nogroup\ --column
+set grepprg=ag\ --nocolor\ --nogroup\ --column
 " }}}
 
 " {{{ Promote to let
@@ -237,3 +246,15 @@ endif
 " {{{ folding
 nnoremap zh zMzvzczO  " Fold everything except for the current line
 " }}}
+
+syntax enable
+
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+  " Building a hash ensures we get each buffer only once
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
