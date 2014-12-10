@@ -22,16 +22,19 @@ set EDITOR vim
 set PATH /usr/local/bin $PATH
 set PATH $PATH /usr/local/sbin
 
+# Julia
+set PATH $PATH /Applications/Julia-0.3.0.app/Contents/Resources/julia/bin
+
 # Scripts
 set PATH $PATH $HOME/bin
 
 # Postgres.app
-set PATH $PATH /Applications/Postgres.app/Contents/MacOS/bin
+set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.3/bin
 set PGHOST localhost
 
 # Chruby
-source ~/code/chruby-fish/share/chruby/chruby.fish
-source ~/code/chruby-fish/share/chruby/auto.fish
+source /usr/local/share/chruby/chruby.fish
+source /usr/local/share/chruby/auto.fish
 
 # Autojump
 source /usr/local/Cellar/autojump/HEAD/etc/autojump.fish
