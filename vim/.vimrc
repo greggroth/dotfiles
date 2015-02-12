@@ -14,7 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " {{{ Basic Bundles
 NeoBundle 'ctrlpvim/ctrlp.vim'
 
-let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules)$'
 
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'godlygeek/tabular'
