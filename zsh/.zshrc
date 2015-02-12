@@ -53,7 +53,8 @@ PATH=$PATH:/usr/local/sbin
 PATH=$PATH:$HOME/bin
 
 #Postgres.app
-PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+TZ="UTC"
 
 PLATFORM="mac"
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
