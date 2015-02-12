@@ -73,3 +73,5 @@ HELPDIR=/usr/local/share/zsh/helpfiles
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+source /usr/local/share/zsh/site-functions/_aws
