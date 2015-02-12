@@ -159,7 +159,7 @@ set scrolloff=8        " Number of lines from vertical edge to start scrolling
 set sidescrolloff=15   " Number of cols from horizontal edge to start scrolling
 
 " Folding shorcuts
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevelstart=99 " open all folds by default
 nnoremap <space> za
 
