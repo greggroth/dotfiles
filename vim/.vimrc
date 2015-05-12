@@ -75,6 +75,7 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'JuliaLang/julia-vim'
+NeoBundle 'nneal/vim-teaspoon'
 
 NeoBundle 'scrooloose/syntastic'
 " }}}
