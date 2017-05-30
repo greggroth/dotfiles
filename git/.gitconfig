@@ -4,7 +4,7 @@
 [core]
   excludesfile = /Users/greggory/.gitignore
   quotepath = false
-  editor = vim
+  editor = nvim
 [color]
   ui = auto
 [branch]
@@ -22,7 +22,6 @@
   c = commit --verbose
   co = checkout
 
-
   # Fancy logging.
   #   h = head
   #   hp = head with patch
@@ -39,6 +38,9 @@
   la = !git l --all
 	g = grep --break --heading --line-number
 	ctags = !.git/hooks/ctags
+
+  # hub
+  pr = !hub pull-request
 [web]
 	browser = open
 [heroku]
@@ -68,3 +70,9 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[gui]
+	recentrepo = /Users/greggory/code/bluebottle
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
