@@ -21,14 +21,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'ap/vim-css-color'
 Plug 'robbles/logstash.vim'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 vmap <Enter> <Plug>(EasyAlign)
 " }}}
-
-
-" let g:deoplete#enable_at_startup = 1
 
 " {{{ Theming
 Plug 'vim-airline/vim-airline'
@@ -38,7 +33,6 @@ Plug 'junegunn/seoul256.vim'
 let g:airline_theme='base16_eighties'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-" let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = ''
 " }}}
@@ -51,8 +45,6 @@ let g:go_term_enabled = 1
 let g:go_term_mode = "split"
 let g:go_fmt_command = "goimports"
 au FileType go nmap <Leader>i <Plug>(go-info)
-" let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-" let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
@@ -86,9 +78,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'groenewege/vim-less'
 Plug 'slim-template/vim-slim'
 Plug 'elzr/vim-json'
-" Plug 'dag/vim-fish'
 
-" Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
 " }}}
 
