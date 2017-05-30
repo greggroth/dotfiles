@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh
+
+branches=$(git branch) &&
+branch=$(echo "$branches" | fzf +m) &&
+git checkout $(echo "$branch" | sed "s/.* //")
