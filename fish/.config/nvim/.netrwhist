@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/greggory/code/bbcbluedocs'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/greggory/code/nsproxy/config/xml_schema'
+let g:netrw_dirhist_2='/Users/greggory/code/nsproxy/app/jobs'
+let g:netrw_dirhist_3='/Users/greggory/code/quarry'
+let g:netrw_dirhist_4='/Users/greggory/code/bs-infra'
+let g:netrw_dirhist_5='/Users/greggory/code/nsproxy/app/jobs'
+let g:netrw_dirhist_6='/Users/greggory/code/bluebottle/app/jobs'

@@ -2,6 +2,7 @@
 set encoding=utf8
 set backspace=2
 let mapleader = ","
+let g:netrw_liststyle= 3
 
 call plug#begin('~/.vim/plugged')
 " }}}
@@ -9,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 " {{{ Basic Bundles
 Plug 'Shougo/vimproc.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 nmap <C-p> :FZF --no-mouse<CR>
 
@@ -20,7 +22,14 @@ Plug 'tpope/vim-dispatch'
 Plug 'junegunn/vim-easy-align'
 Plug 'ap/vim-css-color'
 Plug 'robbles/logstash.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources = {}
+let g:deoplete#sources._ = ['buffer', 'tag']
+let deoplete#tag#cache_limit_size = 5000000
 
 vmap <Enter> <Plug>(EasyAlign)
 " }}}
@@ -83,9 +92,11 @@ Plug 'w0rp/ale'
 " }}}
 
 " {{{ Git
-Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
+set signcolumn=yes
 set diffopt+=vertical
 
 nmap <leader>gj <plug>(signify-next-hunk)
@@ -174,16 +185,6 @@ set wildmenu
 set complete=.,b,u,]
 set wildmode=longest,list:longest
 set completeopt=menu
-" }}}
-
-" {{{ Clojure settings
-let vimclojure#HighlightBuiltins=1
-let vimclojure#ParenRainbow=1
-" }}}
-
-" {{{ Movement Shortcuts
-nnoremap <leader>+ :res +10<CR>
-nnoremap <leader>- :res -10<CR>
 " }}}
 
 " {{{ Searching
