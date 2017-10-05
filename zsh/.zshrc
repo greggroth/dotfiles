@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-alias vlc='Applications/VLC.app/Contents/MacOS/VLC'
-alias hate_coffeeshops='sudo tcpkill -i en1 -9 tcp portrange 6881-6999'
 alias git='hub'
 gcoa () { git checkout `git rev-list -n 1 --before="$1" master` }
 
@@ -29,7 +27,8 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git chruby brew taskwarrior greggroth osx extract tmux zsh-syntax-highlighting zsh-history-substring-search)
+# chruby
+plugins=(git greggroth osx tmux zsh-syntax-highlighting zsh-history-substring-search docker-compose)
 
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
@@ -41,18 +40,12 @@ zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~
 
 source $ZSH/oh-my-zsh.sh
 
-# Pretty diff
-alias pdiff='colordiff -u'
-
-# Heroku console
-alias hc='heroku run console'
-
 #Tmuxinator
 # alias vim='mvim -v'
 alias vim='nvim'
 export EDITOR=nvim
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 #Homewbrew
 PATH=/usr/local/bin:$PATH
@@ -61,7 +54,7 @@ PATH=$PATH:$HOME/bin
 PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 #Postgres.app
-PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 TZ="UTC"
 PGTZ="UTC"
 
@@ -76,7 +69,6 @@ export PGHOST=localhost
 # Remove anoying regex matching
 unsetopt NOMATCH
 
-unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
@@ -89,9 +81,23 @@ export AMAZONREDSHIFTODBCINI=/opt/amazon/redshift/lib/universal/amazon.redshifto
 # export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib
 
 source /usr/local/share/zsh/site-functions/_aws
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
 [ -f /Users/greggory/.travis/travis.sh ] && source /Users/greggory/.travis/travis.sh
 
-eval $(docker-machine env)
+
+[ -f venv/bin/activate ] && source venv/bin/activate
+
+_apex()  {
+  COMPREPLY=()
+  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local opts="$(apex autocomplete -- ${COMP_WORDS[@]:1})"
+  COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+  return 0
+}
+
+complete -F _apex apex
+export PATH="/usr/local/opt/qt5/bin:$PATH"
