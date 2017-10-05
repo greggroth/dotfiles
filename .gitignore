@@ -1,6 +1,7 @@
 *.log
 *.weechatlog
 vim/.vim/bundle
+vim/.vim/plugged
 vim/.vim/_tmp
 vim/.vim/.netrw*
 *.swp

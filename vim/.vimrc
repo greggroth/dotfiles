@@ -1,38 +1,42 @@
 " {{{ Neobundle Init
-set shell=/bin/sh\ -l
+set shell=/usr/local/bin/bash\ -l
+" set shellcmdflag=-l
+" set shell=/usr/local/bin/zsh
+set encoding=utf8
+set backspace=2
+let mapleader = ","
 
-if has('vim_starting')
-  set nocompatible
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
+call plug#begin('~/.vim/plugged')
 " }}}
 
 " {{{ Basic Bundles
-NeoBundle 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Shougo/vimproc.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
-let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules)$'
+nmap <C-p> :FZF --no-mouse<CR>
+" let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules)$'
 
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-abolish'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'henrik/vim-indexed-search'
+Plug 'tpope/vim-repeat'
+Plug 'godlygeek/tabular'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-abolish'
+Plug 'junegunn/vim-easy-align'
+Plug 'henrik/vim-indexed-search'
+Plug 'ap/vim-css-color'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
 vmap <Enter> <Plug>(EasyAlign)
 
 " }}}
 
 " {{{ Theming
-NeoBundle 'bling/vim-airline'
-NeoBundle 'junegunn/seoul256.vim'
+Plug 'bling/vim-airline'
+Plug 'junegunn/seoul256.vim'
 
 let g:airline_theme='luna'
 let g:airline_left_sep=''
@@ -43,55 +47,62 @@ let g:airline#extensions#branch#empty_message = ''
 " }}}
 
 " {{{ GoLang
-NeoBundle 'fatih/vim-go'
+Plug 'fatih/vim-go'
 " }}}
 
 " {{{ Ruby/Rails
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'greggroth/vim-cucumber-folding'
-NeoBundle 'matchit.zip'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'nelstrom/vim-textobj-rubyblock'
-NeoBundle 'skalnik/vim-vroom'
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-cucumber'
+Plug 'greggroth/vim-cucumber-folding'
+Plug 'matchit.zip'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'greggroth/vim-rspec'
 
-let g:vroom_use_binstubs=1
-let g:vroom_cucumber_path='./bin/rspec'
+let g:rspec_command = "!bin/rspec {spec}"
+let g:rspec_runner = "os_x_iterm"
+
+" let g:vroom_use_spring=0
+" let g:vroom_use_binstubs=1
+" let g:vroom_cucumber_path='rspec'
+
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
 " }}}
 
 " {{{ Haskell
-NeoBundle 'wlangstroth/vim-haskell'
-NeoBundle 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM'
+Plug 'wlangstroth/vim-haskell'
+Plug 'vim-scripts/Superior-Haskell-Interaction-Mode-SHIM'
 " }}}
 
 " {{{ Syntax Highlighting
-NeoBundle 'vim-scripts/VimClojure'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'jtratner/vim-flavored-markdown.git'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'dag/vim-fish'
-NeoBundle 'JuliaLang/julia-vim'
-NeoBundle 'nneal/vim-teaspoon'
+Plug 'vim-scripts/VimClojure'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-haml'
+Plug 'groenewege/vim-less'
+Plug 'slim-template/vim-slim'
+Plug 'elzr/vim-json'
+Plug 'dag/vim-fish'
+" Plug 'JuliaLang/julia-vim'
+Plug 'nneal/vim-teaspoon'
 
-NeoBundle 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 " }}}
 
 " {{{ Git
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+
+set diffopt+=vertical
 
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
 " }}}
 
 " {{{ Install Bundles
-call neobundle#end()
+call plug#end()
 filetype plugin indent on
-NeoBundleCheck
 " }}}
 
 " {{{ Set Theme
@@ -107,9 +118,6 @@ set relativenumber
 " }}}
 
 " {{{ Misc
-set encoding=utf8
-let mapleader = ","
-
 " sane split directions
 set splitright
 set splitbelow
@@ -259,3 +267,8 @@ function! QuickfixFilenames()
   endfor
   return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
 endfunction
+
+nnoremap <leader>a :Ag <C-r><C-w><CR>
+
+" Prevent YouCompleteMe from always popping up
+let g:ycm_auto_trigger = 0
