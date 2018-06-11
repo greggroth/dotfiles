@@ -2,14 +2,14 @@
 set encoding=utf8
 set backspace=2
 let mapleader = ","
+let maplocalleader = "\\"
 let g:netrw_liststyle= 3
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 " }}}
 
 " {{{ Basic Bundles
-Plug 'Shougo/vimproc.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 nmap <C-p> :FZF --no-mouse<CR>
@@ -20,15 +20,10 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
 Plug 'junegunn/vim-easy-align'
-Plug 'ap/vim-css-color'
-Plug 'robbles/logstash.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'fishbullet/deoplete-ruby'
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
 
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources = {}
-let g:deoplete#sources._ = ['buffer', 'tag']
 let deoplete#tag#cache_limit_size = 5000000
 
 vmap <Enter> <Plug>(EasyAlign)
@@ -62,33 +57,27 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 " }}}
 
 " {{{ Ruby/Rails
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
+Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'tpope/vim-cucumber'
-Plug 'greggroth/vim-cucumber-folding'
-Plug 'matchit.zip'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'greggroth/vim-rspec'
+Plug 'janko-m/vim-test'
 
-let g:rspec_command = "tabnew|te bin/rspec {spec}"
-let g:rspec_runner = "os_x_iterm"
-
-" let g:vroom_use_spring=0
-" let g:vroom_use_binstubs=1
-" let g:vroom_cucumber_path='rspec'
-
-map <Leader>r :call RunCurrentSpecFile()<CR>
-map <Leader>R :call RunNearestSpec()<CR>
+map <Leader>r :TestFile<CR>
+map <Leader>R :TestNearest<CR>
+map <Leader>c :split term://bin/rails c<CR>
 " }}}
 
 " {{{ Syntax Highlighting
 Plug 'kchmck/vim-coffee-script'
-Plug 'groenewege/vim-less'
 Plug 'slim-template/vim-slim'
 Plug 'elzr/vim-json'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
+Plug 'mattn/calendar-vim'
 
-Plug 'w0rp/ale'
+Plug 'w0rp/ale' " Linting
 " }}}
 
 " {{{ Git
@@ -119,11 +108,43 @@ set number
 set relativenumber
 " }}}
 
-" {{{ Misc
+" {{{ Terminal Mode
+tnoremap <Esc> <C-\><C-n>
+tnoremap <M-[> <Esc>
+tnoremap <C-v><Esc> <Esc>
+au TermOpen * setlocal nonumber norelativenumber
+" }}}
+
+" {{{ Windows/Panes
 " sane split directions
 set splitright
 set splitbelow
 
+hi! TermCursorNC ctermfg=15 guifg=#fdf6e3 ctermbg=14 guibg=#93a1a1 cterm=NONE gui=NONE
+
+" Terminal mode:
+tnoremap <M-h> <c-\><c-n><c-w>h
+tnoremap <M-j> <c-\><c-n><c-w>j
+tnoremap <M-k> <c-\><c-n><c-w>k
+tnoremap <M-l> <c-\><c-n><c-w>l
+" Insert mode:
+inoremap <M-h> <Esc><c-w>h
+inoremap <M-j> <Esc><c-w>j
+inoremap <M-k> <Esc><c-w>k
+inoremap <M-l> <Esc><c-w>l
+" Visual mode:
+vnoremap <M-h> <Esc><c-w>h
+vnoremap <M-j> <Esc><c-w>j
+vnoremap <M-k> <Esc><c-w>k
+vnoremap <M-l> <Esc><c-w>l
+" Normal mode:
+nnoremap <M-h> <c-w>h
+nnoremap <M-j> <c-w>j
+nnoremap <M-k> <c-w>k
+nnoremap <M-l> <c-w>l
+" }}}
+
+" {{{ Misc
 " set the terminal's title
 set title
 
@@ -182,9 +203,11 @@ imap <C-l> <Esc><CR>
 set path=**
 set suffixesadd=.rb,.h,.m
 set wildmenu
-set complete=.,b,u,]
+set complete+=kspell
+set complete=.,w,b,u,U,t,i,d
 set wildmode=longest,list:longest
-set completeopt=menu
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 " }}}
 
 " {{{ Searching
@@ -218,6 +241,17 @@ function! PromoteToLet()
 endfunction
 command! PromoteToLet :call PromoteToLet()
 map <leader>p :PromoteToLet<cr>
+" }}}
+
+" {{{ Bracket to `fetch`
+function! BracketToFetch()
+  normal! dd
+  normal! P
+  .s/\v\[([^\]]*)\]/.fetch(\1)/
+  normal ==
+endfunction
+command! BracketToFetch :call BracketToFetch()
+map <leader>b :BracketToFetch<cr>
 " }}}
 
 
