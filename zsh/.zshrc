@@ -66,9 +66,6 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# added by travis gem
-[ -f /Users/greggory/.travis/travis.sh ] && source /Users/greggory/.travis/travis.sh
-
 
 [ -f venv/bin/activate ] && source venv/bin/activate
 
