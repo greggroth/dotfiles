@@ -20,7 +20,10 @@
   s = status
   st = status
   c = commit --verbose
+  ca = commit --ammend
+  can = commit --ammend --no-edit
   co = checkout
+  pf = push --force-with-lease
 
   # Fancy logging.
   #   h = head
@@ -81,3 +84,5 @@
 	process = git-lfs filter-process
 [gui]
 	recentrepo = /Users/greggrothmeier/code/Transmetropolitan
+[github]
+	user = greggroth

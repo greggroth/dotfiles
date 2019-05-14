@@ -2,13 +2,16 @@
 ZSH=$HOME/.oh-my-zsh
 
 alias git='hub'
+alias t='todo.sh'
 gcoa () { git checkout `git rev-list -n 1 --before="$1" master` }
+
+alias news='newsboat'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit-gregg"
+ZSH_THEME="avit"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -35,52 +38,30 @@ bindkey -M emacs '^N' history-substring-search-down
 
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
+bindkey '^U' backward-kill-line
 
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 #Tmuxinator
 # alias vim='mvim -v'
 alias vim='nvim'
-export EDITOR=nvim
-export NVIM_TUI_ENABLE_TRUE_COLOR=1
 # [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-#Homewbrew
-PATH=/usr/local/bin:$PATH
-PATH=$PATH:/usr/local/sbin
-PATH=$PATH:$HOME/bin
-PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-#Postgres.app
-PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-TZ="UTC"
-PGTZ="UTC"
 
 PLATFORM="mac"
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
-
-export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
-
-export GOPATH=$HOME/code/gocode
-export PGHOST=localhost
 
 # Remove anoying regex matching
 unsetopt NOMATCH
 
 autoload run-help
+autoload bashcompinit
+bashcompinit
 HELPDIR=/usr/local/share/zsh/helpfiles
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export PATH=$PATH:$GOPATH/bin
-
-export AMAZONREDSHIFTODBCINI=/opt/amazon/redshift/lib/universal/amazon.redshiftodbc.ini
-# export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib
-
-source /usr/local/share/zsh/site-functions/_aws
+# source /usr/local/share/zsh/site-functions/_aws
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -100,4 +81,8 @@ _apex()  {
 }
 
 complete -F _apex apex
-export PATH="/usr/local/opt/qt5/bin:$PATH"
+
+
+if [[ $TERM = dumb ]]; then
+  unset zle_backeted_paste
+fi

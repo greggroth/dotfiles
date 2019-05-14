@@ -18,6 +18,6 @@ def app_name
   File.basename(Rails.root)
 end
 
-if defined?(Rails)
-  Pry.config.prompt = proc { |obj, nest_level, _| "[#{app_name}][#{formatted_env}] #{obj}:#{nest_level}> " }
-end
+# if defined?(Rails)
+#   Pry.config.prompt = proc { |obj, nest_level, _| "[#{app_name}][#{formatted_env}] #{obj}:#{nest_level}> " }
+# end

@@ -22,6 +22,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'junegunn/vim-easy-align'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+Plug 'google/vim-searchindex'
 
 let g:deoplete#enable_at_startup = 1
 let deoplete#tag#cache_limit_size = 5000000
@@ -62,22 +63,37 @@ Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'tpope/vim-cucumber'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'janko-m/vim-test'
+" Plug 'janko-m/vim-test'
 
-map <Leader>r :TestFile<CR>
-map <Leader>R :TestNearest<CR>
-map <Leader>c :split term://bin/rails c<CR>
+Plug 'thoughtbot/vim-rspec'
+Plug 'jgdavey/tslime.vim'
+
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
+" vim-rspec mappings
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" let g:test#preserve_screen = 1
+" map <Leader>r :TestFile<CR>
+" map <Leader>R :TestNearest<CR>
+" map <Leader>c :split term://bin/rails c<CR>
 " }}}
 
 " {{{ Syntax Highlighting
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
 Plug 'elzr/vim-json'
+Plug 'aklt/plantuml-syntax'
+
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
 Plug 'mattn/calendar-vim'
+autocmd FileType org setlocal nowrap
 
 Plug 'w0rp/ale' " Linting
+Plug 'chrisbra/csv.vim'
 " }}}
 
 " {{{ Git
@@ -98,7 +114,7 @@ filetype plugin indent on
 " }}}
 
 " {{{ Set Theme
-let g:seoul256_background = 235
+let g:seoul256_background = 234
 colorscheme seoul256
 set laststatus=2
 " }}}
@@ -292,3 +308,5 @@ endfunction
 nnoremap <leader>a :Ag <C-r><C-w><CR>
 
 nnoremap @@x :%!xmllint --format --recover -<CR>
+
+command! Standup edit ~/CloudStation/Notes/Stitchfix/standup.org | normal G

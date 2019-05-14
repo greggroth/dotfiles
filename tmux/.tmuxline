@@ -1,6 +1,10 @@
 # This tmux statusbar config was created by tmuxline.vim
 # on Mon, 21 Apr 2014
 
+
+set-window-option -g window-style 'bg=#27292c'
+set-window-option -g window-active-style 'bg=#101421'
+
 # set -g status-bg 'colour235'
 set -g status-bg 'colour237'
 set -g message-command-fg 'colour252'
@@ -13,10 +17,10 @@ set -g status-right-attr 'none'
 set -g message-fg 'colour252'
 set -g message-command-bg 'colour238'
 set -g status-attr 'none'
-# set -g pane-border-fg 'colour238'
 set -g pane-border-fg 'colour238'
+set -g pane-border-bg '#27292c'
 set -g pane-active-border-fg 'colour31'
-set -g pane-active-border-style bg=default
+set -g pane-active-border-bg '#101421'
 set -g status-left-attr 'none'
 setw -g window-status-attr 'none'
 setw -g window-status-activity-bg 'colour161'
