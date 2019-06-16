@@ -52,6 +52,8 @@
                                    time-string)))))
 (minibuffer-line-mode)
 
-(define-key org-mode-map (kbd "C-k")
-  (lambda () (interactive) (org-ctrl-c-ctrl-c)
-                           (org-display-inline-images)))
+(add-hook 'org-mode-hook
+  (lambda ()
+    (define-key org-mode-map (kbd "C-k")
+      (lambda () (interactive) (org-ctrl-c-ctrl-c)
+                               (org-display-inline-images)))))
