@@ -92,8 +92,13 @@ Plug 'tpope/vim-speeddating'
 Plug 'mattn/calendar-vim'
 autocmd FileType org setlocal nowrap
 
-Plug 'w0rp/ale' " Linting
 Plug 'chrisbra/csv.vim'
+
+Plug 'w0rp/ale' " Linting
+" let g:ale_fix_on_save = 1
+" let g:ale_fixers = {
+" \  'ruby': [ 'rubocop', 'remove_trailing_lines' ]
+" \}
 " }}}
 
 " {{{ Git
