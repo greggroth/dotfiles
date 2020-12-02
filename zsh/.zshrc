@@ -1,8 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/Emacs
 
-alias git='hub'
-alias t='todo.sh'
+# alias git='hub'
+
 gcoa () { git checkout `git rev-list -n 1 --before="$1" master` }
 
 alias news='newsboat'
@@ -11,7 +12,7 @@ alias news='newsboat'
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="avit-it2"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -51,7 +52,7 @@ alias vim='nvim'
 # [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 PLATFORM="mac"
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
+# PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
 
 # Remove anoying regex matching
 unsetopt NOMATCH
@@ -83,3 +84,19 @@ complete -F _apex apex
 if [[ $TERM = dumb ]]; then
   unset zle_backeted_paste
 fi
+
+source ~/bin/tmuxinator.zsh
+alias t='tmuxinator'
+
+# See https://www.iterm2.com/3.3/documentation-scripting-fundamentals.html
+function iterm2_print_user_vars() {
+  iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
+  iterm2_set_user_var nodeVersion $(node -v)
+}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="$HOME/.nvm"
+# Commenting out because it's slow
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
