@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: standup
+# key: <su                                    
+# --
+
+*** `(insert (format-time-string "%Y-%m-%d %A"))`
+**** TODO
