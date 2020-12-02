@@ -59,12 +59,12 @@
 [mergetool]
   prompt = false
 	keepBackup = false
-[diff]
-  tool = p4diff
-[difftool "p4diff"]
-  cmd = p4merge "$LOCAL" "$BASE"
-[difftool]
-  prompt = false
+; [diff]
+;   tool = p4diff
+; [difftool "p4diff"]
+;   cmd = p4merge "$LOCAL" "$BASE"
+; [difftool]
+;   prompt = false
 [rerere]
 	enabled = true
 [push]
@@ -86,3 +86,15 @@
 	recentrepo = /Users/greggrothmeier/code/Transmetropolitan
 [github]
 	user = greggroth
+
+
+[diff]
+    tool = kitty
+    guitool = kitty.gui
+[difftool]
+    prompt = false
+    trustExitCode = true
+[difftool "kitty"]
+    cmd = kitty +kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+    cmd = kitty kitty +kitten diff $LOCAL $REMOTE
