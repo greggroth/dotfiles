@@ -60,7 +60,7 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 " {{{ Ruby/Rails
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
-Plug 'tpope/vim-cucumber'
+" Plug 'tpope/vim-cucumber'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 " Plug 'janko-m/vim-test'
@@ -83,7 +83,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 " {{{ Syntax Highlighting
 Plug 'kchmck/vim-coffee-script'
-Plug 'slim-template/vim-slim'
+" Plug 'slim-template/vim-slim'
 Plug 'elzr/vim-json'
 Plug 'aklt/plantuml-syntax'
 
