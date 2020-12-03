@@ -12,7 +12,7 @@ alias news='newsboat'
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit-it2"
+ZSH_THEME="avit"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -34,6 +34,11 @@ COMPLETION_WAITING_DOTS="true"
 # chruby
 plugins=(git greggroth osx tmux zsh-syntax-highlighting zsh-history-substring-search docker-compose)
 
+zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
+
+source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
@@ -41,15 +46,12 @@ bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 bindkey '^U' backward-kill-line
 
-zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
-
-source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-
 #Tmuxinator
-# alias vim='mvim -v'
-alias vim='nvim'
 # [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# source ~/bin/tmuxinator.zsh
+# alias t='tmuxinator'
+
+alias vim='nvim'
 
 PLATFORM="mac"
 # PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
@@ -84,9 +86,6 @@ complete -F _apex apex
 if [[ $TERM = dumb ]]; then
   unset zle_backeted_paste
 fi
-
-source ~/bin/tmuxinator.zsh
-alias t='tmuxinator'
 
 # See https://www.iterm2.com/3.3/documentation-scripting-fundamentals.html
 function iterm2_print_user_vars() {
