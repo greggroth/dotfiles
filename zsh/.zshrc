@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/Emacs
+PATH=$PATH:$HOME/bin
 
 # alias git='hub'
 
@@ -12,7 +13,7 @@ alias news='newsboat'
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="avit-it2"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -32,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # chruby
-plugins=(git greggroth osx tmux zsh-syntax-highlighting zsh-history-substring-search docker-compose)
+plugins=(git macos tmux zsh-syntax-highlighting zsh-history-substring-search docker-compose)
 
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
@@ -45,6 +46,8 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 bindkey '^U' backward-kill-line
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
 
 #Tmuxinator
 # [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
@@ -88,14 +91,17 @@ if [[ $TERM = dumb ]]; then
 fi
 
 # See https://www.iterm2.com/3.3/documentation-scripting-fundamentals.html
-function iterm2_print_user_vars() {
-  iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
-  iterm2_set_user_var nodeVersion $(node -v)
-}
+# function iterm2_print_user_vars() {
+#   iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
+#   iterm2_set_user_var nodeVersion $(node -v)
+# }
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export NVM_DIR="$HOME/.nvm"
 # Commenting out because it's slow
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+export BUNDLE_STITCHFIX01__JFROG__IO="greggory.rothmeier%40stitchfix.com:AKCp8ih1RKkjDBMtiUDvFjg2By4okbWx9N32S87iK6wmQjuiuSTpF7uFXZqGHWarrWizrbuof"
