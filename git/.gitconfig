@@ -73,6 +73,7 @@
 	host = code.apple.com
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = main
 [grep]
 	extendRegexp = true
 	lineNumber = true
