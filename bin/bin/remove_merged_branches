@@ -1,7 +1,9 @@
 #!/bin/bash
 
-git checkout master
+default_branch=$(git remote show origin | sed -n '/HEAD branch/s/.*: //p')
 
-for branch in $(git branch --merged | sed 's/* master//'); do
+git checkout $default_branch
+
+for branch in $(git branch --merged | sed "s/* $default_branch//"); do
   git branch -d $branch
 done
