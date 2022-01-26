@@ -127,3 +127,4 @@ brew 'zsh-history-substring-search'
 
 # Cask Apps
 cask 'chromedriver'
+cask 'background-music'
