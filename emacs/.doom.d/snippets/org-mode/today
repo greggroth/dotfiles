@@ -1,0 +1,4 @@
+# key: <t
+# name: today
+# --
+* <`(format-time-string "%Y-%m-%d %a")`>
