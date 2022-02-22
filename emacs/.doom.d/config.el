@@ -22,7 +22,7 @@
       doom-theme 'doom-tomorrow-night)
 
 (setq org-image-actual-width nil)
-(setq org-agenda-files '("~/CloudStation/Notes/Stitchfix/" "~/.deft"))
+(setq org-agenda-files '("~/Documents/2022.org" "~/.deft"))
 
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)

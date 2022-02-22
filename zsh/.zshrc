@@ -96,7 +96,7 @@ bindkey "^[f" forward-word
 # source ~/bin/tmuxinator.zsh
 # alias t='tmuxinator'
 
-# alias vim='nvim'
+alias vim='nvim'
 
 PLATFORM="mac"
 # PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
