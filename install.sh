@@ -8,12 +8,5 @@
 #   exit 1
 # fi
 
-# where am i?
-if [ -L "$0" ]; then
-  DIR=$(dirname $(readlink -f $0))
-else
-  DIR=$(dirname $0)
-fi
-
 echo "Adding git aliases"
-git config --global include.path git/.gitconfig
+git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
