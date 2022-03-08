@@ -13,40 +13,6 @@
   rebase = true
 [branch "staging"]
   rebase = true
-[alias]
-  dc = diff --cached
-  aa = add --all :/
-  pu = push --set-upstream
-  s = status
-  st = status
-  c = commit --verbose
-  ca = commit --ammend
-  can = commit --ammend --no-edit
-  co = checkout
-  pf = push --force-with-lease
-
-  # Fancy logging.
-  #   h = head
-  #   hp = head with patch
-  #   r = recent commits, only current branch
-  #   ra = recent commits, all reachable refs
-  #   l = all commits, only current branch
-  #   la = all commits, all reachable refs
-  head = !git l -1
-  h = !git head
-  hp = "!. ~/bin/.githelpers && show_git_head"
-  r = !git l -30
-  ra = !git r --all
-  l = "!. ~/bin/.githelpers && pretty_git_log"
-  la = !git l --all
-	g = grep --break --heading --line-number
-	ctags = !.git/hooks/ctags
-
-  # hub
-  pr = !hub pull-request
-
-  find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
-  show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
 [web]
 	browser = open
 [heroku]
@@ -99,3 +65,5 @@
     cmd = kitty +kitten diff $LOCAL $REMOTE
 [difftool "kitty.gui"]
     cmd = kitty kitty +kitten diff $LOCAL $REMOTE
+[include]
+	path = /Users/greggroth/.gitalias
