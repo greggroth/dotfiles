@@ -15,7 +15,5 @@ else
   DIR=$(dirname $0)
 fi
 
-while read -r alias; do
-  git config --global $alias
-  echo "Added git alias: $alias"
-done <<< "`git config --file git/.gitconfig --get-regexp '^alias'`"
+echo "Adding git aliases"
+git config --global include.path git/.gitconfig
