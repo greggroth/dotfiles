@@ -1,3 +1,10 @@
+# Install fundle package manager
+if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
+
+fundle plugin 'PatrickF1/fzf.fish'
+
+fundle init
+
 # Git Aliases
 alias g "git"
 alias git "hub"
