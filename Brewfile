@@ -65,3 +65,4 @@ cask 'mimestream'  # Email
 cask 'spotify'
 cask 'docker'
 cask 'font-jetbrains-mono'
+cask 'raycast'
