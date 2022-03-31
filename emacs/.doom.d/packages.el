@@ -15,3 +15,5 @@
 
 ;; (package! evil-org :disable t)
 (package! evil-escape :disable t)
+
+(package! org-super-agenda)

@@ -22,7 +22,7 @@
       doom-theme 'doom-tomorrow-night)
 
 (setq org-image-actual-width nil)
-(setq org-agenda-files '("~/Documents/2022.org" "~/.deft"))
+(setq org-agenda-files '("~/org" "~/.deft"))
 
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
@@ -30,9 +30,211 @@
 ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
 ;; (add-to-list 'org-capture-templates
 (setq org-capture-templates
-   '("w" "Work TODO" entry (file+datetree "~/.deft/standup_2019.org")
-     "* TODO %? \n:PROPERTIES:\n:CREATED: %U\n:END:")
-)
+      '(
+        ("t" "Work TODO"
+        entry (file+datetree "~/org/work-log.org")
+        "* TODO %? \nCreated: %T\n "
+        :empty-lines 0
+        :tree-type week)
+
+        ("j" "Work Journal"
+        entry (file+datetree "~/org/work-log.org")
+        "* %?"
+        :empty-lines 0
+        :tree-type week)
+
+        ("m" "Meeting"
+        entry (file+datetree "~/org/work-log.org")
+        "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
+        :tree-type week
+        :empty-lines 0)
+
+        ))
+
+;; https://github.com/james-stoup/emacs-org-mode-tutorial/blob/main/org-mode-config.el
+;;
+;; When a TODO is set to a done state, record a timestamp
+(setq org-log-done 'time)
+
+;; Follow the links
+(setq org-return-follows-link  t)
+
+(after! org
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "PLANNING(p)" "IN-PROGRESS(i@/!)" "VERIFYING(v!)" "BLOCKED(b@)"  "|" "DONE(d!)" "OBE(o@!)" "WONT-DO(w@/!)" )
+          ))
+
+  (setq org-todo-keyword-faces
+        '(
+          ("TODO" . (:foreground "GoldenRod" :weight bold))
+          ("PLANNING" . (:foreground "DeepPink" :weight bold))
+          ("IN-PROGRESS" . (:foreground "Cyan" :weight bold))
+          ("VERIFYING" . (:foreground "DarkOrange" :weight bold))
+          ("BLOCKED" . (:foreground "Red" :weight bold))
+          ("DONE" . (:foreground "LimeGreen" :weight bold))
+          ("OBE" . (:foreground "LimeGreen" :weight bold))
+          ("WONT-DO" . (:foreground "LimeGreen" :weight bold))
+          ))
+
+  ;; Tags
+  (setq org-tag-alist '(
+                        ;; Ticket types
+                        (:startgroup . nil)
+                        ("bug" . ?b)
+                        ("feature" . ?u)
+                        ("spike" . ?j)
+                        (:endgroup . nil)
+
+                        ("project" . ?p)
+                        ("learn" . ?p)
+
+                        ;; Meeting types
+                        (:startgroup . nil)
+                        ("1on1" . ?i)
+                        ("retro" . ?d)
+                        ("grooming" . ?g)
+                        (:endgroup . nil)
+
+                        ;; Special tags
+                        ("CRITICAL" . ?x)
+                        ("obstacle" . ?o)
+
+                        ;; Meeting tags
+                        ("general" . ?l)
+                        ("meeting" . ?m)
+                        ("misc" . ?z)
+                        ;; ("planning" . ?p)
+
+                        ;; Work Log Tags
+                        ("accomplishment" . ?a)
+                        ))
+
+
+  ;; Tag colors
+  (setq org-tag-faces
+        '(
+          ("project"   . (:foreground "mediumPurple1" :weight bold))
+          ("1on1"      . (:foreground "royalblue1"    :weight bold))
+          ("meeting"   . (:foreground "yellow1"       :weight bold))
+          ("CRITICAL"  . (:foreground "red1"          :weight bold))
+          )
+        )
+
+
+  (add-hook 'org-agenda-mode-hook 'org-super-agenda-mode)
+  (setq org-super-agenda-header-map (make-sparse-keymap))
+  (setq org-agenda-custom-commands
+        '(
+
+          ;; Daily Agenda & TODOs
+          ("d" "Daily agenda and all TODOs"
+
+           ;; Display items with priority A
+           ((tags "PRIORITY=\"A\""
+                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
+                   (org-agenda-overriding-header "High-priority unfinished tasks:")))
+
+            ;; View 7 days in the calendar view
+            (agenda "" ((org-agenda-span 7)))
+
+            ;; Display items with priority B (really it is view all items minus A & C)
+            (alltodo ""
+                     ((org-agenda-skip-function '(or (air-org-skip-subtree-if-priority ?A)
+                                                     (air-org-skip-subtree-if-priority ?C)
+                                                     (org-agenda-skip-if nil '(scheduled deadline))))
+                      (org-agenda-overriding-header "ALL normal priority tasks:")))
+
+            ;; Display items with pirority C
+            (tags "PRIORITY=\"C\""
+                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
+                   (org-agenda-overriding-header "Low-priority Unfinished tasks:")))
+            )
+
+           ;; Don't compress things (change to suite your tastes)
+           ((org-agenda-compact-blocks nil)))
+
+          ;; James's Super View
+          ("g" "Super View"
+           (
+            (agenda ""
+                    (
+                     (org-agenda-span 7)
+                     )
+                    )
+
+            (alltodo ""
+                     (
+                      (org-agenda-prefix-format "  %t  %s")
+                      (org-agenda-overriding-header "CURRENT STATUS")
+
+                      ;; Define the super agenda groups (sorts by order)
+                      (org-super-agenda-groups
+                       '(
+                         ;; Filter where tag is CRITICAL
+                         (:name "Critical Tasks"
+                          :tag "CRITICAL"
+                          :order 0
+                          )
+                         ;; Filter where TODO state is IN-PROGRESS
+                         (:name "Currently Working"
+                          :todo "IN-PROGRESS"
+                          :order 1
+                          )
+                         ;; Filter where TODO state is PLANNING
+                         (:name "Planning Next Steps"
+                          :todo "PLANNING"
+                          :order 2
+                          )
+                         ;; Filter where TODO state is BLOCKED or where the tag is obstacle
+                         (:name "Problems & Blockers"
+                          :todo "BLOCKED"
+                          :tag "obstacle"
+                          :order 3
+                          )
+                         ;; Filter where tag is @write_future_ticket
+                         (:name "Tickets to Create"
+                          :tag "@write_future_ticket"
+                          :order 4
+                          )
+                         ;; Filter where tag is @research
+                         (:name "Research Required"
+                          :tag "@research"
+                          :order 7
+                          )
+                         ;; Filter where tag is meeting and priority is A (only want TODOs from meetings)
+                         (:name "Meeting Action Items"
+                          :tag "meeting"
+                          :order 8
+                          )
+                         ;; Filter where state is TODO and the priority is A and the tag is not meeting
+                         (:name "Other Important Items"
+                          :and (:todo "TODO" :priority "A" :not (:tag "meeting"))
+                          :order 9
+                          )
+                         ;; Filter where state is TODO and priority is B
+                         (:name "General Backlog"
+                          :and (:todo "TODO" :priority "B")
+                          :order 10
+                          )
+                         ;; Filter where the priority is C or less (supports future lower priorities)
+                         (:name "Non Critical"
+                          :priority<= "C"
+                          :order 11
+                          )
+                         ;; Filter where TODO state is VERIFYING
+                         (:name "Currently Being Verified"
+                          :todo "VERIFYING"
+                          :order 20
+                          )
+                         )
+                       )
+                      )
+                     )
+            ))
+          ))
+
+  )
+
 
 (setq ns-option-modifier 'meta)
 
@@ -43,6 +245,10 @@
 (map! :leader
       :desc "Search in project"
       :n  "ps" #'projectile-ag)
+
+(map! :leader
+      :desc "Org Agenda"
+      :n "a" #'org-agenda)
 
 (set-popup-rules!
  '((".deft/standup_2019.org" :side bottom :size 0.4 :quit 'current)
@@ -55,9 +261,6 @@
               ("" "minted" t)
               ("" "parskip" t)
               ("" "tikz" t))))
-
-(setq org-latex-create-formula-image-program 'imagemagick)
-
 
 (setq minibuffer-line-format '((:eval
                                 (let ((time-string (format-time-string "%l:%M %b %d %a")))
@@ -72,11 +275,6 @@
     (define-key org-mode-map (kbd "C-k")
       (lambda () (interactive) (org-ctrl-c-ctrl-c)
                                (org-display-inline-images)))))
-
-(evil-define-text-object evgeni-inner-defun (count &optional beg end type)
-  (save-excursion
-    (mark-defun)
-    (evil-range (region-beginning) (region-end) type :expanded t)))
 
 (define-key evil-inner-text-objects-map "m" 'evgeni-inner-defun)
 (define-key evil-outer-text-objects-map "m" 'evgeni-inner-defun)
