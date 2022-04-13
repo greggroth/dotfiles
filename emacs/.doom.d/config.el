@@ -18,8 +18,10 @@
 ;; (add-hook 'projectile-rails-mode-hook 'chruby-use-corresponding)
 ;; (projectile-rails-global-mode)
 
+;; (setq doom-font (font-spec :family "JetBrains Mono" :size 13)
+;;       doom-theme 'doom-tomorrow-night)
 (setq doom-font (font-spec :family "JetBrains Mono" :size 13)
-      doom-theme 'doom-tomorrow-night)
+      doom-theme 'doom-one)
 
 (setq org-image-actual-width nil)
 (setq org-agenda-files '("~/org" "~/.deft"))
@@ -27,13 +29,15 @@
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
 
+(setq org-fancy-priorities-list '("⚑" "▲" "▼"))
+
 ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
 ;; (add-to-list 'org-capture-templates
 (setq org-capture-templates
       '(
         ("t" "Work TODO"
         entry (file+datetree "~/org/work-log.org")
-        "* TODO %? \nCreated: %T\n "
+        "* TODO [#B] %? \nCreated: %T\n "
         :empty-lines 0
         :tree-type week)
 
@@ -60,6 +64,16 @@
 (setq org-return-follows-link  t)
 
 (after! org
+;;         ;; Org-Modern
+;;         (setq
+;;         org-hide-emphasis-markers t
+;;         org-pretty-entities t
+;;         org-ellipsis "…"
+;;         )
+;;         (add-hook 'org-mode-hook #'org-modern-mode)
+;;         (add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
+
+
   (setq org-todo-keywords
         '((sequence "TODO(t)" "PLANNING(p)" "IN-PROGRESS(i@/!)" "VERIFYING(v!)" "BLOCKED(b@)"  "|" "DONE(d!)" "OBE(o@!)" "WONT-DO(w@/!)" )
           ))
@@ -78,15 +92,13 @@
 
   ;; Tags
   (setq org-tag-alist '(
-                        ;; Ticket types
+                        ;; TODO types
                         (:startgroup . nil)
-                        ("bug" . ?b)
-                        ("feature" . ?u)
-                        ("spike" . ?j)
-                        (:endgroup . nil)
-
+                        ("sprint" . ?s)
                         ("project" . ?p)
                         ("learn" . ?p)
+                        (:endgroup . nil)
+                        ;;
 
                         ;; Meeting types
                         (:startgroup . nil)
@@ -107,15 +119,17 @@
 
                         ;; Work Log Tags
                         ("accomplishment" . ?a)
+                        ("retro" . ?r)
                         ))
 
 
   ;; Tag colors
   (setq org-tag-faces
         '(
-          ("project"   . (:foreground "mediumPurple1" :weight bold))
-          ("1on1"      . (:foreground "royalblue1"    :weight bold))
-          ("meeting"   . (:foreground "yellow1"       :weight bold))
+          ("sprint"    . (:foreground "lightSeaGreen" :weight bold))
+          ("project"   . (:foreground "goldenrod2"    :weight bold))
+          ("1on1"      . (:foreground "darkSeaGreen"  :weight bold))
+          ("meeting"   . (:foreground "tomato1"       :weight bold))
           ("CRITICAL"  . (:foreground "red1"          :weight bold))
           )
         )
@@ -125,6 +139,10 @@
   (setq org-super-agenda-header-map (make-sparse-keymap))
   (setq org-agenda-custom-commands
         '(
+          ("r" "Retro Topics"
+           ((tags "retro"
+                  ((org-agenda-overriding-header "Retro Items"))
+           )))
 
           ;; Daily Agenda & TODOs
           ("d" "Daily agenda and all TODOs"
@@ -212,14 +230,24 @@
                           :order 9
                           )
                          ;; Filter where state is TODO and priority is B
+                         (:name "Sprint Backlog"
+                          :and (:todo "TODO" :tag "sprint")
+                          :order 10
+                          )
+                         ;; Filter where state is TODO and tag is project
+                         (:name "Project Backlog"
+                          :and (:todo "TODO" :tag "project")
+                          :order 11
+                          )
+                         ;; Filter where state is TODO and priority is B
                          (:name "General Backlog"
                           :and (:todo "TODO" :priority "B")
-                          :order 10
+                          :order 12
                           )
                          ;; Filter where the priority is C or less (supports future lower priorities)
                          (:name "Non Critical"
                           :priority<= "C"
-                          :order 11
+                          :order 13
                           )
                          ;; Filter where TODO state is VERIFYING
                          (:name "Currently Being Verified"
@@ -250,6 +278,14 @@
       :desc "Org Agenda"
       :n "a" #'org-agenda)
 
+(map! :leader
+      :desc "Open Scratch Buffer"
+      :n "X" #'doom/open-scratch-buffer)
+
+(map! :leader
+      :desc "Org Capture"
+      :n "x" #'org-capture)
+
 (set-popup-rules!
  '((".deft/standup_2019.org" :side bottom :size 0.4 :quit 'current)
    ("*doom:vterm-popup:.*" :side left :size 0.25 :slot -4 :select t :quit nil :ttl 0)
@@ -269,6 +305,7 @@
                                                    (string-width time-string)) ? )
                                    time-string)))))
 (minibuffer-line-mode)
+
 
 (add-hook 'org-mode-hook
   (lambda ()

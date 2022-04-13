@@ -17,3 +17,4 @@
 (package! evil-escape :disable t)
 
 (package! org-super-agenda)
+;; (package! org-modern)
