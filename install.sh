@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Installation script called when loaded into a Codespace
 
@@ -10,3 +10,20 @@
 
 echo "Adding git aliases"
 git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
+
+# Extra packages I find useful
+
+sudo apt install \
+  fd-find \
+  ripgrep
+
+# fd (find replacement)
+# https://github.com/sharkdp/fd
+[ ! -d "~/.local/bin" ] && mkdir -p ~/.local/bin
+ln -s $(which fdfind) ~/.local/bin/fd
+
+# git-delta for pretty diffs
+# https://dandavison.github.io/delta
+wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12.1_amd64.deb
+dpkg -i git-delta_0.12.1_amd64.deb
+git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
