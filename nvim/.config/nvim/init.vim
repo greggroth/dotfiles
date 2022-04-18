@@ -112,6 +112,11 @@ nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
 " }}}
 
+" Command Discoverability
+Plug 'folke/which-key.nvim', { 'branch': 'main' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " {{{ Install Bundles
 call plug#end()
 filetype plugin indent on
