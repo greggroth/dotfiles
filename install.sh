@@ -31,5 +31,5 @@ dpkg -i git-delta_0.12.1_amd64.deb
 git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
 
 # Add dotfiles
-stow tmux
-stow nvim
+stow tmux -t $HOME
+stow nvim -t $HOME
