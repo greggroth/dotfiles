@@ -119,8 +119,8 @@ filetype plugin indent on
 " }}}
 
 " {{{ Set Theme
-let g:seoul256_background = 234
-colorscheme seoul256
+silent let g:seoul256_background = 234
+silent colorscheme seoul256
 set laststatus=2
 " }}}
 
