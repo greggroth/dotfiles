@@ -10,7 +10,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " {{{ Basic Bundles
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-# let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+" let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 nmap <C-p> :FZF --no-mouse<CR>
 
 Plug 'tpope/vim-repeat'
