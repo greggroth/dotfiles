@@ -13,7 +13,7 @@ git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfil
 
 # Extra packages I find useful
 
-sudo apt install \
+sudo apt install -y \
   fd-find \
   ripgrep
 
