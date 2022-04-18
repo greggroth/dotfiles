@@ -16,6 +16,7 @@ git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfil
 sudo apt install -y \
   fd-find \
   ripgrep \
+  fzf \
   neovim \
   stow
 
