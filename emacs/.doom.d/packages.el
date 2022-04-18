@@ -18,3 +18,4 @@
 
 (package! org-super-agenda)
 ;; (package! org-modern)
+(package! ob-mermaid)
