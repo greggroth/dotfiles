@@ -17,7 +17,6 @@ sudo apt install -y \
   fd-find \
   ripgrep \
   fzf \
-  neovim \
   stow
 
 # fd (find replacement)
@@ -32,6 +31,8 @@ dpkg -i git-delta_0.12.1_amd64.deb
 git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
 
 # NeoVim Setup
+wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+dpkg -i nvim-linux64.deb
 pip3 install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
