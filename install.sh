@@ -30,6 +30,11 @@ wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12
 dpkg -i git-delta_0.12.1_amd64.deb
 git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
 
+# NeoVim Setup
+pip3 install neovim
+nvim --headless +PlugInstall +qa
+nvim --headless +UpdateRemotePlugins +qa
+
 # Add dotfiles
 stow tmux -t $HOME
 stow nvim -t $HOME

@@ -66,7 +66,7 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 " Plug 'janko-m/vim-test'
 
 Plug 'thoughtbot/vim-rspec'
-Plug 'jgdavey/tslime.vim'
+Plug 'jgdavey/tslime.vim', { 'branch': 'main' }
 
 let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 " vim-rspec mappings
