@@ -40,3 +40,4 @@ nvim --headless +UpdateRemotePlugins +qa
 # Add dotfiles
 stow tmux -t $HOME
 stow nvim -t $HOME
+stow bash -t $HOME
