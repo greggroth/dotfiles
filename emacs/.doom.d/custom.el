@@ -13,7 +13,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#0d0d0d" "#5a5b5a"))
  '(objed-cursor-color "#cc6666")
  '(package-selected-packages
-   '(ob-mermaid org-modern org-cliplink org-super-agenda fireplace mustache-mode))
+   '(ob-http ob-mermaid org-modern org-cliplink org-super-agenda fireplace mustache-mode))
  '(pdf-view-midnight-colors (cons "#c5c8c6" "#1d1f21"))
  '(vc-annotate-background "#1d1f21")
  '(vc-annotate-color-map

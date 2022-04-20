@@ -29,40 +29,6 @@
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
 
-(setq org-fancy-priorities-list '("⚑" "▲" "▼"))
-
-;; Source: https://www.suenkler.info/docs/emacs-orgmode/
-;; (add-to-list 'org-capture-templates
-(setq org-capture-templates
-      '(
-        ("t" "Work TODO"
-        entry (file+datetree "~/org/work-log.org")
-        "* TODO [#B] %? \nCreated: %T\n "
-        :empty-lines 0
-        :tree-type week)
-
-        ("j" "Work Journal"
-        entry (file+datetree "~/org/work-log.org")
-        "* %?"
-        :empty-lines 0
-        :tree-type week)
-
-        ("m" "Meeting"
-        entry (file+datetree "~/org/work-log.org")
-        "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
-        :tree-type week
-        :empty-lines 0)
-
-        ))
-
-;; https://github.com/james-stoup/emacs-org-mode-tutorial/blob/main/org-mode-config.el
-;;
-;; When a TODO is set to a done state, record a timestamp
-(setq org-log-done 'time)
-
-;; Follow the links
-(setq org-return-follows-link  t)
-
 (after! org
 ;;         ;; Org-Modern
 ;;         (setq
@@ -72,6 +38,39 @@
 ;;         )
 ;;         (add-hook 'org-mode-hook #'org-modern-mode)
 ;;         (add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
+
+  (setq org-fancy-priorities-list '("⚑" "▲" "▼"))
+
+  ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
+  ;; (add-to-list 'org-capture-templates
+  (setq org-capture-templates
+        '(
+          ("t" "Work TODO"
+           entry (file+datetree "~/org/work-log.org")
+           "* TODO [#B] %? \nCreated: %T\n "
+           :empty-lines 0
+           :tree-type week)
+
+          ("j" "Work Journal"
+           entry (file+datetree "~/org/work-log.org")
+           "* %?"
+           :empty-lines 0
+           :tree-type week)
+
+          ("m" "Meeting"
+           entry (file+datetree "~/org/work-log.org")
+           "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
+           :tree-type week
+           :empty-lines 0)
+          ))
+
+  ;; https://github.com/james-stoup/emacs-org-mode-tutorial/blob/main/org-mode-config.el
+  ;;
+  ;; When a TODO is set to a done state, record a timestamp
+  (setq org-log-done 'time)
+
+  ;; Follow the links
+  (setq org-return-follows-link  t)
 
 
   (setq org-todo-keywords
@@ -323,3 +322,25 @@
 
 (add-hook 'vterm-mode-hook
           'turn-off-evil-mode)
+
+(with-eval-after-load 'tramp
+        (tramp-set-completion-function "ssh"
+        '((tramp-parse-sconfig "~/.ssh/codespaces")
+        (tramp-parse-sconfig "~/.ssh/config")))
+        )
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (http . t)))
+
+
+(let ((ghcs (assoc "ghcs" tramp-methods))
+      (ghcs-methods '((tramp-login-program "gh")
+                      (tramp-login-args (("codespace") ("ssh") ("-c") ("%h")))
+                      (tramp-remote-shell "/bin/sh")
+                      (tramp-remote-shell-login ("-l"))
+                      (tramp-remote-shell-args ("-c")))))
+  ;; just for debugging the methods
+  (if ghcs (setcdr ghcs ghcs-methods)
+    (push (cons "ghcs" ghcs-methods) tramp-methods)))
