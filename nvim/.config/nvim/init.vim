@@ -204,7 +204,7 @@ set tags=./tmp/tags,./tags,tags
 set backupdir=~/.vim/_backup
 set directory=~/.vim/_tmp
 
-set autochdir
+" set autochdir
 
 " Use system clipboard
 set clipboard=unnamed
