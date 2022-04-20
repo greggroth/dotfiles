@@ -32,5 +32,8 @@ export PROMPT_DIRTRIM=4
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(rbenv init -)"
 
+export EDITOR=nvim
+alias vim='nvim'
+
 # FZF keybindings
 . /usr/share/doc/fzf/examples/key-bindings.bash
