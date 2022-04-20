@@ -9,10 +9,9 @@
 # fi
 
 echo "Adding git aliases"
-git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
+git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
 
 # Extra packages I find useful
-
 sudo apt install -y \
   fd-find \
   ripgrep \
@@ -21,23 +20,37 @@ sudo apt install -y \
 
 # fd (find replacement)
 # https://github.com/sharkdp/fd
-[ ! -d "~/.local/bin" ] && mkdir -p ~/.local/bin
-ln -s $(which fdfind) ~/.local/bin/fd
+if ! command -v fd &> /dev/null; then
+  [ ! -d "~/.local/bin" ] && mkdir -p ~/.local/bin
+  ln -s $(which fdfind) ~/.local/bin/fd
+fi
 
 # git-delta for pretty diffs
 # https://dandavison.github.io/delta
-wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12.1_amd64.deb
-dpkg -i git-delta_0.12.1_amd64.deb
-git config --global include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
+if ! command -v delta &> /dev/null; then
+  echo "Installing Git-Delta"
+  wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12.1_amd64.deb
+  dpkg -i git-delta_0.12.1_amd64.deb
+  rm git-delta_0.12.1_amd64.deb
+  git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
+fi
+
 
 # NeoVim Setup
-wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-dpkg -i nvim-linux64.deb
-pip3 install neovim
-nvim --headless +PlugInstall +qa
-nvim --headless +UpdateRemotePlugins +qa
+if ! command -v nvim  &> /dev/null; then
+  echo "Installing NVIM"
+  wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+  dpkg -i nvim-linux64.deb
+  rm nvim-linux64.deb
+  pip3 install neovim
+  nvim --headless +PlugInstall +qa
+  nvim --headless +UpdateRemotePlugins +qa
+fi
 
 # Add dotfiles
+echo "Adding Tmux dotfiles"
 stow tmux -t $HOME
+echo "Adding NVIM dotfiles"
 stow nvim -t $HOME
-stow bash -t $HOME
+echo "Adding Bash dotfiles"
+rm ~/.bashrc && stow bash -t $HOME
