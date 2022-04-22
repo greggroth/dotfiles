@@ -13,6 +13,7 @@ git config --global --add include.path "/workspaces/.codespaces/.persistedshare/
 
 # Extra packages I find useful
 sudo apt install -y \
+  tmux \
   fd-find \
   ripgrep \
   fzf \
