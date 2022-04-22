@@ -37,6 +37,9 @@ fi
 
 
 # NeoVim Setup
+echo "Adding NVIM dotfiles"
+stow nvim -t $HOME
+
 if ! command -v nvim  &> /dev/null; then
   echo "Installing NVIM"
   wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
@@ -50,7 +53,5 @@ fi
 # Add dotfiles
 echo "Adding Tmux dotfiles"
 stow tmux -t $HOME
-echo "Adding NVIM dotfiles"
-stow nvim -t $HOME
 echo "Adding Bash dotfiles"
 rm ~/.bashrc && stow bash -t $HOME
