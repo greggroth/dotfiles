@@ -29,6 +29,10 @@
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
 
+(after! org-fancy-priorities
+  (setq org-fancy-priorities-list '("⚑" "▲" "▼"))
+)
+
 (after! org
 ;;         ;; Org-Modern
 ;;         (setq
@@ -39,7 +43,6 @@
 ;;         (add-hook 'org-mode-hook #'org-modern-mode)
 ;;         (add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
 
-  (setq org-fancy-priorities-list '("⚑" "▲" "▼"))
 
   ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
   ;; (add-to-list 'org-capture-templates

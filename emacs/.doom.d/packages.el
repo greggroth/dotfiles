@@ -21,3 +21,4 @@
 (package! ob-mermaid)
 
 (package! ob-http)
+(package! org-fancy-priorities)
