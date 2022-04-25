@@ -11,3 +11,4 @@ runit/**/log/logs/*
 runit/**/supervise/*
 fish/.config/fish/fish_history
 .DS_Store
+zsh/.env

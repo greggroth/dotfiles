@@ -12,6 +12,7 @@ brew 'chruby'
 brew 'chruby-fish'
 brew 'cmake'
 brew 'coreutils'
+brew 'direnv'
 brew 'emacs-plus@28', args: ['with-native-comp']
 brew 'fd'
 brew 'fswatch'
