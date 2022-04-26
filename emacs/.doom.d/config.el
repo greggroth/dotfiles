@@ -338,12 +338,12 @@
    (http . t)))
 
 
-(let ((ghcs (assoc "ghcs" tramp-methods))
-      (ghcs-methods '((tramp-login-program "gh")
-                      (tramp-login-args (("codespace") ("ssh") ("-c") ("%h")))
-                      (tramp-remote-shell "/bin/sh")
-                      (tramp-remote-shell-login ("-l"))
-                      (tramp-remote-shell-args ("-c")))))
-  ;; just for debugging the methods
-  (if ghcs (setcdr ghcs ghcs-methods)
-    (push (cons "ghcs" ghcs-methods) tramp-methods)))
+;; (let ((ghcs (assoc "ghcs" tramp-methods))
+;;       (ghcs-methods '((tramp-login-program "gh")
+;;                       (tramp-login-args (("codespace") ("ssh") ("-c") ("%h")))
+;;                       (tramp-remote-shell "/bin/sh")
+;;                       (tramp-remote-shell-login ("-l"))
+;;                       (tramp-remote-shell-args ("-c")))))
+;;   ;; just for debugging the methods
+;;   (if ghcs (setcdr ghcs ghcs-methods)
+;;     (push (cons "ghcs" ghcs-methods) tramp-methods)))

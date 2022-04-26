@@ -1,2 +1,0 @@
---target=/etc/service/
---ignore=./log/logs/*
