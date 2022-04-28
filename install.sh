@@ -31,7 +31,7 @@ fi
 if ! command -v delta &> /dev/null; then
   echo "Installing Git-Delta"
   wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12.1_amd64.deb
-  dpkg -i git-delta_0.12.1_amd64.deb
+  sudo dpkg -i git-delta_0.12.1_amd64.deb
   rm git-delta_0.12.1_amd64.deb
   git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
 fi
@@ -44,7 +44,7 @@ stow nvim -t $HOME
 if ! command -v nvim  &> /dev/null; then
   echo "Installing NVIM"
   wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-  dpkg -i nvim-linux64.deb
+  sudo dpkg -i nvim-linux64.deb
   rm nvim-linux64.deb
   pip3 install neovim
   nvim --headless +PlugInstall +qa
