@@ -54,5 +54,6 @@ fi
 # Add dotfiles
 echo "Adding Tmux dotfiles"
 stow tmux -t $HOME
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "Adding Bash dotfiles"
 rm ~/.bashrc && stow bash -t $HOME
