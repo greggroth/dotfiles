@@ -3,10 +3,10 @@
 # Installation script called when loaded into a Codespace
 
 # are we on a mac or GH codespace? bootstrap!
-# if [ $(uname -s) = "Darwin" ]; then
-#   echo "Not set up to work with MacOS yet"
-#   exit 1
-# fi
+if [ $(uname -s) = "Darwin" ]; then
+  echo "Not set up to work with MacOS yet"
+  exit 1
+fi
 
 echo "Adding git aliases"
 git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
@@ -22,8 +22,8 @@ sudo apt install -y \
 # fd (find replacement)
 # https://github.com/sharkdp/fd
 if ! command -v fd &> /dev/null; then
-  [ ! -d "~/.local/bin" ] && mkdir -p ~/.local/bin
-  ln -s $(which fdfind) ~/.local/bin/fd
+  [ ! -d "$HOME/.local/bin" ] && mkdir -p $HOME/.local/bin
+  ln -s $(which fdfind) $HOME/.local/bin/fd
 fi
 
 # git-delta for pretty diffs
@@ -54,6 +54,6 @@ fi
 # Add dotfiles
 echo "Adding Tmux dotfiles"
 stow tmux -t $HOME
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 echo "Adding Bash dotfiles"
-rm ~/.bashrc && stow bash -t $HOME
+rm $HOME/.bashrc && stow bash -t $HOME
