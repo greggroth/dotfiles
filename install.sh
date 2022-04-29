@@ -51,9 +51,12 @@ if ! command -v nvim  &> /dev/null; then
   nvim --headless +UpdateRemotePlugins +qa
 fi
 
-# Add dotfiles
+# TMUX Setup
 echo "Adding Tmux dotfiles"
 stow tmux -t $HOME
 git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+$HOME/.tmux/plugins/tpm/bin/install_plugins
+
+# Bash Setup
 echo "Adding Bash dotfiles"
 rm $HOME/.bashrc && stow bash -t $HOME
