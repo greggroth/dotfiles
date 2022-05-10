@@ -12,3 +12,4 @@ install.sh
 .oh-my-zsh/cache
 
 Brewfile.lock.json
+install.sh
