@@ -1,12 +1,8 @@
 #!/bin/bash
 
-# Installation script called when loaded into a Codespace
+export GITHUB_USERNAME=greggroth
 
-# are we on a mac or GH codespace? bootstrap!
-if [ $(uname -s) = "Darwin" ]; then
-  echo "Not set up to work with MacOS yet"
-  exit 1
-fi
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply $GITHUB_USERNAME
 
 echo "Adding git aliases"
 git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitalias"
