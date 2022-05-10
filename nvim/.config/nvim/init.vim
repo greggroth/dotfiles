@@ -5,6 +5,10 @@ let mapleader = ","
 let maplocalleader = "\\"
 let g:netrw_liststyle= 3
 
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
 call plug#begin('~/.local/share/nvim/plugged')
 " }}}
 

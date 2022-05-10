@@ -47,7 +47,6 @@ if ! command -v nvim  &> /dev/null; then
   sudo dpkg -i nvim-linux64.deb
   rm nvim-linux64.deb
   pip3 install neovim
-  nvim --headless +PlugInstall +qa
   nvim --headless +UpdateRemotePlugins +qa
 fi
 
