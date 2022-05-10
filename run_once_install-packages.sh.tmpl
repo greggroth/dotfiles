@@ -1,0 +1,31 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+sudo apt install -y \
+  tmux \
+  fd-find \
+  ripgrep \
+  fzf \
+  stow
+
+# NeoVim Setup
+if ! command -v nvim  &> /dev/null; then
+  echo "Installing NVIM"
+  wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+  sudo dpkg -i nvim-linux64.deb
+  rm nvim-linux64.deb
+  pip3 install neovim
+  nvim --headless +UpdateRemotePlugins +qa
+fi
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+brew bundle
+{{ end -}}
+
+# fd (find replacement)
+# https://github.com/sharkdp/fd
+if ! command -v fd &> /dev/null; then
+  [ ! -d "$HOME/.local/bin" ] && mkdir -p $HOME/.local/bin
+  ln -s $(which fdfind) $HOME/.local/bin/fd
+fi
+
+$HOME/.tmux/plugins/tpm/bin/install_plugins

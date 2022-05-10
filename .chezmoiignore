@@ -1,0 +1,14 @@
+README.md
+
+fish
+emacs
+git
+pry
+psql
+bin
+tig
+vim
+install.sh
+.oh-my-zsh/cache
+
+Brewfile.lock.json
