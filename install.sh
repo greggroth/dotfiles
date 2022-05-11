@@ -34,7 +34,3 @@ if ! command -v delta &> /dev/null; then
   rm git-delta_0.12.1_amd64.deb
   git config --global --add include.path "/workspaces/.codespaces/.persistedshare/dotfiles/git/.gitdelta"
 fi
-
-# Bash Setup
-echo "Adding Bash dotfiles"
-rm $HOME/.bashrc && stow bash -t $HOME

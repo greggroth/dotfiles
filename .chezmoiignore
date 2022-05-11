@@ -1,6 +1,4 @@
 README.md
-
-fish
 emacs
 git
 pry
@@ -9,7 +7,7 @@ bin
 tig
 vim
 install.sh
-.oh-my-zsh/cache
 
+.config/fish/fundle
 Brewfile.lock.json
 install.sh
