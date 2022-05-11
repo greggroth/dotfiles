@@ -1,4 +1,8 @@
 # AVIT ZSH Theme
+autoload -U colors && colors
+setopt auto_cd
+setopt multios
+setopt prompt_subst
 
 PROMPT='%{$(iterm2_prompt_mark)%} $(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
 %{$fg[$CARETCOLOR]%} ∴%{$resetcolor%} '
