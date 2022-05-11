@@ -12,6 +12,8 @@ zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~
 bindkey '^U' backward-kill-line
 bindkey "^[b" backward-word
 bindkey "^[f" forward-word
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
 
 alias vim='nvim'
 
