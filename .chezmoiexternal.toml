@@ -12,6 +12,7 @@
     type = "archive"
     url = "https://github.com/tmux-plugins/tpm/archive/refs/heads/master.zip"
     refreshPeriod = "168h"
+    stripComponents = 1
 [".git-prompt.sh"]
     type = "file"
     url = "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh"
