@@ -41,3 +41,8 @@ alias vim='nvim'
 {{ else if eq .chezmoi.os "linux" }}
   . /usr/share/doc/fzf/examples/key-bindings.bash
 {{ end }}
+
+# Automatically create/attach to TMUX session on Codespaces
+if [[ -v CODESPACES ]] && [[ ! -v TMUX ]]; then
+  tmux new -As$CODESPACE_NAME
+fi
