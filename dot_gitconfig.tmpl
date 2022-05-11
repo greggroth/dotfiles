@@ -1,3 +1,25 @@
+[user]
+  name = Greggory Rothmeier
+  email = greggroth@github.com
+[core]
+  quotepath = false
+  editor = nvim
+[branch]
+  autosetuprebase = always
+[web]
+  browser = open
+[rerere]
+  enabled = true
+[grep]
+  extendRegexp = true
+  lineNumber = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+[github]
+  user = greggroth
 [alias]
   dc = diff --cached
   aa = add --all :/
@@ -24,11 +46,13 @@
   ra = !git r --all
   l = "!. ~/bin/.githelpers && pretty_git_log"
   la = !git l --all
-	g = grep --break --heading --line-number
-	ctags = !.git/hooks/ctags
+  g = grep --break --heading --line-number
+  ctags = !.git/hooks/ctags
 
-  # hub
-  pr = !hub pull-request
 
-  find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
-  show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
+{{ if .codespaces }}
+[url "https://github.com/"]
+  insteadOf = git@github.com:
+[credential]
+  helper = cache
+{{ end }}
