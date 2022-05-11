@@ -36,4 +36,8 @@ export EDITOR=nvim
 alias vim='nvim'
 
 # FZF keybindings
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+{{ if eq .chezmoi.os "darwin" }}
+  [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+{{ else if eq .chezmoi.os "linux" }}
+  . /usr/share/doc/fzf/examples/key-bindings.bash
+{{ end }}
