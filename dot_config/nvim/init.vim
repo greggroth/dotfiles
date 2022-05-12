@@ -14,8 +14,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " {{{ Basic Bundles
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 nmap <C-p> :FZF --no-mouse<CR>
+" Map Escape to close the popup
+autocmd FileType fzf tnoremap <Esc> <C-c>
 
 Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'
