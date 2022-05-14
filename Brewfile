@@ -60,6 +60,7 @@ brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 
 cask 'iterm2'
+cask 'kitty'
 cask 'alfred'
 cask 'visual-studio-code'
 cask 'cron'        # Calendar
