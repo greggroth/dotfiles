@@ -1,6 +1,7 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'd12frosted/emacs-plus'
+tap 'wez/wezterm'
 
 # Core Homebrew
 brew 'asciidoctor'
@@ -61,6 +62,7 @@ brew 'zsh-syntax-highlighting'
 
 cask 'iterm2'
 cask 'kitty'
+cask 'wez/wezterm/wezterm'
 cask 'alfred'
 cask 'visual-studio-code'
 cask 'cron'        # Calendar
