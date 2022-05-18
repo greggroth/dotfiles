@@ -41,4 +41,3 @@ fi
 # [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # export PATH="/usr/local/opt/openjdk/bin:$PATH"
-eval "$(direnv hook zsh)"
