@@ -17,3 +17,8 @@
     type = "file"
     url = "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh"
     refreshPeriod = "168h"
+[".emacs.d"]
+    type = "archive"
+    url = "https://github.com/doomemacs/doomemacs/archive/refs/heads/master.zip"
+    refreshPeriod = "168h"
+    stripComponents = 1
