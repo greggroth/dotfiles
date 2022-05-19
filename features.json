@@ -1,0 +1,13 @@
+{
+    "features": {
+        "nvim": {
+            "package-manager": "vim-plug" # packer, pathogen, etc.
+        },
+        "tmux": {
+            "package-manager": "tpm"
+        },
+        "fzf": "latest",
+        "ripgrep": "latest",
+        "fd": "latest"
+    }
+}
