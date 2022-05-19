@@ -1,7 +1,7 @@
 {
     "features": {
         "nvim": {
-            "package-manager": "vim-plug" # packer, pathogen, etc.
+            "package-manager": "vim-plug"
         },
         "tmux": {
             "package-manager": "tpm"
