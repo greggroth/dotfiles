@@ -48,6 +48,6 @@ alias vim='nvim'
 {{ end }}
 
 # Automatically create/attach to TMUX session on Codespaces
-if [[ -v CODESPACES ]] && [[ ! -v TMUX ]]; then
-  tmux new -As$CODESPACE_NAME
-fi
+# if [[ -v CODESPACES ]] && [[ ! -v TMUX ]]; then
+#   tmux new -As$CODESPACE_NAME
+# fi
