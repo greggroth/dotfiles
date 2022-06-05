@@ -1,25 +1,35 @@
+#!/bin/sh
 {{ if eq .chezmoi.os "linux" -}}
-#!/bin/sh
-sudo apt install -y \
-  tmux \
-  fd-find \
-  ripgrep \
-  fzf
+  {{ if eq .chezmoi.osRelease.idLike "arch" -}}
+    sudo pacman -Sy --noconfirm \
+      neovim \
+      tmux \
+      fd \
+      ripgrep \
+      fzf
 
-# NeoVim Setup
-if ! command -v nvim  &> /dev/null; then
-  echo "Installing NVIM"
-  wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-  sudo dpkg -i nvim-linux64.deb
-  rm nvim-linux64.deb
-  pip3 install neovim
-  nvim --headless +PlugInstall +qa
-  nvim --headless +UpdateRemotePlugins +qa
-fi
+  {{ else -}}
+    sudo apt install -y \
+      tmux \
+      fd-find \
+      ripgrep \
+      fzf
+
+    # NeoVim Setup
+    if ! command -v nvim  &> /dev/null; then
+      echo "Installing NVIM"
+      wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+      sudo dpkg -i nvim-linux64.deb
+      rm nvim-linux64.deb
+    fi
+  {{ end -}}
 {{ else if eq .chezmoi.os "darwin" -}}
-#!/bin/sh
 brew bundle
 {{ end -}}
+
+pip3 install neovim
+nvim --headless +PlugInstall +qa
+nvim --headless +UpdateRemotePlugins +qa
 
 # fd (find replacement)
 # https://github.com/sharkdp/fd
