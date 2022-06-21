@@ -1,7 +1,8 @@
+export GOPATH=$HOME/go
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
-
 
 source ~/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/avit-it2.zsh-theme
@@ -9,6 +10,7 @@ source ~/.git-prompt.sh
 
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
+bindkey -e
 bindkey '^U' backward-kill-line
 bindkey "^[b" backward-word
 bindkey "^[f" forward-word
