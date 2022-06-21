@@ -29,6 +29,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
 Plug 'google/vim-searchindex'
+Plug 'github/copilot.vim'
 
 let g:deoplete#enable_at_startup = 1
 let deoplete#tag#cache_limit_size = 5000000
