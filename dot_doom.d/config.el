@@ -8,9 +8,9 @@
 
 (remove-hook 'org-mode-hook #'doom|disable-line-numbers)
 
-(setq rspec-use-chruby t)
-(setq rspec-use-rvm nil)
-(setq rspec-use-spring-when-possible nil)
+(setq rspec-use-chruby t
+      rspec-use-rvm nil
+      rspec-use-spring-when-possible nil)
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (add-hook 'rspec-before-verification-hook 'turn-off-evil-mode)
 ;; (add-to-list 'evil-emacs-state-modes 'inf-ruby-mode)
@@ -23,8 +23,12 @@
 (setq doom-font (font-spec :family "JetBrains Mono" :size 13)
       doom-theme 'doom-one)
 
-(setq org-image-actual-width nil)
-(setq org-agenda-files '("~/org" "~/.deft"))
+(setq org-image-actual-width nil
+      org-agenda-files '(
+                         "~/SynologyDrive/org"
+                         "~/SynologyDrive/org/roam"
+                         "~/SynologyDrive/org/roam/daily"
+                         "~/.deft"))
 
 (setq deft-directory "~/.deft")
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
@@ -43,25 +47,42 @@
 ;;         (add-hook 'org-mode-hook #'org-modern-mode)
 ;;         (add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
 
+  (setq org-roam-directory "~/SynologyDrive/org/roam")
+
+  (setq org-roam-dailies-capture-templates
+      '(
+        ("d" "default" entry
+         "* %?"
+         :target (file+head "%<%Y-%m-%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))
+        ("t" "todo" entry
+         "* TODO [#B] %?"
+         :target (file+head "%<%Y-%m-%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))
+        ("m" "meeting" entry
+         "* %? :meeting:%^g \n:Created: %T\n** Attendees\n** Notes\n** Action Items\n"
+         :target (file+head "%<%Y-%m-%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))
+        ))
 
   ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
   ;; (add-to-list 'org-capture-templates
   (setq org-capture-templates
         '(
           ("t" "Work TODO"
-           entry (file+datetree "~/org/work-log.org")
+           entry (file+datetree "~/SynologyDrive/org/work-log.org")
            "* TODO [#B] %? \nCreated: %T\n "
            :empty-lines 0
            :tree-type week)
 
           ("j" "Work Journal"
-           entry (file+datetree "~/org/work-log.org")
+           entry (file+datetree "~/SynologyDrive/org/work-log.org")
            "* %?"
            :empty-lines 0
            :tree-type week)
 
           ("m" "Meeting"
-           entry (file+datetree "~/org/work-log.org")
+           entry (file+datetree "~/SynologyDrive/org/work-log.org")
            "* %? :meeting:%^g \n:Created: %T\n** Attendees\n*** \n** Notes\n** Action Items\n*** TODO [#A] "
            :tree-type week
            :empty-lines 0)
@@ -77,7 +98,7 @@
 
 
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "PLANNING(p)" "IN-PROGRESS(i@/!)" "VERIFYING(v!)" "BLOCKED(b@)"  "|" "DONE(d!)" "OBE(o@!)" "WONT-DO(w@/!)" )
+        '((sequence "TODO(t)" "PLANNING(p)" "IN-PROGRESS(i@/!)" "BLOCKED(b@)"  "|" "DONE(d!)" "OBE(o@!)" "WONT-DO(w@/!)" )
           ))
 
   (setq org-todo-keyword-faces
@@ -85,7 +106,6 @@
           ("TODO" . (:foreground "GoldenRod" :weight bold))
           ("PLANNING" . (:foreground "DeepPink" :weight bold))
           ("IN-PROGRESS" . (:foreground "Cyan" :weight bold))
-          ("VERIFYING" . (:foreground "DarkOrange" :weight bold))
           ("BLOCKED" . (:foreground "Red" :weight bold))
           ("DONE" . (:foreground "LimeGreen" :weight bold))
           ("OBE" . (:foreground "LimeGreen" :weight bold))
@@ -141,129 +161,40 @@
   (setq org-super-agenda-header-map (make-sparse-keymap))
   (setq org-agenda-custom-commands
         '(
-          ("r" "Retro Topics"
-           ((tags "retro"
-                  ((org-agenda-overriding-header "Retro Items"))
-           )))
-
-          ;; Daily Agenda & TODOs
-          ("d" "Daily agenda and all TODOs"
-
-           ;; Display items with priority A
-           ((tags "PRIORITY=\"A\""
-                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
-                   (org-agenda-overriding-header "High-priority unfinished tasks:")))
-
-            ;; View 7 days in the calendar view
-            (agenda "" ((org-agenda-span 7)))
-
-            ;; Display items with priority B (really it is view all items minus A & C)
-            (alltodo ""
-                     ((org-agenda-skip-function '(or (air-org-skip-subtree-if-priority ?A)
-                                                     (air-org-skip-subtree-if-priority ?C)
-                                                     (org-agenda-skip-if nil '(scheduled deadline))))
-                      (org-agenda-overriding-header "ALL normal priority tasks:")))
-
-            ;; Display items with pirority C
-            (tags "PRIORITY=\"C\""
-                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
-                   (org-agenda-overriding-header "Low-priority Unfinished tasks:")))
-            )
-
-           ;; Don't compress things (change to suite your tastes)
-           ((org-agenda-compact-blocks nil)))
-
-          ;; James's Super View
           ("g" "Super View"
            (
-            (agenda ""
-                    (
-                     (org-agenda-span 7)
-                     )
-                    )
-
+            (agenda "" ((org-agenda-span 7)))
             (alltodo ""
-                     (
-                      (org-agenda-prefix-format "  %t  %s")
+                     ((org-agenda-prefix-format "  %-12:c %t  %s")
                       (org-agenda-overriding-header "CURRENT STATUS")
 
                       ;; Define the super agenda groups (sorts by order)
                       (org-super-agenda-groups
                        '(
-                         ;; Filter where tag is CRITICAL
                          (:name "Critical Tasks"
                           :tag "CRITICAL"
                           :order 0
                           )
-                         ;; Filter where TODO state is IN-PROGRESS
                          (:name "Currently Working"
                           :todo "IN-PROGRESS"
                           :order 1
                           )
-                         ;; Filter where TODO state is PLANNING
-                         (:name "Planning Next Steps"
-                          :todo "PLANNING"
+                         (:name "High Priority"
+                          :and (:todo "TODO" :priority "A")
                           :order 2
                           )
-                         ;; Filter where TODO state is BLOCKED or where the tag is obstacle
-                         (:name "Problems & Blockers"
-                          :todo "BLOCKED"
-                          :tag "obstacle"
-                          :order 3
-                          )
-                         ;; Filter where tag is @write_future_ticket
-                         (:name "Tickets to Create"
-                          :tag "@write_future_ticket"
-                          :order 4
-                          )
-                         ;; Filter where tag is @research
-                         (:name "Research Required"
-                          :tag "@research"
-                          :order 7
-                          )
-                         ;; Filter where tag is meeting and priority is A (only want TODOs from meetings)
-                         (:name "Meeting Action Items"
-                          :tag "meeting"
-                          :order 8
-                          )
-                         ;; Filter where state is TODO and the priority is A and the tag is not meeting
-                         (:name "Other Important Items"
-                          :and (:todo "TODO" :priority "A" :not (:tag "meeting"))
-                          :order 9
-                          )
-                         ;; Filter where state is TODO and priority is B
-                         (:name "Sprint Backlog"
-                          :and (:todo "TODO" :tag "sprint")
-                          :order 10
-                          )
-                         ;; Filter where state is TODO and tag is project
-                         (:name "Project Backlog"
-                          :and (:todo "TODO" :tag "project")
-                          :order 11
-                          )
-                         ;; Filter where state is TODO and priority is B
                          (:name "General Backlog"
                           :and (:todo "TODO" :priority "B")
-                          :order 12
+                          :order 3
                           )
-                         ;; Filter where the priority is C or less (supports future lower priorities)
                          (:name "Non Critical"
                           :priority<= "C"
-                          :order 13
-                          )
-                         ;; Filter where TODO state is VERIFYING
-                         (:name "Currently Being Verified"
-                          :todo "VERIFYING"
-                          :order 20
+                          :order 4
                           )
                          )
-                       )
-                      )
-                     )
-            ))
-          ))
-
-  )
+                       ))))
+           )
+        )))
 
 
 (setq ns-option-modifier 'meta)
@@ -285,13 +216,21 @@
       :n "X" #'doom/open-scratch-buffer)
 
 (map! :leader
-      :desc "Org Capture"
-      :n "x" #'org-capture)
+      :desc "Org Roam Capture Today"
+      :n "d" #'org-roam-dailies-capture-today)
+
+(map! :leader
+      :desc "Org Roam Goto Today"
+      :n "nn" #'org-roam-dailies-goto-today)
+
+(map! :leader
+      :desc "Org Roam Goto Date"
+      :n "nN" #'org-roam-dailies-goto-date)
 
 (set-popup-rules!
- '((".deft/standup_2019.org" :side bottom :size 0.4 :quit 'current)
-   ("*doom:vterm-popup:.*" :side left :size 0.25 :slot -4 :select t :quit nil :ttl 0)
-   ("^\\*rspec" :slot 0 :size 0.4 :quit 'current)))
+  '((".deft/standup_2019.org" :side bottom :size 0.4 :quit 'current)
+    ("*doom:vterm-popup:.*" :side left :size 0.25 :slot -4 :select t :quit nil :ttl 0)
+    ("^\\*rspec" :slot 0 :size 0.4 :quit 'current)))
 
 ;; set up tikz as one of the default packages for LaTeX
 (setq org-latex-packages-alist
@@ -310,10 +249,10 @@
 
 
 (add-hook 'org-mode-hook
-  (lambda ()
-    (define-key org-mode-map (kbd "C-k")
-      (lambda () (interactive) (org-ctrl-c-ctrl-c)
-                               (org-display-inline-images)))))
+          (lambda ()
+            (define-key org-mode-map (kbd "C-k")
+              (lambda () (interactive) (org-ctrl-c-ctrl-c)
+                (org-display-inline-images)))))
 
 (define-key evil-inner-text-objects-map "m" 'evgeni-inner-defun)
 (define-key evil-outer-text-objects-map "m" 'evgeni-inner-defun)
@@ -327,10 +266,10 @@
           'turn-off-evil-mode)
 
 (with-eval-after-load 'tramp
-        (tramp-set-completion-function "ssh"
-        '((tramp-parse-sconfig "~/.ssh/codespaces")
-        (tramp-parse-sconfig "~/.ssh/config")))
-        )
+  (tramp-set-completion-function "ssh"
+                                 '((tramp-parse-sconfig "~/.ssh/codespaces")
+                                   (tramp-parse-sconfig "~/.ssh/config")))
+  )
 
 (org-babel-do-load-languages
  'org-babel-load-languages

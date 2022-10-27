@@ -48,7 +48,8 @@
        file-templates    ; auto-snippets for empty files
        ;;god               ; run Emacs commands without modifier keys
        fold              ; (nigh) universal code folding
-       ;;(format +onsave)  ; automated prettiness
+       ;; (format +onsave)  ; automated prettiness
+       format  ; automated prettiness
        ;;lispy             ; vim for lisp, for people who dont like vim
        ;; multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
@@ -99,6 +100,7 @@
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
        ;;wakatime
+       tree-sitter
 
        :lang
        ;;assembly          ; assembly for fun or debugging
@@ -107,7 +109,7 @@
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
-       ;;csharp            ; unity, .NET, and mono shenanigans
+       csharp            ; unity, .NET, and mono shenanigans
        data              ; config/data formats
        ;;erlang            ; an elegant language for a more civilized age
        ;;elixir            ; erlang done right
@@ -120,7 +122,7 @@
        ;;idris             ;
        json              ; At least it ain't XML
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
-       ;; javascript        ; all(hope(abandon(ye(who(enter(here))))))
+       javascript        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;; latex             ; writing papers in Emacs has never been so fun
        ;;ledger            ; an accounting system in Emacs
@@ -134,6 +136,7 @@
         ;;+hugo            ; use Emacs for hugo blogging
         ;;+jupyter        ; ipython/jupyter support for babel
         +pandoc          ; pandoc integration into org's exporter
+        +roam2
         ;;+pomodoro        ; be fruitful with the tomato technique
         +pretty
         +present)        ; using Emacs for presentations
@@ -152,7 +155,7 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;; web               ; the tubes
-       ;;yaml              ; JSON, but readable
+       yaml              ; JSON, but readable
 
 
        :email
