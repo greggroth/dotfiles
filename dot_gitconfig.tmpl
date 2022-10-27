@@ -49,6 +49,10 @@
   g = grep --break --heading --line-number
   ctags = !.git/hooks/ctags
 
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
 
 {{ if .codespaces }}
 [url "https://github.com/"]
