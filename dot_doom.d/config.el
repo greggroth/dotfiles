@@ -27,10 +27,11 @@
       org-agenda-files '(
                          "~/SynologyDrive/org"
                          "~/SynologyDrive/org/roam"
-                         "~/SynologyDrive/org/roam/daily"
-                         "~/.deft"))
+                         "~/SynologyDrive/org/roam/daily"))
 
-(setq deft-directory "~/.deft")
+(setq deft-directory "~/SynologyDrive/org"
+      deft-recursive t
+      deft-use-filename-as-title t)
 (global-set-key (kbd "C-x C-g") 'deft-find-file)
 
 (after! org-fancy-priorities
@@ -51,16 +52,7 @@
 
   (setq org-roam-dailies-capture-templates
       '(
-        ("d" "default" entry
-         "* %?"
-         :target (file+head "%<%Y-%m-%d>.org"
-                            "#+title: %<%Y-%m-%d>\n"))
-        ("t" "todo" entry
-         "* TODO [#B] %?"
-         :target (file+head "%<%Y-%m-%d>.org"
-                            "#+title: %<%Y-%m-%d>\n"))
-        ("m" "meeting" entry
-         "* %? :meeting:%^g \n:Created: %T\n** Attendees\n** Notes\n** Action Items\n"
+        ("d" "default" plain "%?"
          :target (file+head "%<%Y-%m-%d>.org"
                             "#+title: %<%Y-%m-%d>\n"))
         ))
@@ -151,7 +143,7 @@
           ("sprint"    . (:foreground "lightSeaGreen" :weight bold))
           ("project"   . (:foreground "goldenrod2"    :weight bold))
           ("1on1"      . (:foreground "darkSeaGreen"  :weight bold))
-          ("meeting"   . (:foreground "tomato1"       :weight bold))
+          ("meeting"   . (:foreground "salmon1"       :weight bold))
           ("CRITICAL"  . (:foreground "red1"          :weight bold))
           )
         )
@@ -183,13 +175,21 @@
                           :and (:todo "TODO" :priority "A")
                           :order 2
                           )
-                         (:name "General Backlog"
-                          :and (:todo "TODO" :priority "B")
+                         (:name "Blocked"
+                          :todo "BLOCKED"
                           :order 3
                           )
-                         (:name "Non Critical"
-                          :priority<= "C"
+                         (:name "General Backlog"
+                          :and (:todo "TODO" :priority "B")
                           :order 4
+                          )
+                         (:name "Need Prioritization"
+                          :and (:todo "TODO" :priority< "C")
+                          :order 5
+                          )
+                         (:name "Non Critical"
+                          :priority "C"
+                          :order 6
                           )
                          )
                        ))))
@@ -228,8 +228,7 @@
       :n "nN" #'org-roam-dailies-goto-date)
 
 (set-popup-rules!
-  '((".deft/standup_2019.org" :side bottom :size 0.4 :quit 'current)
-    ("*doom:vterm-popup:.*" :side left :size 0.25 :slot -4 :select t :quit nil :ttl 0)
+  '(("*doom:vterm-popup:.*" :side left :size 0.25 :slot -4 :select t :quit nil :ttl 0)
     ("^\\*rspec" :slot 0 :size 0.4 :quit 'current)))
 
 ;; set up tikz as one of the default packages for LaTeX
@@ -286,3 +285,17 @@
 ;;   ;; just for debugging the methods
 ;;   (if ghcs (setcdr ghcs ghcs-methods)
 ;;     (push (cons "ghcs" ghcs-methods) tramp-methods)))
+
+(use-package! codespaces
+  :config (codespaces-setup)
+  :bind ("C-c S" . #'codespaces-connect))
+
+(defun my/org-roam-rg-search ()
+  "Search org-roam directory using consult-ripgrep. With live-preview."
+  (interactive)
+  (let ((consult-ripgrep-command "rg --null --ignore-case --type org --line-buffered --color=always --max-columns=500 --no-heading --line-number . -e ARG OPTS"))
+    (consult-ripgrep org-roam-directory)))
+
+(map! :leader
+      :desc "Search Roam Notes"
+      "n s" #'my/org-roam-rg-search)

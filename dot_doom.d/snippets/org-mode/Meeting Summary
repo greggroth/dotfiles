@@ -1,0 +1,7 @@
+# key: meeting
+# name: Meeting Summary
+# --
+* $1 :meeting:
+** Attendees
+** Notes
+** Action Items

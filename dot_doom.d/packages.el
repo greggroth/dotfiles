@@ -22,3 +22,4 @@
 
 (package! ob-http)
 (package! org-fancy-priorities)
+(package! codespaces)
