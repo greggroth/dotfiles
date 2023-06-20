@@ -1,6 +1,7 @@
 #!/bin/sh
 {{ if eq .chezmoi.os "linux" -}}
   {{ if eq .chezmoi.osRelease.id "debian" -}}
+    sudo apt update
     sudo apt install -y \
       tmux \
       fd-find \
@@ -8,12 +9,12 @@
       fzf
 
     # NeoVim Setup
-    if ! command -v nvim  &> /dev/null; then
-      echo "Installing NVIM"
-      wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-      sudo dpkg -i nvim-linux64.deb
-      rm nvim-linux64.deb
-    fi
+    # if ! command -v nvim  &> /dev/null; then
+    #   echo "Installing NVIM"
+    #   wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+    #   sudo dpkg -i nvim-linux64.deb
+    #   rm nvim-linux64.deb
+    # fi
   {{ else if eq .chezmoi.osRelease.idLike "arch" -}}
     sudo pacman -Sy --noconfirm \
       neovim \
@@ -32,9 +33,9 @@ fi
 brew bundle
 {{ end -}}
 
-pip3 install neovim
-nvim --headless +PlugInstall +qa
-nvim --headless +UpdateRemotePlugins +qa
+# pip3 install neovim
+# nvim --headless +PlugInstall +qa
+# nvim --headless +UpdateRemotePlugins +qa
 
 # fd (find replacement)
 # https://github.com/sharkdp/fd
@@ -43,4 +44,4 @@ if ! command -v fd &> /dev/null; then
   [ ! -f "$HOME/.local/bin/fd" ] && ln -s $(which fdfind) $HOME/.local/bin/fd
 fi
 
-$HOME/.tmux/plugins/tpm/bin/install_plugins || true
+# $HOME/.tmux/plugins/tpm/bin/install_plugins || true

@@ -43,3 +43,7 @@ fi
 # [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+alias '??'='github-copilot-cli what-the-shell'
+alias 'git?'='github-copilot-cli git-assist'
+alias 'gh?'='github-copilot-cli gh-assist'
