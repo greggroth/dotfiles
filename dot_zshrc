@@ -30,7 +30,7 @@ if [ "$(command -v chruby)" ]; then
   source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
 [ -f venv/bin/activate ] && source venv/bin/activate
 [ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 
